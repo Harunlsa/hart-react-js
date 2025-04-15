@@ -1,0 +1,212 @@
+export const products = {
+  babySets: {
+    description:
+      "Safe and adorable baby care essentials designed for comfort and convenience. Our baby sets combine practicality with charming designs perfect for modern parenting needs.",
+    items: [
+      {
+        id: 1,
+        name: "Essential Baby Care Kit",
+        sizes: ["3-piece", "5-piece", "7-piece"],
+        colors: [
+          { imgSrc: "baby-set-1.jpg", className: "blue-swatch" },
+          { imgSrc: "baby-set-2.jpg", className: "pink-swatch" },
+        ],
+      },
+    ],
+  },
+  basins: {
+    description:
+      "Durable multi-purpose basins perfect for household and industrial use. Made from sturdy materials to withstand daily wear and tear.",
+    items: [
+      {
+        id: 1,
+        name: "Heavy Duty Utility Basin",
+        sizes: ["Small", "Medium", "Large"],
+        colors: [
+          { imgSrc: "basin-1.jpg", className: "white-swatch" },
+          { imgSrc: "basin-2.jpg", className: "green-swatch" },
+        ],
+      },
+    ],
+  },
+  baskets: {
+    description:
+      "Versatile storage solutions for home organization. Our baskets combine functionality with stylish designs for any space.",
+    items: [
+      {
+        id: 1,
+        name: "Foldable Storage Basket",
+        sizes: ["30cm", "40cm", "50cm"],
+        colors: [
+          { imgSrc: "basket-1.jpg", className: "brown-swatch" },
+          { imgSrc: "basket-2.jpg", className: "beige-swatch" },
+        ],
+      },
+    ],
+  },
+  bowls: {
+    description:
+      "Food-grade plastic bowls for everyday use. Microwave-safe and dishwasher-friendly designs for modern kitchens.",
+    items: [
+      {
+        id: 1,
+        name: "Premium Mixing Bowl Set",
+        sizes: ["1L", "2L", "3L"],
+        colors: [
+          { imgSrc: "bowl-1.jpg", className: "red-swatch" },
+          { imgSrc: "bowl-2.jpg", className: "blue-swatch" },
+        ],
+      },
+    ],
+  },
+  buckets: {
+    description:
+      "Heavy-duty buckets built to last. Perfect for construction, cleaning, and agricultural applications.",
+    items: [
+      {
+        id: 1,
+        name: "Industrial Strength Bucket",
+        sizes: ["10L", "15L", "20L"],
+        colors: [
+          { imgSrc: "bucket-1.jpg", className: "yellow-swatch" },
+          { imgSrc: "bucket-2.jpg", className: "grey-swatch" },
+        ],
+      },
+    ],
+  },
+  colandersAndPlates: {
+    description:
+      "Essential kitchen tools for food preparation. Our colanders and plates feature ergonomic designs for efficient cooking.",
+    items: [
+      {
+        id: 1,
+        name: "Stainless Steel Colander Set",
+        sizes: ["24cm", "28cm", "32cm"],
+        colors: [
+          { imgSrc: "colander-1.jpg", className: "silver-swatch" },
+          { imgSrc: "colander-2.jpg", className: "black-swatch" },
+        ],
+      },
+    ],
+  },
+  coolers: {
+    description:
+      "High-performance cooling solutions for food preservation. Ideal for picnics, parties, and outdoor activities.",
+    items: [
+      {
+        id: 1,
+        name: "Premium Ice Cooler",
+        sizes: ["25L", "40L", "60L"],
+        colors: [
+          { imgSrc: "cooler-1.jpg", className: "red-swatch" },
+          { imgSrc: "cooler-2.jpg", className: "blue-swatch" },
+        ],
+      },
+    ],
+  },
+  drums: {
+    description:
+      "Industrial-grade storage drums for chemicals and liquids. UN-certified containers with secure sealing systems.",
+    items: [
+      {
+        id: 1,
+        name: "Chemical Resistant Drum",
+        sizes: ["50L", "100L", "200L"],
+        colors: [
+          { imgSrc: "drum-1.jpg", className: "blue-swatch" },
+          { imgSrc: "drum-2.jpg", className: "green-swatch" },
+        ],
+      },
+    ],
+  },
+  iceCreamContainers: {
+    description:
+      "Commercial-grade containers for ice cream storage and display. Perfect for parlors and bulk storage.",
+    items: [
+      {
+        id: 1,
+        name: "Insulated Ice Cream Tub",
+        sizes: ["2kg", "5kg", "10kg"],
+        colors: [
+          { imgSrc: "ice-cream-container-1.jpg", className: "white-swatch" },
+          { imgSrc: "ice-cream-container-2.jpg", className: "pink-swatch" },
+        ],
+      },
+    ],
+  },
+  jerryCans: {
+    description:
+      "Reliquid transportation solutions with spill-proof designs. Certified for safe fuel and chemical storage.",
+    items: [
+      {
+        id: 1,
+        name: "Heavy Duty Jerry Can",
+        sizes: ["10L", "20L", "25L"],
+        colors: [
+          { imgSrc: "jerry-can-1.jpg", className: "yellow-swatch" },
+          { imgSrc: "jerry-can-2.jpg", className: "red-swatch" },
+        ],
+      },
+    ],
+  },
+  mugsAndCups: {
+    description:
+      "Ergonomic drinkware for home and office use. Heat-resistant and dishwasher-safe designs.",
+    items: [
+      {
+        id: 1,
+        name: "Insulated Travel Mug",
+        sizes: ["300ml", "400ml", "500ml"],
+        colors: [
+          { imgSrc: "mug-1.jpg", className: "black-swatch" },
+          { imgSrc: "mug-2.jpg", className: "silver-swatch" },
+        ],
+      },
+    ],
+  },
+  racks: {
+    description:
+      "Space-saving storage solutions for kitchens and warehouses. Durable racks with adjustable configurations.",
+    items: [
+      {
+        id: 1,
+        name: "Adjustable Utility Rack",
+        sizes: ["4-tier", "5-tier", "6-tier"],
+        colors: [
+          { imgSrc: "rack-1.jpg", className: "grey-swatch" },
+          { imgSrc: "rack-2.jpg", className: "white-swatch" },
+        ],
+      },
+    ],
+  },
+  takeAwayContainers: {
+    description:
+      "Eco-friendly food packaging solutions. Microwave-safe containers with leak-proof designs.",
+    items: [
+      {
+        id: 1,
+        name: "Biodegradable Food Box",
+        sizes: ["500ml", "750ml", "1000ml"],
+        colors: [
+          { imgSrc: "container-1.jpg", className: "clear-swatch" },
+          { imgSrc: "container-2.jpg", className: "brown-swatch" },
+        ],
+      },
+    ],
+  },
+  toys: {
+    description:
+      "Child-safe educational toys that encourage creative play. Made from non-toxic, durable materials.",
+    items: [
+      {
+        id: 1,
+        name: "Interactive Learning Set",
+        sizes: ["Basic", "Deluxe", "Premium"],
+        colors: [
+          { imgSrc: "toy-1.jpg", className: "multi-color-swatch" },
+          { imgSrc: "toy-2.jpg", className: "primary-color-swatch" },
+        ],
+      },
+    ],
+  },
+};
