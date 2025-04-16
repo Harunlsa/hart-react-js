@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import logo from "../assets/hart_logo.png";
 // import "../assets/hart-logo.png" as Logo;
 
 const HeaderWrapper = styled(Navbar)`
@@ -142,7 +143,7 @@ const Header = () => {
         <LogoContainer as={NavLink} to="/">
           <img
             alt="Hart Industries Logo"
-            src="../src/assets/hart_logo.png"
+            src={logo}
             className="d-inline-block align-top"
           />
           <h1>Hart Industries Limited</h1>

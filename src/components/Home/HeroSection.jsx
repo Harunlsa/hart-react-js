@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import racksGroup from "../../assets/images/hero-bg/bg-hero-blue.png";
 const HeroSection = () => {
   const slides = [
     {
@@ -11,7 +11,7 @@ const HeroSection = () => {
       highlight: "Racks",
       description:
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
-      imgSrc: "../src/assets/images/product-group/racks-group.png",
+      imgSrc: { racksGroup },
       color: "#bcff33",
       link: "products/Racks",
       // minWidth: "100%",
