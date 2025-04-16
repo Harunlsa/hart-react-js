@@ -2,16 +2,19 @@ import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import racksGroup from "../../assets/images/hero-bg/bg-hero-blue.png";
+// import racksGroup from "../../assets/images/hero-bg/bg-hero-blue.png";
+// import racksHeroBg from "../../assets/images/hero-bg/bg-hero-blue.png";
+// import racksGroup from "../../assets/images/product-group/racks-group.png";
+
 const HeroSection = () => {
   const slides = [
     {
-      background: "../src/assets/images/hero-bg/bg-hero-green.png",
+      background: "/assets/images/hero-bg/bg-hero-green.png",
       title: "Organise with Versatile ",
       highlight: "Racks",
       description:
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
-      imgSrc: { racksGroup },
+      imgSrc: "/assets/images/product-group/racks-group.png",
       color: "#bcff33",
       link: "products/Racks",
       // minWidth: "100%",
