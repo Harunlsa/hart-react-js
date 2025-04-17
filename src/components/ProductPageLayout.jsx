@@ -54,7 +54,6 @@ const ProductPageLayout = () => {
             <Col md={5} className="text-right">
               <BannerImage
                 src={`/assets/images/product-groups/${currentCategory.value}Group.png`}
-                // "C:\Users\HLAbdulwahab\Documents\projects\hart-react-js\public\assets\images\product-groups\bowlsGroup.png"
                 alt={currentCategory.label}
               />
             </Col>

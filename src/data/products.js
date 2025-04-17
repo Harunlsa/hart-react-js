@@ -166,15 +166,21 @@ export const products = {
   },
   racks: {
     description:
-      "Space-saving storage solutions for kitchens and warehouses. Durable racks with adjustable configurations.",
+      "Durable and flexible plastic racks perfect for efficient storage and organisation in any setting.",
     items: [
       {
         id: 1,
-        name: "Adjustable Utility Rack",
-        sizes: ["4-tier", "5-tier", "6-tier"],
+        name: "Kitchen Rack Set",
+        sizes: ["4-tier", "5-tier"],
         colors: [
-          { imgSrc: "rack-1.jpg", className: "grey-swatch" },
-          { imgSrc: "rack-2.jpg", className: "white-swatch" },
+          {
+            imgSrc: "kitchen-rack-set.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "kitchen-rack-set-g.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
         ],
       },
     ],

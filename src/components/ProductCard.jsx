@@ -9,7 +9,7 @@ const ProductCard = ({ product, category }) => {
     <Col md={4} lg={3} className="mb-4">
       <Card>
         <ProductImage
-          src={`/assets/images/portfolio/${category}/${product.colors[selectedColor].imgSrc}`}
+          src={`/assets/images/products/${category}/${product.colors[selectedColor].imgSrc}`}
           alt={product.name}
         />
         <CardBody>
@@ -21,10 +21,10 @@ const ProductCard = ({ product, category }) => {
               ))}
             </SizeOptions>
             <ColorSwatches>
-              {product.colors.map((coloOr, index) => (
+              {product.colors.map((color, index) => (
                 <ColorDot
                   key={index}
-                  className={color.colorClass}
+                  className={selectedColor.colorClass}
                   active={index === selectedColor}
                   onClick={() => setSelectedColor(index)}
                 />
@@ -62,10 +62,14 @@ const SizeOptions = styled.div`
     font-size: 12px;
     color: #666;
     padding-right: 10px;
+    padding-left: 10px;
     border-right: 1px solid #ddd;
 
     &:last-child {
       border-right: none;
+    }
+    &:first-child {
+      padding-left: 0;
     }
   }
 `;
@@ -76,10 +80,11 @@ const ColorSwatches = styled.div`
 `;
 
 const ColorDot = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   cursor: pointer;
+  background-color: currentColor;
   outline: ${(props) => (props.active ? "2px solid currentColor" : "none")};
   outline-offset: 2px;
 `;
