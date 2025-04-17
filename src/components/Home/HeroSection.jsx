@@ -25,7 +25,7 @@ const HeroSection = () => {
       highlight: "Coolers",
       description:
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
-      imgSrc: "../src/assets/images/product-group/coolers6.png",
+      imgSrc: "/assets/images/product-group/coolers6.png",
       color: "#914391",
       link: "products/Coolers",
       minWidth: "80%",
