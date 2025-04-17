@@ -9,7 +9,7 @@ const ProductCard = ({ product, category }) => {
     <Col md={4} lg={3} className="mb-4">
       <Card>
         <ProductImage
-          src={`/assets/img/portfolio/${category}/${product.colors[selectedColor].imgSrc}`}
+          src={`/assets/images/portfolio/${category}/${product.colors[selectedColor].imgSrc}`}
           alt={product.name}
         />
         <CardBody>
@@ -21,7 +21,7 @@ const ProductCard = ({ product, category }) => {
               ))}
             </SizeOptions>
             <ColorSwatches>
-              {product.colors.map((color, index) => (
+              {product.colors.map((coloOr, index) => (
                 <ColorDot
                   key={index}
                   className={color.colorClass}

@@ -1,6 +1,7 @@
 import ProductPageLayout from "../../components/ProductPageLayout";
 
 import { products } from "../../data/products";
+
 const BowlsPage = () => (
   <ProductPageLayout
     categoryName="Bowls"

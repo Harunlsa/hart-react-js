@@ -16,7 +16,7 @@ const ContactBanner = () => (
 
 const BannerSection = styled.section`
   height: 326px;
-  background: url("src/assets/images/contact-banner.png");
+  background: url("/assets/images/contact-banner.png");
   background-size: cover;
   position: relative;
   display: flex;
@@ -27,8 +27,8 @@ const BannerContent = styled.div`
   color: #444444;
   h1 {
     font-size: 4rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 450;
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
     letter-spacing: 0.5px;
   }
 

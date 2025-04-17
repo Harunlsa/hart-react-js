@@ -20,12 +20,12 @@ const About = () => {
           </AboutText>
           <Col lg={6}>
             <AboutImageContainer className="twoImages">
-              <img src="src\assets\images\abt1.png" alt="abt1" />
+              <img src="/assets/images/abt1.png" alt="abt1" />
             </AboutImageContainer>
             <AboutImageContainer isSecond className="twoImages">
               <img
                 className="second"
-                src="src\assets\images\abt2.jpg"
+                src="/assets/images/abt2.jpg"
                 alt="abt2"
               />
             </AboutImageContainer>
@@ -51,7 +51,7 @@ const About = () => {
           </AboutText>
           <Col lg={3}>
             <AboutIconContainer>
-              <img src="src\assets\images\visionIcon.png" alt="abt1" />
+              <img src="\assets\images\visionIcon.png" alt="abt1" />
             </AboutIconContainer>
           </Col>
         </Row>
@@ -65,7 +65,7 @@ const About = () => {
           </AboutText>
           <Col lg={3}>
             <AboutIconContainer>
-              <img src="src\assets\images\missionIcon.png" alt="abt1" />
+              <img src="\assets\images\missionIcon.png" alt="abt1" />
             </AboutIconContainer>
           </Col>
         </Row>
@@ -87,7 +87,7 @@ const About = () => {
           </AboutText>
           <Col lg={6}>
             <AboutImageContainer>
-              <img src="src\assets\images\recycling.png" alt="abt1" />
+              <img src="\assets\images\recycling.png" alt="abt1" />
             </AboutImageContainer>
           </Col>
         </Row>

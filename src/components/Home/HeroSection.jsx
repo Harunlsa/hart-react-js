@@ -20,7 +20,7 @@ const HeroSection = () => {
       // minWidth: "100%",
     },
     {
-      background: "../src/assets/images/hero-bg/bg-hero-blue.png",
+      background: "/assets/images/hero-bg/bg-hero-blue.png",
       title: "Efficient and Reliable ",
       highlight: "Coolers",
       description:

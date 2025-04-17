@@ -52,7 +52,7 @@ const ClientsSection = () => {
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
               <ClientImage
-                src={`/src/assets/images/clients/${client}`}
+                src={`/assets/images/clients/${client}`}
                 alt={`${client.substring(0, client.lastIndexOf("."))}`}
                 className="img-fluid"
               />

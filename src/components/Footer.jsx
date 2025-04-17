@@ -90,7 +90,6 @@ const FooterWrapper = styled.footer`
 `;
 
 const FooterTop = styled.div`
-  // margin-top: 60px;
   padding: 30px 0 30px 0;
   background: #fff;
 
