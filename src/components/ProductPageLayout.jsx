@@ -25,7 +25,6 @@ const ProductPageLayout = () => {
   // React Router hooks
   const navigate = useNavigate();
   const { category } = useParams();
-  console.log("Category:", category);
 
   /// Find current category data
   const currentCategory = categoryOptions.find((opt) => opt.value === category);
@@ -113,7 +112,10 @@ const Banner = styled.section`
   height: 326px;
   background: url(${(props) => props.bgImage}) no-repeat center center;
   background-size: cover;
-  padding: 60px 0;
+  display: flex;
+  align-items: center;
+
+  // padding: 60px 0;
 
   h1 {
     font-size: 4rem;
@@ -128,9 +130,9 @@ const Banner = styled.section`
 `;
 
 const BannerImage = styled.img`
-  max-width: 100%;
-  height: auto;
-  padding-left: 20%;
+  max-height: 300px;
+  width: auto;
+  margin-left: 40%;
 `;
 
 const FilterSection = styled.section`
