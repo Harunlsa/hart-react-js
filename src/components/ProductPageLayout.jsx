@@ -132,15 +132,18 @@ const Banner = styled.section`
 const BannerImage = styled.img`
   max-height: 300px;
   width: auto;
-  margin-left: 40%;
+  padding-left: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const FilterSection = styled.section`
-  padding: 40px 0;
+  padding-top: 40px;
 `;
 
 const ProductGrid = styled.section`
-  padding: 40px 0;
+  // padding: 40px 0;
 `;
 
 export default ProductPageLayout;
