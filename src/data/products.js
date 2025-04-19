@@ -19,11 +19,394 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Heavy Duty Utility Basin",
-        sizes: ["Small", "Medium", "Large"],
+        name: "Benz basin",
+        sizes: ["13L", "18L"],
         colors: [
-          { imgSrc: "basin-1.jpg", className: "white-swatch" },
-          { imgSrc: "basin-2.jpg", className: "green-swatch" },
+          {
+            imgSrc: "benz-basin-13-ltrs--web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "benz-basin-18-ltrs--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Big sunny basin",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "big-sunny-basin.--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Butterfly basin",
+        sizes: ["16L"],
+        colors: [
+          {
+            imgSrc: "butterfly-basin-16-ltrs--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Chinese basin",
+        sizes: ["20L"],
+        colors: [
+          {
+            imgSrc: "chinese-basin-20-ltrs--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Cute basin",
+        sizes: ["9L"],
+        colors: [
+          {
+            imgSrc: "cute-basin-9-ltrs--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Diabmond basin",
+        sizes: ["7L", "9L"],
+        colors: [
+          {
+            imgSrc: "diamond-basin-9-lt--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "diamond-basin-7-lt--web.png",
+            className: "olive-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Dolphin basin",
+        sizes: ["9L", "20L", "60L"],
+        colors: [
+          {
+            imgSrc: "dolphin-basin-9-ltrs--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "dolphin-basin-32-ltrs--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "dolphin-basin-60-ltrs--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Dolphin basin gp",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "dolphin-basin-gp--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: "Dolphin basin kampala",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "dolphin-basin-kampala.--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: "Dolphin junior",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "dolphin-junior.--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 11,
+        name: "Eagle basin",
+        sizes: ["16L", "60L"],
+        colors: [
+          {
+            imgSrc: "eagle-basin-16-ltr--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "eagle-basin-60-ltr--web.png",
+            className: "olive-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 12,
+        name: "Elephant basin",
+        sizes: ["25L"],
+        colors: [
+          {
+            imgSrc: "elephant-basin-25-ltr--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 13,
+        name: "Emeka basin",
+        sizes: ["9L"],
+        colors: [
+          {
+            imgSrc: "emeka-basin-9-ltr--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 14,
+        name: "Fura basin",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fura-basin--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 15,
+        name: "Harribino basin",
+        sizes: ["17L"],
+        colors: [
+          {
+            imgSrc: "harribino-basin-17-ltrs--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 16,
+        name: "Hot cake basin",
+        sizes: ["7L", "14L"],
+        colors: [
+          {
+            imgSrc: "hot-cake-basin-7-ltr--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "hot-cake-basin-14-ltr--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 17,
+        name: "Johny basin",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "johny-basin.--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 18,
+        name: "Kano basin",
+        sizes: ["16L"],
+        colors: [
+          {
+            imgSrc: "kano-basin-16-ltrs-kampala--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 19,
+        name: "Lion basin",
+        sizes: ["15L"],
+        colors: [
+          {
+            imgSrc: "lion-basin-15-ltrs--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 20,
+        name: "National basin",
+        sizes: ["12L", "22L"],
+        colors: [
+          {
+            imgSrc: "national-basin-12-ltr.--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "national-basin-22-ltr--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 21,
+        name: "New fruit basin",
+        sizes: ["8L"],
+        colors: [
+          {
+            imgSrc: "new-fruit-basin-8-ltr--web.png",
+            className: "grey-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 22,
+        name: "Princess basin kampala",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "princess-basin-kampala--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 23,
+        name: "Rose basin",
+        sizes: ["7L"],
+        colors: [
+          {
+            imgSrc: "rose-basin-7-ltr--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 24,
+        name: "Round basin dansy",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "round-basin-dansy.--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 25,
+        name: "Round basin fancy",
+        sizes: ["20L"],
+        colors: [
+          {
+            imgSrc: "round-basin-fancy-20-ltrs--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 26,
+        name: "Saminu basin",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "saminu-basin--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 27,
+        name: "Square basin",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "square-basin--web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 28,
+        name: "Stripe basin",
+        sizes: ["10L"],
+        colors: [
+          {
+            imgSrc: "stripe-basin-10-ltr--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 29,
+        name: "Super fine basin",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "super-fine-basin.--web.png",
+            className: "turquoise-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 30,
+        name: "Super star basin",
+        sizes: ["7L", "12L"],
+        colors: [
+          {
+            imgSrc: "super-star-basin-7-ltr--web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 31,
+        name: "Tiger basin kampala",
+        sizes: ["5L", "13L", "14L", "40L"],
+        colors: [
+          {
+            imgSrc: "tiger-basin-5-ltr-kampala--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "tiger-basin-13ltr-kampala--web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "tiger-basin-14-ltrs-kampala--web.png",
+            className: "pink-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "tiger-basin-40-ltr-gp--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 32,
+        name: "Wave basin",
+        sizes: ["60L"],
+        colors: [
+          {
+            imgSrc: "wave-basin-60-ltrs--web.png",
+            className: "pink-swatch inner-shadow-dark",
+          },
         ],
       },
     ],
@@ -380,7 +763,7 @@ export const products = {
   },
   jerryCans: {
     description:
-      "Reliquid transportation solutions with spill-proof designs. Certified for safe fuel and chemical storage.",
+      "Safe and sturdy jerry cans for transporting liquids, available in various sizes to suit your needs.",
     items: [
       {
         id: 1,
@@ -390,6 +773,17 @@ export const products = {
           {
             imgSrc: "18-ltr-jerry-can--web.png",
             className: "amber-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "4L Jerry Can",
+        sizes: ["S", "M", "L"],
+        colors: [
+          {
+            imgSrc: "4-ltr-jerry-can-plan--web.png",
+            className: "white-swatch inner-shadow-dark",
           },
         ],
       },

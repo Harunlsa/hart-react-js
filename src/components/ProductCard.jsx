@@ -96,15 +96,13 @@ const Title = styled.h5`
   font-size: 16px;
   font-weight: 600;
   color: #1d1d1d;
-  margin-bottom: 15px;
-  min-height: 40px;
 `;
 
 const OptionsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  // margin-top: 15px;
 `;
 
 const ProductImage = styled.img`

@@ -10,10 +10,10 @@ html {
   scrollbar-width: none;
   box-sizing: border-box;
 }
-/* html,
+html,
 body {
   overflow-x: hidden;
-} */
+}
 
 body {
   position: relative;
