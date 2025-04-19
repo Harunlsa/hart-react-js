@@ -14,7 +14,7 @@ const HeroSection = () => {
       highlight: "Racks",
       description:
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
-      imgSrc: "/assets/images/product-group/racks-group.png",
+      imgSrc: "/assets/images/product-groups/racksGroup.png",
       color: "#bcff33",
       link: "products/Racks",
       // minWidth: "100%",
@@ -25,7 +25,7 @@ const HeroSection = () => {
       highlight: "Coolers",
       description:
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
-      imgSrc: "/assets/images/product-group/coolers6.png",
+      imgSrc: "/assets/images/product-groups/coolers6.png",
       color: "#914391",
       link: "products/Coolers",
       minWidth: "80%",

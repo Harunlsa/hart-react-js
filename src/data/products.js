@@ -5,11 +5,10 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Essential Baby Care Kit",
-        sizes: ["3-piece", "5-piece", "7-piece"],
+        name: "Baby set",
+        sizes: [],
         colors: [
-          { imgSrc: "baby-set-1.jpg", className: "blue-swatch" },
-          { imgSrc: "baby-set-2.jpg", className: "pink-swatch" },
+          { imgSrc: "babySetsGroup.png", className: "light-blue-swatch" },
         ],
       },
     ],
@@ -50,11 +49,244 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Premium Mixing Bowl Set",
-        sizes: ["1L", "2L", "3L"],
+        name: "Apple bowl",
+        sizes: [],
         colors: [
-          { imgSrc: "bowl-1.jpg", className: "red-swatch" },
-          { imgSrc: "bowl-2.jpg", className: "blue-swatch" },
+          {
+            imgSrc: "apple-bowl--web.png",
+            className: "yellow-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Chinese bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "chinese-soup-bowl--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Combo bowl",
+        sizes: ["2L"],
+        colors: [
+          {
+            imgSrc: "combo-bowl-2lt--web.png",
+            className: "red-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Desert bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "desert-bowl---web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Dolphin bowl",
+        sizes: ["3L"],
+        colors: [
+          {
+            imgSrc: "dolphin-bowl-3ltr--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "England bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "england-bowl-jr.--web.png",
+            className: "pink-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Fancy bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "facny-bowl-2.5-ltr---web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Fancy bowl ribs",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fancy-bowl-ribs--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: "Football bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "football-bowl---web.png",
+            className: "yellow-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: "Oval bowl fancy",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "oval-bowl-fancy-with-cover--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 11,
+        name: "Party bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "party-bowl--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 12,
+        name: "Pilot bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "pilot-bowl--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 13,
+        name: "Ricky bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "ricky-bowl---web.png",
+            className: "turquoise-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 14,
+        name: "Rose bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "rose-bowl--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 15,
+        name: "Salad bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "salad-bowl-stripe---web.png",
+            className: "yellow-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 16,
+        name: "Sanghai bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "sanghai-bowl-small-with-cover--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 17,
+        name: "Sugar bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "sugar-bowl---web.png",
+            className: "turquoise-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 18,
+        name: "Super beach bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "super-beach-bowl---web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 19,
+        name: "Super star bowl",
+        sizes: ["1L"],
+        colors: [
+          {
+            imgSrc: "super-star-bowl-1-ltr---web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 20,
+        name: "Tisco bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "tisco-bowl--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 21,
+        name: "Tutty fruity bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "tutty-fruity-bowl---web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 22,
+        name: "Zigzag bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "zigzag-bowl---web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
         ],
       },
     ],
@@ -95,11 +327,17 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Premium Ice Cooler",
-        sizes: ["25L", "40L", "60L"],
+        name: "Cooler",
+        sizes: [],
         colors: [
-          { imgSrc: "cooler-1.jpg", className: "red-swatch" },
-          { imgSrc: "cooler-2.jpg", className: "blue-swatch" },
+          {
+            imgSrc: "coolers0.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "coolers6.png",
+            className: "blue-swatch inner-shadow-light",
+          },
         ],
       },
     ],
@@ -110,11 +348,17 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Chemical Resistant Drum",
-        sizes: ["50L", "100L", "200L"],
+        name: "Drum",
+        sizes: [],
         colors: [
-          { imgSrc: "drum-1.jpg", className: "blue-swatch" },
-          { imgSrc: "drum-2.jpg", className: "green-swatch" },
+          {
+            imgSrc: "img-20240319-151615--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "img-20240319-151645--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
         ],
       },
     ],
@@ -140,11 +384,13 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Heavy Duty Jerry Can",
-        sizes: ["10L", "20L", "25L"],
+        name: "18L Jerry Can",
+        sizes: ["10L", "18L", "20L"],
         colors: [
-          { imgSrc: "jerry-can-1.jpg", className: "yellow-swatch" },
-          { imgSrc: "jerry-can-2.jpg", className: "red-swatch" },
+          {
+            imgSrc: "18-ltr-jerry-can--web.png",
+            className: "amber-swatch inner-shadow-dark",
+          },
         ],
       },
     ],
@@ -155,26 +401,64 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Insulated Travel Mug",
-        sizes: ["300ml", "400ml", "500ml"],
+        name: "Mug",
+        sizes: [],
         colors: [
-          { imgSrc: "mug-1.jpg", className: "black-swatch" },
-          { imgSrc: "mug-2.jpg", className: "silver-swatch" },
+          {
+            imgSrc: "mug0--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "mug2--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "mug4--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
         ],
       },
     ],
   },
   racks: {
     description:
-      "Space-saving storage solutions for kitchens and warehouses. Durable racks with adjustable configurations.",
+      "Durable and flexible plastic racks perfect for efficient storage and organisation in any setting.",
     items: [
       {
         id: 1,
-        name: "Adjustable Utility Rack",
-        sizes: ["4-tier", "5-tier", "6-tier"],
+        name: "Kitchen Rack Set",
+        sizes: ["4-tier", "5-tier"],
         colors: [
-          { imgSrc: "rack-1.jpg", className: "grey-swatch" },
-          { imgSrc: "rack-2.jpg", className: "white-swatch" },
+          {
+            imgSrc: "kitchen-rack-set.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "kitchen-rack-set-g.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Office / Paper Rack Set",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "office-paper-rack-set.png",
+            className: "pink-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Shoe Rack Set",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "shoe-rack-set.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
         ],
       },
     ],
