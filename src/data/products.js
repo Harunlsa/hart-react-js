@@ -779,7 +779,7 @@ export const products = {
       {
         id: 2,
         name: "4L Jerry Can",
-        sizes: ["S", "M", "L"],
+        sizes: ["4L"],
         colors: [
           {
             imgSrc: "4-ltr-jerry-can-plan--web.png",
@@ -821,7 +821,7 @@ export const products = {
       {
         id: 1,
         name: "Kitchen Rack Set",
-        sizes: ["4-tier", "5-tier"],
+        sizes: [],
         colors: [
           {
             imgSrc: "kitchen-rack-set.png",

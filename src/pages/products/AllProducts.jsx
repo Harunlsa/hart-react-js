@@ -1,12 +1,12 @@
 import ProductPageLayout from "../../components/ProductPageLayout";
 
 import { products } from "../../data/products";
-const Babysets = () => (
+const AllProducts = () => (
   <ProductPageLayout
-    categoryName="Babysets"
+    categoryName="AllProducts"
     bannerImage="babysets-group.png"
     products={products.babysets}
   />
 );
 
-export default Babysets;
+export default AllProducts;
