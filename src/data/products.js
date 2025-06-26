@@ -863,7 +863,7 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Biodegradable Food Box",
+        name: "Food Box",
         sizes: ["500ml", "750ml", "1000ml"],
         colors: [
           { imgSrc: "container-1.jpg", className: "clear-swatch" },
@@ -874,11 +874,11 @@ export const products = {
   },
   toys: {
     description:
-      "Child-safe educational toys that encourage creative play. Made from non-toxic, durable materials.",
+      "Child-safe toys that encourage creative play. Made from non-toxic, durable materials.",
     items: [
       {
         id: 1,
-        name: "Interactive Learning Set",
+        name: "Toy set",
         sizes: ["Basic", "Deluxe", "Premium"],
         colors: [
           { imgSrc: "toy-1.jpg", className: "multi-color-swatch" },

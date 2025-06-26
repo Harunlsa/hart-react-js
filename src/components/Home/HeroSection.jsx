@@ -16,7 +16,7 @@ const HeroSection = () => {
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
       imgSrc: "/assets/images/product-groups/racksGroup.png",
       color: "#bcff33",
-      link: "products/Racks",
+      link: "products/racks",
       // minWidth: "100%",
     },
     {
@@ -27,7 +27,29 @@ const HeroSection = () => {
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
       imgSrc: "/assets/images/product-groups/coolers6.png",
       color: "#914391",
-      link: "products/Coolers",
+      link: "products/coolers",
+      minWidth: "80%",
+    },
+    {
+      background: "/assets/images/hero-bg/bg-hero-orange.png",
+      title: "Durable and Stylish ",
+      highlight: "Bowls",
+      description:
+        "Perfect for everyday use, our plastic bowls offer a blend of durability and modern design.",
+      imgSrc: "/assets/images/product-groups/bowlsGroupHero.png",
+      color: "#C2690F",
+      link: "products/bowls",
+      // minWidth: "100%",
+    },
+    {
+      background: "/assets/images/hero-bg/bg-hero-yellow.png",
+      title: "High-Quality ",
+      highlight: "Jerry Cans",
+      description:
+        "Safe and sturdy jerry cans for transporting liquids, available in various sizes to suit your needs.",
+      imgSrc: "/assets/images/product-groups/jcGroup.png",
+      color: "#ffff00",
+      link: "products/jerryCans",
       minWidth: "80%",
     },
   ];
