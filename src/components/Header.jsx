@@ -159,6 +159,15 @@ const Header = () => {
             </Nav.Link>
 
             <NavDropdown title="Products" id="products">
+              {/* <div className="dropdown-menu-container">
+                <Container fluid>
+                  <Row>
+                    <Col>
+                      <h6 className="dropdown-header">Blow</h6>
+                    </Col>
+                  </Row>
+                </Container>
+              </div> */}
               <NavDropdown.Item as={NavLink} to="/products/babySets">
                 Baby Sets
               </NavDropdown.Item>
