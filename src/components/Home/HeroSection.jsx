@@ -7,10 +7,7 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "swiper/css/effect-fade";
-// import { useSpring, animated } from "@react-spring/web";
 import ActiveSlideContent from "./ActiveSlideContent";
-// import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -140,7 +137,6 @@ const HeroSection = () => {
 
 export default HeroSection;
 
-// Updated styled components
 const HeroWrapper = styled.section`
   width: 100%;
   position: relative;
