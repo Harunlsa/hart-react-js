@@ -197,6 +197,12 @@ const Section = styled.section`
       border-radius: 50px;
     }
   }
+  @media (max-width: 426px) {
+    padding-bottom: 0;
+    .section-title {
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 const TitleText = styled.h3`

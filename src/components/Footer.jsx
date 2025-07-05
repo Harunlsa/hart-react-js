@@ -69,6 +69,9 @@ const Footer = () => {
 
 // Styled Components
 const FooterWrapper = styled.footer`
+  width: 100%;
+  overflow-x: hidden; // scoped only here
+  position: relative;
   background: #f1f6fe;
   color: #444444;
   font-size: 14px;
@@ -94,14 +97,14 @@ const FooterTop = styled.div`
   background: #fff;
 
   @media (max-width: 768px) {
-    text-align: center;
+    // text-align: center;
   }
 `;
 
 const ContactInfo = styled.div`
   h3 {
     font-size: 24px;
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
     font-weight: 700;
   }
 
@@ -118,11 +121,12 @@ const ContactInfo = styled.div`
 `;
 
 const LinksSection = styled.div`
+  margin-top: 15px;
   h4 {
     font-size: 16px;
     font-weight: bold;
     color: #444444;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: left;
   }
 `;
@@ -134,7 +138,7 @@ const LinksList = styled.ul`
 `;
 
 const ListItem = styled.li`
-  padding: 10px 0;
+  padding: 6px 0;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -164,6 +168,12 @@ const BottomFooter = styled.div`
   background: #f1f6fe;
   .credits {
     text-align: right;
+  }
+  @media (max-width: 767px) {
+    // width: 98%;
+    .credits {
+      text-align: center;
+    }
   }
 `;
 

@@ -17,7 +17,18 @@ function App() {
       <Header />
       <Routes>
         {/* Main pages */}
-        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="/"
+          element={
+            <Home
+              style={{
+                width: "100%",
+                overflowX: "hidden",
+                position: "relative",
+              }}
+            />
+          }
+        ></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
 
@@ -32,5 +43,7 @@ function App() {
     </>
   );
 }
-
+// width: 100%;
+// overflow-x: hidden; // scoped only here
+// position: relative;
 export default App;

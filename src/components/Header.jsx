@@ -8,17 +8,35 @@ import logo from "../assets/hart_logo.png";
 // import "../assets/hart-logo.png" as Logo;
 
 const HeaderWrapper = styled(Navbar)`
+  // width: 100%;
+  // overflow-x: hidden; // scoped only here
+  // position: relative;
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
   min-height: 86px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
+  button {
+    color: transparent;
+  }
+
   &.fixed-top {
     height: 70px;
   }
   button {
     border: transparent;
+  }
+
+  @media (max-width: 380px) {
+    // width: 10px;
+    min-height: 64px;
+    button {
+    }
+    span {
+      padding: 0;
+      width: 12px;
+    }
   }
 `;
 
@@ -33,6 +51,7 @@ const LogoContainer = styled(Navbar.Brand)`
 
   h1 {
     font-size: 1.875rem;
+    // font-size: 20vh;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -51,10 +70,10 @@ const LogoContainer = styled(Navbar.Brand)`
   }
   @media (max-width: 438px) {
     h1 {
-      font-size: 1.25rem;
+      font-size: 5.5vw;
     }
     img {
-      max-height: 38px;
+      max-height: 10vw;
       margin-right: 6px;
     }
   }

@@ -38,6 +38,10 @@ const services = [
 
 const Section = styled.section`
   padding: 60px 0;
+  overflow: hidden;
+  @media (max-width: 426px) {
+    padding-bottom: 0;
+  }
 `;
 
 const Row = styled.div`

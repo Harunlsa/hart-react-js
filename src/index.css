@@ -10,10 +10,16 @@ html {
   scrollbar-width: none;
   box-sizing: border-box;
 }
-html,
+/* html,
 body {
   overflow-x: hidden;
-}
+} */
+/* @media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+} */
 
 body {
   position: relative;
@@ -64,4 +70,8 @@ h6 {
   button {
     background-color: #f9f9f9;
   }
+} */
+/* .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
 } */
