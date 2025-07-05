@@ -1,9 +1,9 @@
 import { useSpring, animated } from "@react-spring/web";
+import { useMemo } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-// import { useSpring, animated } from "@react-spring/web";
-// console.log(animated.div);
+
 const ActiveSlideContent = ({ slide }) => {
   const textSpring = useSpring({
     from: { opacity: 0, transform: "translateX(-550px)" },
@@ -23,52 +23,26 @@ const ActiveSlideContent = ({ slide }) => {
     },
   });
 
-  const heading = slide.title + slide.highlight;
-  const headingLength = heading.length;
-  const headingWords = heading.split(" ");
-  const topWordsCount = Math.floor(headingLength / 2);
+  function getTopAndBottomWords(title, highlight) {
+    const headingWords = (title + highlight).split(" ");
+    const midIndex = Math.floor(headingWords.length / 2);
 
-  function getTopWords(topWordsCount, highlight) {
-    const topWords = [];
-    let topCount = 0;
+    let topWords = headingWords.slice(0, midIndex);
+    let bottomWords = headingWords.slice(midIndex);
 
-    for (let i = 0; i < headingWords.length; i++) {
-      const word = headingWords[i];
-
-      if (topCount + word.length <= topWordsCount || topCount == 0) {
-        topWords.push(word);
-        topCount = topCount + word.length;
-      } else {
-        break;
-      }
-    }
-    highlight = highlight.split(" ");
-    console.log("Highlight; ", highlight);
-    const bottomWords = headingWords.slice(topWords.length);
-    const wordsToRemove = [];
-    for (let i = 0; i < bottomWords.length; i++) {
-      if (bottomWords.includes(highlight[i])) {
-        wordsToRemove.push(highlight[i]);
-        // bottomWords.pop(highlight[i]);
-        // console.log("Bottomwords pop", bottomWords.pop());
-        // console.log("Bottom words: ", bottomWords);
-        // console.log("highlight: ", highlight);
-        // console.log("Words to remove: ", wordsToRemove);
-      }
-    }
-    for (let i = 0; i < wordsToRemove.length; i++) {
-      bottomWords.pop();
-    }
-    console.log(`Top words: ${topWords}. \nBottom words: ${bottomWords}`);
+    // Avoid repeating highlight words in bottomWords
+    const highlightWords = highlight.split(" ");
+    bottomWords = bottomWords.filter((word) => !highlightWords.includes(word));
 
     bottomWords.push(" ");
+
     return { topWords, bottomWords };
   }
 
-  // }
-  // else if (headingWords[0] >= topWordsCount){
-  //   return `${headingWords[0]} ${headingWords[1]}`;
-  // }
+  const { topWords, bottomWords } = useMemo(
+    () => getTopAndBottomWords(slide.title, slide.highlight),
+    [slide.title, slide.highlight]
+  );
 
   return (
     <Container fluid style={heroStyle}>
@@ -78,16 +52,10 @@ const ActiveSlideContent = ({ slide }) => {
             <SlideText>
               <SlideContent>
                 <h1>
-                  <span>
-                    {getTopWords(topWordsCount, slide.highlight).topWords.join(
-                      " "
-                    )}
-                  </span>
+                  <span>{topWords.join(" ")}</span>
                   <br />
-                  {`${getTopWords(
-                    topWordsCount,
-                    slide.highlight
-                  ).bottomWords.join(" ")}`}
+                  <span>{bottomWords.join(" ")}</span>
+                  {/* {`${bottomWords.join(" ")}`} */}
                   <span style={{ color: slide.color }}>{slide.highlight}</span>
                 </h1>
                 <p>{slide.description}</p>

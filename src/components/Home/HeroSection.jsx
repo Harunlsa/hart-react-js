@@ -125,7 +125,6 @@ const HeroSection = () => {
             onMouseLeave={() => swiperRef.current?.autoplay?.start()}
           >
             <Slide bg={slide.background}>
-              {console.log("Index: ", index, "Active index: ", activeIndex)}
               {index === activeIndex && <ActiveSlideContent slide={slide} />}
             </Slide>
           </SwiperSlide>
