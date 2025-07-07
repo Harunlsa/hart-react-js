@@ -30,7 +30,7 @@ const HeaderWrapper = styled(Navbar)`
 
   @media (max-width: 380px) {
     // width: 10px;
-    min-height: 64px;
+    min-height: 68px;
     button {
     }
     span {

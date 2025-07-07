@@ -96,22 +96,10 @@ const HeroSection = () => {
           // type: "progressbar",
           dynamicBullets: true,
         }}
-        // // scrollbar={{ draggable: true }}
-        // effect="slide"
-        // // fadeEffect={{ crossFade: true }}
-        // speed={800}
-        // loop={true}
         autoplay={{
-          delay: 10000,
+          delay: 5000000000,
           disableOnInteraction: false,
         }}
-        // onInit={(swiper) => {
-        //   // Set refs after initialization
-        //   swiper.params.navigation.prevEl = navigationPrevRef.current;
-        //   swiper.params.navigation.nextEl = navigationNextRef.current;
-        //   swiper.navigation.init();
-        //   swiper.navigation.update();
-        // }}
         className="hero-swiper"
       >
         {slides.map((slide, index) => (
@@ -171,18 +159,20 @@ const HeroWrapper = styled.section`
       }
     }
   }
-
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) and (orientation: portrait) {
+    height: 75vh;
+  }
+  @media (min-width: 1024px) and (orientation: landscape) {
     background-attachment: fixed;
   }
 
-  @media (max-width: 768px) {
-    height: 70vh;
-  }
+  // @media (max-width: 768px) {
+  //   height: 75vh;
+  // }
 
-  @media (max-width: 576px) {
-    height: 86vh;
-  }
+  // @media (max-width: 576px) {
+  //   height: 75vh;
+  // }
 `;
 
 const Slide = styled.div`
@@ -201,23 +191,23 @@ const Slide = styled.div`
   }
 `;
 
-const SlideImage = styled.img`
-  max-width: ${(props) => props.minWidth || "100%"};
-  height: auto;
-  // padding-left: 10%;
+// const SlideImage = styled.img`
+//   max-width: ${(props) => props.minWidth || "100%"};
+//   height: auto;
+//   // padding-left: 10%;
 
-  @media (max-width: 768px) {
-    max-width: 70%;
-    margin: 0 auto;
-  }
+//   @media (max-width: 768px) {
+//     max-width: 70%;
+//     margin: 0 auto;
+//   }
 
-  @media (max-width: 576px) {
-    max-width: 80%;
-    height: auto;
-    padding: 0;
-    margin-top: 20px;
-  }
-`;
+//   @media (max-width: 576px) {
+//     max-width: 80%;
+//     height: auto;
+//     padding: 0;
+//     margin-top: 20px;
+//   }
+// `;
 const NavButton = styled.div`
   position: absolute;
   top: 50%;

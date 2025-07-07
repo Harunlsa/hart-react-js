@@ -45,9 +45,9 @@ const ActiveSlideContent = ({ slide }) => {
   );
 
   return (
-    <Container fluid style={heroStyle}>
-      <Row className="align-items-center">
-        <Col md={7}>
+    <HeroContainer as={Container} fluid>
+      <Row className="align-items-center heroRow">
+        <Col md={7} className="textCol">
           <animated.div style={textSpring}>
             <SlideText>
               <SlideContent>
@@ -68,13 +68,9 @@ const ActiveSlideContent = ({ slide }) => {
             </SlideText>
           </animated.div>
         </Col>
-        <Col md={5} className="text-center slideImage">
+        <Col md={5} className="text-center imageCol">
           <animated.div style={imageSpring}>
-            <SlideImage
-              src={slide.imgSrc}
-              alt={slide.highlight}
-              minWidth={slide.minWidth}
-            />
+            <SlideImage src={slide.imgSrc} alt={slide.highlight} />
           </animated.div>
           <MobileOnlyButton>
             <Button as={Link} to={slide.link}>
@@ -83,51 +79,94 @@ const ActiveSlideContent = ({ slide }) => {
           </MobileOnlyButton>
         </Col>
       </Row>
-    </Container>
+    </HeroContainer>
   );
 };
 
 export default ActiveSlideContent;
-const heroStyle = {
-  // outline: "2px solid red",
-  margin: "0",
-  padding: "0",
-};
+
+const HeroContainer = styled.div`
+  @media (min-width: 600px) and (orientation: portrait) {
+    .heroRow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // padding: 0;
+      margin: 0;
+      // box-sizing: border-box;
+      > .textCol,
+      .imageCol {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (orientation: landscape) {
+    .heroRow .slide-btn-mobile {
+      text-align: left;
+      margin-left: 8%;
+    }
+  }
+`;
+
 const SlideContent = styled.div`
   color: #fff;
   text-align: center;
   width: 94vw;
   margin: 0 auto;
+  // outline: 2px solid red;
 
-  @media (min-width: 426px) {
-    max-width: calc(100vw * 0.9);
+  @media (width: 426px) {
+    max-width: 90vw;
     margin-top: 80px;
   }
 
   // tablet
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (orietation: landscape) {
     margin: 0;
     text-align: left;
     max-width: calc(100vw * 0.58);
     padding: 60px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) and (orietation: landscape) {
     // max-width: calc(100vw * 0.6);
     padding-left: 80px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1440px) and (orietation: landscape) {
     max-width: 52vw;
     // padding-left: 12px;
     margin-left: 40px;
   }
+    
+  @media (min-width: 600px) and (orientation: portrait) {
+  // margin: 0 auto;
+  width: 80vw;
+  h1 {
+    // text-align: center;
+    // outline: 2px solid red;
+    max-width: 100%;
+    margin: 0 auto;
+    // font-size: 5vw;
+  }
+  p {
+    // text-align: center;
+    // outline: 2px solid red;
+    width: 100%;
+    // margin-bottom: 0 !important;
+    margin: 0 auto;
+  }
+    // .slide-btn-mobile {
+    // margin-left: 10% !important;
+    // }
 `;
 const SlideText = styled.div`
   h1 {
     font-size: 10.5vw;
     font-weight: 700;
     font-family: "Syne", sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     @media (min-width: 426px) {
       font-size: 6.6vw;
@@ -135,19 +174,25 @@ const SlideText = styled.div`
       letter-spacing: 1px;
       margin-bottom: 20px;
     }
-
-    @media (min-width: 768px) {
+    @media (min-width: 600px) and (orientation: portrait) {
+      width: 100%;
+      font-size: 8vw;
+      // margin: 0 auto;
+    }
+    @media (min-width: 768px) and (orientation: landscape) {
       font-size: 5.6vw;
+      text-align: left;
       letter-spacing: 1px;
       margin-bottom: 20px;
+      margin-left: 8%;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (orientation: landscape) {
       font-size: 6vw;
       letter-spacing: 2px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1440px) and (orientation: landscape) {
       font-size: 5vw;
       letter-spacing: 2px;
       line-height: 80px;
@@ -159,34 +204,43 @@ const SlideText = styled.div`
     @media (min-width: 426px) {
       max-width: calc(100vw * 0.9);
     }
-
-    @media (min-width: 768px) {
+    @media (min-width: 600px) and (orientation: portrait) {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (min-width: 768px) and (orientation: landscape) {
       max-width: 52vw;
       line-height: 2rem;
       margin-bottom: 30px;
+      text-align: left;
+      margin-left: 8%;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (orientation: landscape) {
       font-size: 1.5rem;
       line-height: 2.5rem;
       margin-bottom: 30px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1440px) and (orientation: landscape) {
       font-size: 1.8rem;
     }
   }
 `;
 const SlideImage = styled.img`
-  // margin: 0 auto;
-  // width: 80%;
-
-  max-height: 40vh;
+  slide.highlight == "Coolers" ? margin-top: 10px : 500px;
+  max-height: 35vh;
   @media (min-width: 1024px) {
     max-height: 50vh;
   }
+  @media (min-width: 600px) and (orientation: portrait) {
+    max-height: 40vh;
+    margin: 20px 0;
+  }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1440px) and (orientation: landscape){
     max-height: 60vh;
     padding-right: 10px;
   }
@@ -271,8 +325,11 @@ const SlideImage = styled.img`
 //   }
 // `;
 const MobileSlideButton = styled.div`
-  @media (max-width: 767px) {
+  // margin-left: 100px;
+  // color: red;
+  @media (max-width: 767px), (orientation: portrait) and (min-width: 600px) {
     display: none;
+    width: 10px;
   }
   a {
     padding: 10px 20px;
@@ -350,7 +407,7 @@ const MobileOnlyButton = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 767px), (orientation: portrait) and (min-width: 600px) {
     display: block;
     margin-bottom: 20px;
   }

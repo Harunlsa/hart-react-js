@@ -109,33 +109,55 @@ const PageWrapper = styled.div`
 `;
 
 const Banner = styled.section`
-  height: 326px;
   background: url(${(props) => props.bgImage}) no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
-
-  // padding: 60px 0;
+  // padding-top: 180px;
+  height: 60vh;
+  text-align: center;
+  color: #ffffff;
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Syne", sans-serif;
-    color: #ffffff;
   }
 
   p {
-    color: white;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 426px) {
+    // height: 326px;
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 326px;
+    text-align: left;
   }
 `;
 
 const BannerImage = styled.img`
-  max-height: 300px;
+  max-height: 30vh;
   width: auto;
-  padding-left: 10%;
-  display: block;
+  // padding-left: 10%;
+  // display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 426px) {
+    max-height: 300px;
+    width: auto;
+    padding-left: 10%;
+    // display: block;
+  }
 `;
 
 const FilterSection = styled.section`

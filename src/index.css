@@ -75,3 +75,27 @@ h6 {
   width: 20px !important;
   height: 20px !important;
 } */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 600px), (orientation: portrait) {
+  .heroRow > div:nth-child(1) {
+    /* color: red !important;
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center; */
+    justify-content: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
