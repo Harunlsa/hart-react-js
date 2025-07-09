@@ -4,7 +4,12 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/hart_logo.png";
+// import logo from "../assets/hart_logo.png";
+// import logo from "../assets/hart-logo-new.svg";
+// import logo from "./hartLogo.png";
+import logo from "/src/assets/hartLogo.png";
+// C:\Users\HLAbdulwahab\Documents\projects\hart-react-js\public\hart-logo.png
+
 // import "../assets/hart-logo.png" as Logo;
 
 const HeaderWrapper = styled(Navbar)`
@@ -16,7 +21,8 @@ const HeaderWrapper = styled(Navbar)`
   z-index: 997;
   min-height: 86px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-
+  height: 40px;
+  padding: 0;
   button {
     color: transparent;
   }
@@ -43,15 +49,16 @@ const HeaderWrapper = styled(Navbar)`
 const LogoContainer = styled(Navbar.Brand)`
   display: flex;
   align-items: center;
+  // width: 40%;
 
   img {
     max-height: 60px;
+    // max-width: 0px;
     margin-right: 1rem;
   }
 
   h1 {
     font-size: 1.875rem;
-    // font-size: 20vh;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -59,6 +66,7 @@ const LogoContainer = styled(Navbar.Brand)`
     letter-spacing: 0.8px;
     font-family: "Poppins", sans-serif;
     color: #222222;
+    width: 100% !important;
   }
   @media (max-width: 514px) {
     h1 {

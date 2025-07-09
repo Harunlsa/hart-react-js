@@ -767,8 +767,8 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "18L Jerry Can",
-        sizes: ["10L", "18L", "20L"],
+        name: "Jerry can",
+        sizes: ["4L", "10L", "18L", "20L"],
         colors: [
           {
             imgSrc: "18-ltr-jerry-can--web.png",
@@ -778,12 +778,116 @@ export const products = {
       },
       {
         id: 2,
-        name: "4L Jerry Can",
+        name: "4L jerry can plain",
         sizes: ["4L"],
         colors: [
           {
             imgSrc: "4-ltr-jerry-can-plan--web.png",
             className: "white-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "2L Cross neck jerry can",
+        sizes: ["2L"],
+        colors: [
+          {
+            imgSrc: "2-ltr-cross-neck--web.png",
+            className: "black-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "4L Liberty Jerry Can",
+        sizes: ["4L"],
+        colors: [
+          {
+            imgSrc: "4-liter-jerry-can-liberty--web.png",
+            className: "white-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "4l-jerry-can-liberty--web.png",
+            className: "amber-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "20L Jerry can steps",
+        sizes: ["20L"],
+        colors: [
+          {
+            imgSrc: "20l-jerry-can-steps--web.png",
+            className: "amber-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "jc27.png",
+            className: "grey-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "25L Jerry Can",
+        sizes: ["4L"],
+        colors: [
+          {
+            imgSrc: "25-ltr-jerry-can.png",
+            className: "white-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "25L Jerry Can",
+        sizes: ["25L"],
+        colors: [
+          {
+            imgSrc: "jc24.png",
+            className: "yellow-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "jc58.png",
+            className: "black-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "jc70.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "25L Jerry Can",
+        sizes: ["25L"],
+        colors: [
+          {
+            imgSrc: "jc86.png",
+            className: "white-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: "25L Jerry Can",
+        sizes: ["25L"],
+        colors: [
+          {
+            imgSrc: "jc72.png",
+            className: "grey-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: "25L Jerry Can",
+        sizes: ["25L"],
+        colors: [
+          {
+            imgSrc: "jc78.png",
+            className: "yellow-swatch inner-shadow-dark",
           },
         ],
       },
@@ -809,6 +913,159 @@ export const products = {
           {
             imgSrc: "mug4--web.png",
             className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Baby shai cup",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug36--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "mug25--web.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "img-20250612-wa0164--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Best cup",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "best-cup--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Woven cup",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "woven-cup--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Tea cup",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "tea-cup--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "mug41--web.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Mug with handle",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug-with-handle--web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "mug18--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Joyo mug",
+        sizes: ["S", "M", "L", "XL"],
+        colors: [
+          {
+            imgSrc: "mug14--web.png",
+            className: "light-blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "joyo-mug--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "mug11--web.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "mug9--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "mug7--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: " mug",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug38--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: " mug",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug33--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: " mug",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug28--web.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 11,
+        name: " mug",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug23--web.png",
+            className: "yellow-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 12,
+        name: " mug",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mug35--web.png",
+            className: "brown-swatch inner-shadow-dark",
           },
         ],
       },
@@ -842,6 +1099,10 @@ export const products = {
             imgSrc: "office-paper-rack-set.png",
             className: "pink-swatch inner-shadow-dark",
           },
+          {
+            imgSrc: "office-paper-rack-g.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
         ],
       },
       {
@@ -855,6 +1116,39 @@ export const products = {
           },
         ],
       },
+      {
+        id: 4,
+        name: "Corner rack",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "corner-rack--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: " rack",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "r1--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: " rack",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "r2--web.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+        ],
+      },
     ],
   },
   takeAwayContainers: {
@@ -863,12 +1157,95 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Food Box",
-        sizes: ["500ml", "750ml", "1000ml"],
+        name: "Custard container",
+        sizes: ["1L"],
+        colors: [{ imgSrc: "1l-custard--web.png", className: "clear-swatch" }],
+      },
+      {
+        id: 2,
+        name: "Ketchup container",
+        sizes: [""],
         colors: [
-          { imgSrc: "container-1.jpg", className: "clear-swatch" },
-          { imgSrc: "container-2.jpg", className: "brown-swatch" },
+          { imgSrc: "ketchup-container--web.png", className: "clear-swatch" },
         ],
+      },
+      {
+        id: 3,
+        name: "Tamper-proof container",
+        sizes: ["1L"],
+        colors: [
+          {
+            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.png",
+            className: "clear-swatch",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Square container",
+        sizes: ["500ml"],
+        colors: [
+          { imgSrc: "500ml-square--web.png", className: "clear-swatch" },
+        ],
+      },
+      {
+        id: 5,
+        name: "Ice cream container",
+        sizes: ["1L"],
+        colors: [
+          {
+            imgSrc: "ice-cream-container-1000ml--web.png",
+            className: "clear-swatch",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Takeaway container",
+        sizes: ["1/2 L"],
+        colors: [
+          { imgSrc: "half-l-take-away--web.png", className: "clear-swatch" },
+        ],
+      },
+      {
+        id: 7,
+        name: "Square takeaway containers",
+        sizes: ["1L"],
+        colors: [
+          {
+            imgSrc: "1000-750-500-650-square--web.png",
+            className: "clear-swatch",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Take away container",
+        sizes: ["650ml"],
+        colors: [{ imgSrc: "650-ta--web.png", className: "clear-swatch" }],
+      },
+      {
+        id: 9,
+        name: "Take away container",
+        sizes: ["100ml", "125ml", "150ml", "350ml", "500ml"],
+        colors: [
+          {
+            imgSrc: "500-350-150-125-100ml-take-away--web.png",
+            className: "clear-swatch",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: "Custard",
+        sizes: ["1L"],
+        colors: [{ imgSrc: "1l-custard--web.png", className: "clear-swatch" }],
+      },
+      {
+        id: 11,
+        name: "Custard",
+        sizes: ["1L"],
+        colors: [{ imgSrc: "1l-custard--web.png", className: "clear-swatch" }],
       },
     ],
   },
@@ -878,12 +1255,80 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Toy set",
-        sizes: ["Basic", "Deluxe", "Premium"],
+        name: "Teddy bear",
+        sizes: [],
         colors: [
-          { imgSrc: "toy-1.jpg", className: "multi-color-swatch" },
-          { imgSrc: "toy-2.jpg", className: "primary-color-swatch" },
+          { imgSrc: "teddy-bear--web.png", className: "bright-green-swatch" },
         ],
+      },
+      {
+        id: 2,
+        name: "Soft toy strawberry",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "soft-toys-strawberry--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Soft toy elephant",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "soft-toy-elephant--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Soft toy apple",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "soft-toy-apple--web.png",
+            className: "blue-swatch",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Soft toy mango",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "soft-toy-mango--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Soft toy baby doll",
+        sizes: [],
+        colors: [
+          { imgSrc: "baby-doll-soft--web.png", className: "blue-swatch" },
+        ],
+      },
+      {
+        id: 6,
+        name: "Soft toy duck",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "duck-soft-toy--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Hard balls",
+        sizes: [],
+        colors: [{ imgSrc: "hb--web.png", className: "bright-green-swatch" }],
       },
     ],
   },
