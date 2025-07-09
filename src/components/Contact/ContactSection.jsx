@@ -48,7 +48,7 @@ const ContactSection = ({ formData, setFormData, handleSubmit, status }) => (
 
           <Form onSubmit={handleSubmit}>
             <Form.Group className="row">
-              <Col>
+              <Col md={6}>
                 <Form.Control
                   type="text"
                   name="name"
@@ -60,7 +60,7 @@ const ContactSection = ({ formData, setFormData, handleSubmit, status }) => (
                   required
                 />
               </Col>
-              <Col>
+              <Col md={6}>
                 <Form.Control
                   type="email"
                   name="email"
