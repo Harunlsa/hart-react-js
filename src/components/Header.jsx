@@ -21,7 +21,6 @@ const HeaderWrapper = styled(Navbar)`
   z-index: 997;
   min-height: 86px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  height: 40px;
   padding: 0;
   button {
     color: transparent;
@@ -43,6 +42,23 @@ const HeaderWrapper = styled(Navbar)`
       padding: 0;
       width: 12px;
     }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (max-width: 992px) {
+    padding: 10px 0;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
   }
 `;
 
@@ -195,8 +211,8 @@ const Header = () => {
                   </Row>
                 </Container>
               </div> */}
-              <NavDropdown.Item as={NavLink} to="/products/babySets">
-                Baby Sets
+              <NavDropdown.Item as={NavLink} to="/products/babyCare">
+                Baby Care
               </NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/products/basins">
                 Basins

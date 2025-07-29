@@ -5,7 +5,7 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { products } from "../data/products";
 
 const categoryOptions = [
-  { value: "babySets", label: "Baby Sets" },
+  { value: "babyCare", label: "Baby Care" },
   { value: "basins", label: "Basins" },
   { value: "baskets", label: "Baskets" },
   { value: "bowls", label: "Bowls" },
@@ -28,6 +28,7 @@ const ProductPageLayout = () => {
 
   /// Find current category data
   const currentCategory = categoryOptions.find((opt) => opt.value === category);
+  // console.log("currentCategory", currentCategory);
 
   // Find products for current category
   const categoryProducts = currentCategory

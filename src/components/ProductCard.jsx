@@ -5,7 +5,7 @@ import styled from "styled-components";
 // Color mapping utility
 const getColorCode = (colorClass) => {
   const colorName = colorClass.split(" ")[0];
-  console.log("colorClass: ", colorClass.split(" ")[0]);
+  // console.log("colorClass: ", colorClass.split(" ")[0]);
   const colorMap = {
     "red-swatch": "#c92943",
     "blue-swatch": "#0077db",
@@ -30,6 +30,7 @@ const getColorCode = (colorClass) => {
     "lime-yellow-swatch": "#b7c900",
     "multi-color-swatch": "linear-gradient(45deg, #ff0000, #00ff00, #0000ff)",
     "primary-color-swatch": "#106eea",
+    "dark-blue-swatch": "#0d2a6b",
   };
   return colorMap[colorName] || "#cccccc";
 };

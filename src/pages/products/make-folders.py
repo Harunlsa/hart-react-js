@@ -1,8 +1,8 @@
 import os
 
-fileNames = ["babySets","basins","baskets","bowls","buckets","colandersAndPlates","coolers","drums","iceCreamContainers","jerryCans","mugsAndCups","racks","takeAwayContainers","toys"]
+fileNames = ["babyCare","basins","baskets","bowls","buckets","colandersAndPlates","coolers","drums","iceCreamContainers","jerryCans","mugsAndCups","racks","takeAwayContainers","toys"]
 
-kebabCaseNames = ["baby-sets", "basins", "baskets", "bowls", "buckets", "colanders-plates", "coolers", "drums", "ice-cream-containers", "jerry-cans", "mugs-cups", "racks", "take-away-containers", "toys"]
+kebabCaseNames = ["baby-care", "basins", "baskets", "bowls", "buckets", "colanders-plates", "coolers", "drums", "ice-cream-containers", "jerry-cans", "mugs-cups", "racks", "take-away-containers", "toys"]
 
 # for fileName in fileNames:
 #     fileName = fileName.capitalize()

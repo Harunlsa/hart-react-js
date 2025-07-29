@@ -1,5 +1,5 @@
 export const products = {
-  babySets: {
+  babyCare: {
     description:
       "Safe and adorable baby care essentials designed for comfort and convenience. Our baby sets combine practicality with charming designs perfect for modern parenting needs.",
     items: [
@@ -8,7 +8,7 @@ export const products = {
         name: "Baby set",
         sizes: [],
         colors: [
-          { imgSrc: "babySetsGroup.png", className: "light-blue-swatch" },
+          { imgSrc: "babyCareGroup.png", className: "light-blue-swatch" },
         ],
       },
     ],
@@ -23,12 +23,20 @@ export const products = {
         sizes: ["13L", "18L"],
         colors: [
           {
-            imgSrc: "benz-basin-13-ltrs--web.png",
+            imgSrc: "benz basin/benz-basin-13-ltrs--web.png",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "benz-basin-18-ltrs--web.png",
+            imgSrc: "benz basin/benz-basin-18-ltrs--web.png",
             className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "benz basin/benz-basin-18l--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "benz basin/basin17.png",
+            className: "blue-swatch inner-shadow-dark",
           },
         ],
       },
@@ -46,22 +54,38 @@ export const products = {
       {
         id: 3,
         name: "Butterfly basin",
-        sizes: ["16L"],
+        sizes: ["1L", "6L"],
         colors: [
           {
-            imgSrc: "butterfly-basin-16-ltrs--web.png",
+            imgSrc: "butterfly basin/butterfly-basin-16-ltrs--web.png",
             className: "pink-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "butterfly basin/butterfly-basin-6--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "butterfly basin/butterfly-6-basin--web.png",
+            className: "purple-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 4,
         name: "Chinese basin",
-        sizes: ["20L"],
+        sizes: ["9L", "20L", "40L", "60L"],
         colors: [
           {
-            imgSrc: "chinese-basin-20-ltrs--web.png",
+            imgSrc: "chinese basin/chinese-basin-20-ltrs--web.png",
             className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "chinese basin/chinese-basin-9l--web.png",
+            className: "brown-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "chinese basin/chinese-basin-40--web.png",
+            className: "black-swatch inner-shadow-light",
           },
         ],
       },
@@ -71,23 +95,31 @@ export const products = {
         sizes: ["9L"],
         colors: [
           {
-            imgSrc: "cute-basin-9-ltrs--web.png",
+            imgSrc: "cute basin/cute-basin-9-ltrs--web.png",
             className: "pink-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 6,
-        name: "Diabmond basin",
+        name: "Diamond basin",
         sizes: ["7L", "9L"],
         colors: [
           {
-            imgSrc: "diamond-basin-9-lt--web.png",
+            imgSrc: "diamond basin/diamond-basin-9-lt--web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "diamond-basin-7-lt--web.png",
-            className: "olive-swatch inner-shadow-light",
+            imgSrc: "diamond basin/basin5.png",
+            className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "diamond basin/diamond-basin-7-lt--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "diamond basin/diamond-basin--web.png",
+            className: "orange-swatch inner-shadow-light",
           },
         ],
       },
@@ -97,63 +129,79 @@ export const products = {
         sizes: ["9L", "20L", "60L"],
         colors: [
           {
-            imgSrc: "dolphin-basin-9-ltrs--web.png",
+            imgSrc: "dolphin basin/dolphin-basin-9-ltrs--web.png",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin-basin-32-ltrs--web.png",
+            imgSrc: "dolphin basin/dolphin-basin-32-ltrs--web.png",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin-basin-60-ltrs--web.png",
+            imgSrc: "dolphin basin/dolphin-basin-60-ltrs--web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
-        ],
-      },
-      {
-        id: 8,
-        name: "Dolphin basin gp",
-        sizes: [],
-        colors: [
           {
-            imgSrc: "dolphin-basin-gp--web.png",
-            className: "bright-green-swatch inner-shadow-light",
+            imgSrc: "dolphin basin/basin15.png",
+            className: "dark-blue-swatch inner-shadow-light",
           },
-        ],
-      },
-      {
-        id: 9,
-        name: "Dolphin basin kampala",
-        sizes: [],
-        colors: [
           {
-            imgSrc: "dolphin-basin-kampala.--web.png",
-            className: "bright-green-swatch inner-shadow-light",
+            imgSrc: "dolphin basin/basin25.png",
+            className: "dull-green-swatch inner-shadow-light",
           },
-        ],
-      },
-      {
-        id: 10,
-        name: "Dolphin junior",
-        sizes: [],
-        colors: [
           {
-            imgSrc: "dolphin-junior.--web.png",
+            imgSrc: "dolphin basin/dolphin-junior.--web.png",
             className: "pink-swatch inner-shadow-light",
           },
         ],
       },
+      // {
+      //   id: 8,
+      //   name: "Dolphin basin gp",
+      //   sizes: [],
+      //   colors: [
+      //     {
+      //       imgSrc: "dolphin-basin-gp--web.png",
+      //       className: "bright-green-swatch inner-shadow-light",
+      //     },
+      //   ],
+      // },
+      // {
+      //   id: 9,
+      //   name: "Dolphin basin kampala",
+      //   sizes: [],
+      //   colors: [
+      //     {
+      //       imgSrc: "dolphin-basin-kampala.--web.png",
+      //       className: "bright-green-swatch inner-shadow-light",
+      //     },
+      //   ],
+      // },
+      // {
+      //   id: 10,
+      //   name: "Dolphin junior",
+      //   sizes: [],
+      //   colors: [
+      //     {
+      //       imgSrc: "dolphin-junior.--web.png",
+      //       className: "pink-swatch inner-shadow-light",
+      //     },
+      //   ],
+      // },
       {
         id: 11,
         name: "Eagle basin",
         sizes: ["16L", "60L"],
         colors: [
           {
-            imgSrc: "eagle-basin-16-ltr--web.png",
+            imgSrc: "eagle basin/eagle-basin-16-ltr--web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "eagle-basin-60-ltr--web.png",
+            imgSrc: "eagle basin/eagle-basi-60l--web.png",
+            className: "brown-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "eagle basin/eagle-basin-60-ltr--web.png",
             className: "olive-swatch inner-shadow-light",
           },
         ],
@@ -164,7 +212,7 @@ export const products = {
         sizes: ["25L"],
         colors: [
           {
-            imgSrc: "elephant-basin-25-ltr--web.png",
+            imgSrc: "elephant basin/elephant-basin-25-ltr--web.png",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -175,7 +223,7 @@ export const products = {
         sizes: ["9L"],
         colors: [
           {
-            imgSrc: "emeka-basin-9-ltr--web.png",
+            imgSrc: "emeka basin/emeka-basin-9-ltr--web.png",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -186,8 +234,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fura-basin--web.png",
+            imgSrc: "fura basin/fura-basin--web.png",
             className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "fura basin/fura-basin-p--web.png",
+            className: "pink-swatch inner-shadow-light",
           },
         ],
       },
@@ -197,7 +249,7 @@ export const products = {
         sizes: ["17L"],
         colors: [
           {
-            imgSrc: "harribino-basin-17-ltrs--web.png",
+            imgSrc: "harribino basin/harribino-basin-17-ltrs--web.png",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -208,11 +260,11 @@ export const products = {
         sizes: ["7L", "14L"],
         colors: [
           {
-            imgSrc: "hot-cake-basin-7-ltr--web.png",
+            imgSrc: "hot cake basin/hot-cake-basin-9l--web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "hot-cake-basin-14-ltr--web.png",
+            imgSrc: "hot cake basin/hot-cake-basin-14-ltr--web.png",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -223,7 +275,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "johny-basin.--web.png",
+            imgSrc: "johnny basin/johny-basin.--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -234,8 +286,12 @@ export const products = {
         sizes: ["16L"],
         colors: [
           {
-            imgSrc: "kano-basin-16-ltrs-kampala--web.png",
+            imgSrc: "kano basin/kano-basin-16-ltrs-kampala--web.png",
             className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "kano basin/kano-basin-16--web.png",
+            className: "black-swatch inner-shadow-dark",
           },
         ],
       },
@@ -245,7 +301,7 @@ export const products = {
         sizes: ["15L"],
         colors: [
           {
-            imgSrc: "lion-basin-15-ltrs--web.png",
+            imgSrc: "lion basin/lion-basin-15-ltrs--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -256,34 +312,42 @@ export const products = {
         sizes: ["12L", "22L"],
         colors: [
           {
-            imgSrc: "national-basin-12-ltr.--web.png",
+            imgSrc: "national basin/national-basin-12-ltr.--web.png",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "national-basin-22-ltr--web.png",
+            imgSrc: "national basin/national-basin-22-ltr--web.png",
             className: "black-swatch inner-shadow-light",
           },
-        ],
-      },
-      {
-        id: 21,
-        name: "New fruit basin",
-        sizes: ["8L"],
-        colors: [
           {
-            imgSrc: "new-fruit-basin-8-ltr--web.png",
-            className: "grey-swatch inner-shadow-dark",
+            imgSrc: "national basin/bowl66.png",
+            className: "dull-green-swatch inner-shadow-light",
           },
         ],
       },
+      // {
+      //   id: 21,
+      //   name: "New fruit basin",
+      //   sizes: ["8L"],
+      //   colors: [
+      //     {
+      //       imgSrc: "new-fruit-basin-8-ltr--web.png",
+      //       className: "grey-swatch inner-shadow-dark",
+      //     },
+      //   ],
+      // },
       {
         id: 22,
-        name: "Princess basin kampala",
+        name: "Princess basin",
         sizes: [],
         colors: [
           {
-            imgSrc: "princess-basin-kampala--web.png",
+            imgSrc: "princess basin/princess-basin-kampala--web.png",
             className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "princess basin/princess-basin--web.png",
+            className: "black-swatch inner-shadow-light",
           },
         ],
       },
@@ -293,7 +357,7 @@ export const products = {
         sizes: ["7L"],
         colors: [
           {
-            imgSrc: "rose-basin-7-ltr--web.png",
+            imgSrc: "rose basin/rose-basin-7-ltr--web.png",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -304,8 +368,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "round-basin-dansy.--web.png",
+            imgSrc: "round basin dansy/round-basin-dansy.--web.png",
             className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "round basin dansy/bowl56.png",
+            className: "brown-swatch inner-shadow-light",
           },
         ],
       },
@@ -315,7 +383,7 @@ export const products = {
         sizes: ["20L"],
         colors: [
           {
-            imgSrc: "round-basin-fancy-20-ltrs--web.png",
+            imgSrc: "round basin fancy/round-basin-fancy-20-ltrs--web.png",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -326,8 +394,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "saminu-basin--web.png",
+            imgSrc: "saminu basin/saminu-basin--web.png",
             className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "saminu basin/saminu-basin-g--web.png",
+            className: "dull-green-swatch inner-shadow-light",
           },
         ],
       },
@@ -337,8 +409,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "square-basin--web.png",
+            imgSrc: "square basin/square-basin--web.png",
             className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "square basin/sb.png",
+            className: "bright-green-swatch inner-shadow-light",
           },
         ],
       },
@@ -348,8 +424,12 @@ export const products = {
         sizes: ["10L"],
         colors: [
           {
-            imgSrc: "stripe-basin-10-ltr--web.png",
+            imgSrc: "stripe basin/stripe-basin-10-ltr--web.png",
             className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "stripe basin/stripe-basin-10l--web.png",
+            className: "dull-green-swatch inner-shadow-light",
           },
         ],
       },
@@ -359,18 +439,26 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "super-fine-basin.--web.png",
+            imgSrc: "super fine basin/super-fine-basin.--web.png",
             className: "turquoise-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "super fine basin/basin7.png",
+            className: "pink-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 30,
-        name: "Super star basin",
+        name: "Superstar basin",
         sizes: ["7L", "12L"],
         colors: [
           {
-            imgSrc: "super-star-basin-7-ltr--web.png",
+            imgSrc: "superstar basin/super-star-basin-7-ltr--web.png",
+            className: "dull-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "superstar basin/super-star-basin-12-ltrs--web.png",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -381,31 +469,80 @@ export const products = {
         sizes: ["5L", "13L", "14L", "40L"],
         colors: [
           {
-            imgSrc: "tiger-basin-5-ltr-kampala--web.png",
+            imgSrc: "tiger basin/tiger-basin-5-ltr-kampala--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "tiger-basin-13ltr-kampala--web.png",
+            imgSrc: "tiger basin/tiger-basin-13ltr-kampala--web.png",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "tiger-basin-14-ltrs-kampala--web.png",
+            imgSrc: "tiger basin/tiger-basin-14-ltrs-kampala--web.png",
             className: "pink-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "tiger-basin-40-ltr-gp--web.png",
+            imgSrc: "tiger basin/tiger-basin-40-ltr-gp--web.png",
             className: "black-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "tiger basin/tiger-3--web.png",
+            className: "blue-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 32,
         name: "Wave basin",
-        sizes: ["60L"],
+        sizes: ["5L", "60L"],
         colors: [
           {
-            imgSrc: "wave-basin-60-ltrs--web.png",
+            imgSrc: "wave basin/wave-basin-60-ltrs--web.png",
             className: "pink-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "wave basin/wave-5l-basin--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 33,
+        name: "Combo basin",
+        sizes: ["14L"],
+        colors: [
+          {
+            imgSrc: "combo basin/combo-basin-14-ltr--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "combo basin/combo-basin-14l--web.png",
+            className: "dull-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 34,
+        name: "Fruit basin",
+        sizes: ["14L"],
+        colors: [
+          {
+            imgSrc: "fruit basin/fruit-basin-8l--web.png",
+            className: "black-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "fruit basin/new-fruit-basin-8-ltr--web.png",
+            className: "grey-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 35,
+        name: "Musa basin",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "musa basin/musa-basin-big--web.png",
+            className: "dark-blue-swatch inner-shadow-dark",
           },
         ],
       },
@@ -417,11 +554,148 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Foldable Storage Basket",
-        sizes: ["30cm", "40cm", "50cm"],
+        name: "Diamond Basket",
+        sizes: ["Small", "Big"],
         colors: [
-          { imgSrc: "basket-1.jpg", className: "brown-swatch" },
-          { imgSrc: "basket-2.jpg", className: "beige-swatch" },
+          {
+            imgSrc: "diamond basket/basket3-removebg-preview (Custom).png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "diamond basket/basket5-removebg-preview (Custom).png",
+            className: "dull-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Family Basket",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "family basket/basket3--web.png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "family basket/family-basket--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Fancy Basket",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "fancy basket/basket13-removebg-preview (Custom).png",
+            className: "orange-swatch",
+          },
+          {
+            imgSrc: "fancy basket/basket17-removebg-preview (Custom).png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "fancy basket/small-fancy-basket--web.png",
+            className: "blue-swatch",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Hot cake Basket",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "hot cake basket/basket10-removebg-preview (Custom).png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "hot cake basket/basket12-removebg-preview (Custom).png",
+            className: "orange-swatch",
+          },
+          {
+            imgSrc: "hot cake basket/hot-cake-basket-big--web.png",
+            className: "blue-swatch",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Laundry Basket",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "laundry basket/basket6-removebg-preview (Custom).png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "laundry basket/small-laundry-basket--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Oval family Basket",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "oval family basket/basket1--web.png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "oval family basket/oval-family-basket--web.png",
+            className: "blue-swatch",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Round Basket",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "round basket/round-basket--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Tisco Basket",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "tisco basket/tisco-basket--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: "Vegetable Basket",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "vegetable basket/veg-bas--web.png",
+            className: "blue-swatch",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: "Waste paper Basket",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "waste paper basket/img-20250612-wa0035--web.png",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "waste paper basket/small-waste-basket--web.png",
+            className: "blue-swatch",
+          },
         ],
       },
     ],
@@ -669,6 +943,21 @@ export const products = {
           {
             imgSrc: "zigzag-bowl---web.png",
             className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 23,
+        name: "Afrika bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "afrika bowl/africa-bowl--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "afrika bowl/bowl6.png",
+            className: "blue-swatch inner-shadow-light",
           },
         ],
       },
@@ -1251,14 +1540,17 @@ export const products = {
   },
   toys: {
     description:
-      "Child-safe toys that encourage creative play. Made from non-toxic, durable materials.",
+      "Our collection of plastic soft toys offers a delightful combination of entertainment and learning for children of all ages. Crafted with the highest quality materials, these toys provide numerous benefits and endless hours of enjoyment.",
     items: [
       {
         id: 1,
         name: "Teddy bear",
         sizes: [],
         colors: [
-          { imgSrc: "teddy-bear--web.png", className: "bright-green-swatch" },
+          {
+            imgSrc: "teddy bear/teddy-bear--web.png",
+            className: "bright-green-swatch",
+          },
         ],
       },
       {
@@ -1267,7 +1559,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft-toys-strawberry--web.png",
+            imgSrc: "soft toy strawberry/soft-toys-strawberry--web.png",
             className: "orange-swatch",
           },
         ],
@@ -1278,7 +1570,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft-toy-elephant--web.png",
+            imgSrc: "soft toy elephant/soft-toy-elephant--web.png",
             className: "orange-swatch",
           },
         ],
@@ -1289,7 +1581,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft-toy-apple--web.png",
+            imgSrc: "soft toy apple/soft-toy-apple--web.png",
             className: "blue-swatch",
           },
         ],
@@ -1300,7 +1592,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft-toy-mango--web.png",
+            imgSrc: "soft toy mango/soft-toy-mango--web.png",
             className: "bright-green-swatch",
           },
         ],
@@ -1310,7 +1602,10 @@ export const products = {
         name: "Soft toy baby doll",
         sizes: [],
         colors: [
-          { imgSrc: "baby-doll-soft--web.png", className: "blue-swatch" },
+          {
+            imgSrc: "baby doll soft/baby-doll-soft--web.png",
+            className: "blue-swatch",
+          },
         ],
       },
       {
@@ -1319,7 +1614,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "duck-soft-toy--web.png",
+            imgSrc: "duck soft toy/duck-soft-toy--web.png",
             className: "orange-swatch",
           },
         ],
@@ -1328,7 +1623,7 @@ export const products = {
         id: 7,
         name: "Hard balls",
         sizes: [],
-        colors: [{ imgSrc: "hb--web.png", className: "bright-green-swatch" }],
+        colors: [{ imgSrc: "hb--web.png", className: "" }],
       },
     ],
   },
