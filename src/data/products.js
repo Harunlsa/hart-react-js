@@ -11,6 +11,32 @@ export const products = {
           { imgSrc: "babyCareGroup.png", className: "light-blue-swatch" },
         ],
       },
+      {
+        id: 2,
+        name: "Chamber pot",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "chamber pot/chamber-pot.jpg",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Baby feeder",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "baby feeder/IMG-20250612-WA0181.jpg",
+            className: "plum-swatch",
+          },
+          {
+            imgSrc: "baby feeder/IMG-20250612-WA0171.jpg",
+            className: "orange-swatch",
+          },
+        ],
+      },
     ],
   },
   basins: {
@@ -710,40 +736,76 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "apple-bowl--web.png",
+            imgSrc: "apple bowl/apple-bowl--web.png",
             className: "yellow-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "apple bowl/img-20250612-wa0156--web.png",
+            className: "blue-swatch inner-shadow-dark",
           },
         ],
       },
       {
         id: 2,
         name: "Chinese bowl",
-        sizes: [],
+        sizes: ["1L", "20L", "40L"],
         colors: [
           {
-            imgSrc: "chinese-soup-bowl--web.png",
+            imgSrc: "chinese bowl/chinese-soup-bowl--web.png",
             className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "chinese bowl/bowl54.png",
+            className: "brown-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "chinese bowl/bowl44.png",
+            className: "dark-blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "chinese bowl/img-20250612-wa0052--web.png",
+            className: "dull-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "chinese bowl/chinese-bowl--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "chinese bowl/chinese-bowl-pink--web.png",
+            className: "pink-swatch inner-shadow-dark",
           },
         ],
       },
       {
         id: 3,
         name: "Combo bowl",
-        sizes: ["2L"],
+        sizes: ["500ml", "2L"],
         colors: [
           {
-            imgSrc: "combo-bowl-2lt--web.png",
+            imgSrc: "combo bowl/combo-bowl-2lt--web.png",
             className: "red-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "combo bowl/bowl45.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "combo bowl/bowl48.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "combo bowl/combo-bowl-2l-2---web.png",
+            className: "orange-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 4,
-        name: "Desert bowl",
+        name: "Dessert bowl",
         sizes: [],
         colors: [
           {
-            imgSrc: "desert-bowl---web.png",
+            imgSrc: "dessert bowl/desert-bowl--web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -751,11 +813,23 @@ export const products = {
       {
         id: 5,
         name: "Dolphin bowl",
-        sizes: ["3L"],
+        sizes: ["1L", "3L", "14L", "20L"],
         colors: [
           {
-            imgSrc: "dolphin-bowl-3ltr--web.png",
+            imgSrc: "dolphin bowl/dolphin-bowl-3ltr--web.png",
             className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "dolphin bowl/dolphin-bowl-14--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "dolphin bowl/dolphin-bowl-1l--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "dolphin bowl/bowl33.png",
+            className: "dull-green-swatch inner-shadow-light",
           },
         ],
       },
@@ -765,7 +839,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "england-bowl-jr.--web.png",
+            imgSrc: "england bowl/england-bowl-jr.--web.png",
             className: "pink-swatch inner-shadow-dark",
           },
         ],
@@ -776,8 +850,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "facny-bowl-2.5-ltr---web.png",
+            imgSrc: "fancy bowl/facny-bowl-2.5-ltr---web.png",
             className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "fancy bowl/bowl41.png",
+            className: "dark-blue-swatch inner-shadow-light",
           },
         ],
       },
@@ -787,7 +865,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fancy-bowl-ribs--web.png",
+            imgSrc: "fancy bowl ribs/fancy-bowl-ribs--web.png",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -798,8 +876,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "football-bowl---web.png",
+            imgSrc: "football bowl/football-bowl---web.png",
             className: "yellow-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "football bowl/bowl1.png",
+            className: "orange-swatch inner-shadow-dark",
           },
         ],
       },
@@ -809,7 +891,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "oval-bowl-fancy-with-cover--web.png",
+            imgSrc: "oval bowl fancy/oval-bowl-fancy-with-cover--web.png",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
@@ -820,8 +902,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "party-bowl--web.png",
+            imgSrc: "party bowl/party-bowl--web.png",
             className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "party bowl/party-bowl-dg--web.png",
+            className: "dull-green-swatch inner-shadow-dark",
           },
         ],
       },
@@ -831,8 +917,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "pilot-bowl--web.png",
+            imgSrc: "pilot bowl/pilot-bowl--web.png",
             className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "pilot bowl/pilot-bowl-g--web.png",
+            className: "bright-green-swatch inner-shadow-light",
           },
         ],
       },
@@ -842,8 +932,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "ricky-bowl---web.png",
+            imgSrc: "ricky bowl/ricky-bowl---web.png",
             className: "turquoise-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "ricky bowl/img-20250612-wa0048--web.png",
+            className: "orange-swatch inner-shadow-light",
           },
         ],
       },
@@ -853,7 +947,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "rose-bowl--web.png",
+            imgSrc: "rose bowl/rose-bowl--web.png",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -864,19 +958,23 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "salad-bowl-stripe---web.png",
+            imgSrc: "salad bowl/salad-bowl-stripe---web.png",
             className: "yellow-swatch inner-shadow-dark",
           },
         ],
       },
       {
         id: 16,
-        name: "Sanghai bowl",
+        name: "Shanghai bowl",
         sizes: [],
         colors: [
           {
-            imgSrc: "sanghai-bowl-small-with-cover--web.png",
+            imgSrc: "shanghai bowl/sanghai-bowl-small-with-cover--web.png",
             className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "shanghai bowl/img-20250612-wa0154--web.png",
+            className: "blue-swatch inner-shadow-light",
           },
         ],
       },
@@ -886,7 +984,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "sugar-bowl---web.png",
+            imgSrc: "sugar bowl/sugar-bowl---web.png",
             className: "turquoise-swatch inner-shadow-dark",
           },
         ],
@@ -897,19 +995,23 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "super-beach-bowl---web.png",
+            imgSrc: "super beach bowl/super-beach-bowl---web.png",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 19,
-        name: "Super star bowl",
+        name: "Superstar bowl",
         sizes: ["1L"],
         colors: [
           {
-            imgSrc: "super-star-bowl-1-ltr---web.png",
+            imgSrc: "superstar bowl/super-star-bowl-1-ltr--web.png",
             className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "superstar bowl/bowl2.png",
+            className: "purple-swatch inner-shadow-light",
           },
         ],
       },
@@ -919,8 +1021,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tisco-bowl--web.png",
+            imgSrc: "tisco bowl/tisco-bowl--web.png",
             className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "tisco bowl/bowl49.png",
+            className: "dark-blue-swatch inner-shadow-light",
           },
         ],
       },
@@ -930,7 +1036,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tutty-fruity-bowl---web.png",
+            imgSrc: "tutty-frutty bowl/tutty-fruity-bowl---web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -941,7 +1047,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "zigzag-bowl---web.png",
+            imgSrc: "zigzag bowl/zigzag-bowl---web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -961,6 +1067,121 @@ export const products = {
           },
         ],
       },
+      {
+        id: 24,
+        name: "Benz bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "benz bowl/benz-bowl-2l--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 25,
+        name: "Diamond bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "diamond bowl/bowl7.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 26,
+        name: "Fish bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fish bowl/fish-bowl--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 27,
+        name: "Fruit bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fruit bowl/fruit--web.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 28,
+        name: "National bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "national bowl/img-20250612-wa0046--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 29,
+        name: "Oval bowl",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "oval bowl/oval-bowl-2---web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 30,
+        name: "Star bowl",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "star bowl/bowl17.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "star bowl/sbo--web.png",
+            className: "orange-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 31,
+        name: "Utility bowl",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "utility bowl/big-utility-bowl--web.png",
+            className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "utility bowl/ub.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "utility bowl/ubp--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 32,
+        name: "Wave bowl",
+        sizes: ["Small", "Big"],
+        colors: [
+          {
+            imgSrc: "wave bowl/img-20250612-wa0163--web.png",
+            className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "wave bowl/wave-bowl-g--web.png",
+            className: "bright-green-swatch inner-shadow-light",
+          },
+        ],
+      },
     ],
   },
   buckets: {
@@ -969,11 +1190,65 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Industrial Strength Bucket",
-        sizes: ["10L", "15L", "20L"],
+        name: "Bucket with cover",
+        sizes: ["9L", "13L", "21L"],
         colors: [
-          { imgSrc: "bucket-1.jpg", className: "yellow-swatch" },
-          { imgSrc: "bucket-2.jpg", className: "grey-swatch" },
+          {
+            imgSrc: "bucket/img-20250612-wa0092--web.png",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "bucket/IMG-20250612-WA0070.jpg",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "bucket/transparent.jpg",
+            className: "white-swatch",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Chinese bucket",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "chinese bucket/chinese bucket 1l trANS.jpg",
+            className: "white-swatch",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Fancy bucket with cover",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "fancy bucket/1 lt. Bucket Fancy with cover.jpg",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Open bucket",
+        sizes: ["7L"],
+        colors: [
+          {
+            imgSrc: "open bucket/img-20250612-wa0085--web.png",
+            className: "dull-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Shanghai bucket",
+        sizes: ["11L"],
+        colors: [
+          {
+            imgSrc: "shanghai bucket/shanghai-bucket-11l--web.png",
+            className: "blue-swatch",
+          },
         ],
       },
     ],
@@ -984,11 +1259,94 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Stainless Steel Colander Set",
-        sizes: ["24cm", "28cm", "32cm"],
+        name: "Combo plate",
+        sizes: [""],
         colors: [
-          { imgSrc: "colander-1.jpg", className: "silver-swatch" },
-          { imgSrc: "colander-2.jpg", className: "black-swatch" },
+          {
+            imgSrc: "combo plate/combo-plate--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Cute tray",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "cute tray/cue-tray--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Fancy plate",
+        sizes: ["S", "L"],
+        colors: [
+          {
+            imgSrc: "fancy plate/fancy-plate-big--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Floral plate",
+        sizes: ['8"', '9"'],
+        colors: [
+          {
+            imgSrc: "floral plate/floral-plate-8-inches--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Oval strainer",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "oval strainer/oval-strainer--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Round tray",
+        sizes: ["S", "M", "L"],
+        colors: [
+          {
+            imgSrc: "round tray/round-tray-9inch--web.png",
+            className: "orange-swatch",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Strainer",
+        sizes: ["S", "L"],
+        colors: [
+          {
+            imgSrc: "strainer/img-20250612-wa0012--web.png",
+            className: "orange-swatch",
+          },
+          {
+            imgSrc: "strainer/img-20250612-wa0185--web.png",
+            className: "bright-green-swatch",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Weaving plate",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "weaving plate/weaving-plate--web.png",
+            className: "bright-green-swatch",
+          },
         ],
       },
     ],
@@ -1000,7 +1358,7 @@ export const products = {
       {
         id: 1,
         name: "Cooler",
-        sizes: [],
+        sizes: ["1L"],
         colors: [
           {
             imgSrc: "coolers0.png",
@@ -1009,6 +1367,44 @@ export const products = {
           {
             imgSrc: "coolers6.png",
             className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "flask-g.png",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "flask-r.png",
+            className: "red-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Food flask",
+        sizes: ["S", "L"],
+        colors: [
+          {
+            imgSrc: "food flask/food-flask-big--web.png",
+            className: "pink-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "food flask/food-flask-small--web.png",
+            className: "blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Water bottle",
+        sizes: ["S", "L"],
+        colors: [
+          {
+            imgSrc: "water bottle/IMG-20250612-WA0200.jpg",
+            className: "purple-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "water bottle/water botte big.jpg",
+            className: "orange-swatch inner-shadow-light",
           },
         ],
       },
@@ -1021,7 +1417,7 @@ export const products = {
       {
         id: 1,
         name: "Drum",
-        sizes: [],
+        sizes: ["30L", "40L", "50L"],
         colors: [
           {
             imgSrc: "img-20240319-151615--web.png",
@@ -1041,11 +1437,13 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Insulated Ice Cream Tub",
-        sizes: ["2kg", "5kg", "10kg"],
+        name: "Ice cream container",
+        sizes: ["500ml", "650ml"],
         colors: [
-          { imgSrc: "ice-cream-container-1.jpg", className: "white-swatch" },
-          { imgSrc: "ice-cream-container-2.jpg", className: "pink-swatch" },
+          {
+            imgSrc: "img-20250611-wa0042--web.png",
+            className: "white-swatch",
+          },
         ],
       },
     ],
@@ -1056,127 +1454,106 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Jerry can",
-        sizes: ["4L", "10L", "18L", "20L"],
+        name: "Plain jerry can",
+        sizes: ["1L", "4L", "10L", "18L", "20L"],
         colors: [
           {
-            imgSrc: "18-ltr-jerry-can--web.png",
+            imgSrc: "plain/jc53.png",
             className: "amber-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "plain/jc134.png",
+            className: "white-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "plain/jc150.png",
+            className: "bright-yellow-swatch inner-shadow-dark",
           },
         ],
       },
       {
         id: 2,
-        name: "4L jerry can plain",
-        sizes: ["4L"],
-        colors: [
-          {
-            imgSrc: "4-ltr-jerry-can-plan--web.png",
-            className: "white-swatch inner-shadow-dark",
-          },
-        ],
-      },
-      {
-        id: 3,
-        name: "2L Cross neck jerry can",
+        name: "Cross neck jerry can",
         sizes: ["2L"],
         colors: [
           {
-            imgSrc: "2-ltr-cross-neck--web.png",
+            imgSrc: "cross neck/2-ltr-cross-neck--web.png",
             className: "black-swatch inner-shadow-dark",
           },
-        ],
-      },
-      {
-        id: 4,
-        name: "4L Liberty Jerry Can",
-        sizes: ["4L"],
-        colors: [
           {
-            imgSrc: "4-liter-jerry-can-liberty--web.png",
-            className: "white-swatch inner-shadow-dark",
-          },
-          {
-            imgSrc: "4l-jerry-can-liberty--web.png",
-            className: "amber-swatch inner-shadow-dark",
-          },
-        ],
-      },
-      {
-        id: 5,
-        name: "20L Jerry can steps",
-        sizes: ["20L"],
-        colors: [
-          {
-            imgSrc: "20l-jerry-can-steps--web.png",
-            className: "amber-swatch inner-shadow-dark",
-          },
-          {
-            imgSrc: "jc27.png",
-            className: "grey-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 6,
-        name: "25L Jerry Can",
-        sizes: ["4L"],
-        colors: [
-          {
-            imgSrc: "25-ltr-jerry-can.png",
-            className: "white-swatch inner-shadow-dark",
-          },
-        ],
-      },
-      {
-        id: 7,
-        name: "25L Jerry Can",
-        sizes: ["25L"],
-        colors: [
-          {
-            imgSrc: "jc24.png",
-            className: "yellow-swatch inner-shadow-light",
-          },
-          {
-            imgSrc: "jc58.png",
-            className: "black-swatch inner-shadow-light",
-          },
-          {
-            imgSrc: "jc70.png",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 8,
-        name: "25L Jerry Can",
-        sizes: ["25L"],
-        colors: [
-          {
-            imgSrc: "jc86.png",
-            className: "white-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 9,
-        name: "25L Jerry Can",
-        sizes: ["25L"],
-        colors: [
-          {
-            imgSrc: "jc72.png",
+            imgSrc: "cross neck/jerry-can-2l-crossneck--web.png",
             className: "grey-swatch inner-shadow-dark",
           },
         ],
       },
       {
-        id: 10,
-        name: "25L Jerry Can",
+        id: 3,
+        name: "Liberty jerry Can",
+        sizes: ["4L"],
+        colors: [
+          {
+            imgSrc: "liberty/4-liter-jerry-can-liberty--web.png",
+            className: "white-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "liberty/4l-jerry-can-liberty--web.png",
+            className: "amber-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Jerry can steps",
+        sizes: ["4L", "10L", "20L"],
+        colors: [
+          {
+            imgSrc: "with steps/20l-jerry-can-steps--web.png",
+            className: "amber-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "with steps/jc27.png",
+            className: "grey-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "25L jerry can",
         sizes: ["25L"],
         colors: [
           {
-            imgSrc: "jc78.png",
-            className: "yellow-swatch inner-shadow-dark",
+            imgSrc: "25L/25-ltr-jerry-can.png",
+            className: "black-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "25L Jerry can",
+        sizes: ["25L"],
+        colors: [
+          {
+            imgSrc: "tall/jc24.png",
+            className: "yellow-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "tall/jc70.png",
+            className: "black-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "tall/jc161.png",
+            className: "bright-yellow-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Taperneck jerry can",
+        sizes: ["2L"],
+        colors: [
+          {
+            imgSrc: "taperneck/jc86.png",
+            className: "white-swatch inner-shadow-light",
           },
         ],
       },
@@ -1188,19 +1565,19 @@ export const products = {
     items: [
       {
         id: 1,
-        name: "Mug",
+        name: "Chinese mug",
         sizes: [],
         colors: [
           {
-            imgSrc: "mug0--web.png",
+            imgSrc: "chinese mug/mug0--web.png",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "mug2--web.png",
+            imgSrc: "chinese mug/mug2--web.png",
             className: "orange-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "mug4--web.png",
+            imgSrc: "chinese mug/mug4--web.png",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -1211,15 +1588,15 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "mug36--web.png",
+            imgSrc: "baby shai/mug36--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "mug25--web.png",
+            imgSrc: "baby shai/mug25--web.png",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "img-20250612-wa0164--web.png",
+            imgSrc: "baby shai/img-20250612-wa0164--web.png",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
