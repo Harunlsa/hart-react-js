@@ -1566,7 +1566,7 @@ export const products = {
       {
         id: 1,
         name: "Chinese mug",
-        sizes: [],
+        sizes: ["100ml", "250ml", "400ml", "700ml"],
         colors: [
           {
             imgSrc: "chinese mug/mug0--web.png",
@@ -1598,6 +1598,10 @@ export const products = {
           {
             imgSrc: "baby shai/img-20250612-wa0164--web.png",
             className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "baby shai/mug23--web.png",
+            className: "bright-yellow-swatch inner-shadow-dark",
           },
         ],
       },
