@@ -1611,8 +1611,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "best-cup--web.png",
+            imgSrc: "best cup/best-cup--web.png",
             className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "best cup/mug29--web.png",
+            className: "purple-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1622,7 +1626,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "woven-cup--web.png",
+            imgSrc: "woven cup/woven-cup--web.png",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
@@ -1633,11 +1637,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tea-cup--web.png",
+            imgSrc: "tea cup/tea-cup--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "mug41--web.png",
+            imgSrc: "tea cup/mug41--web.png",
             className: "blue-swatch inner-shadow-dark",
           },
         ],
@@ -1648,11 +1652,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "mug-with-handle--web.png",
+            imgSrc: "mug with handle/mug-with-handle--web.png",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "mug18--web.png",
+            imgSrc: "mug with handle/mug18--web.png",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -1663,79 +1667,46 @@ export const products = {
         sizes: ["S", "M", "L", "XL"],
         colors: [
           {
-            imgSrc: "mug14--web.png",
+            imgSrc: "joyo mug/mug14--web.png",
             className: "light-blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "joyo-mug--web.png",
+            imgSrc: "joyo mug/joyo-mug--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "mug11--web.png",
+            imgSrc: "joyo mug/mug11--web.png",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "mug9--web.png",
+            imgSrc: "joyo mug/mug9--web.png",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "mug7--web.png",
+            imgSrc: "joyo mug/mug7--web.png",
             className: "orange-swatch inner-shadow-light",
           },
         ],
       },
       {
         id: 8,
-        name: " mug",
+        name: "Star tea cup",
         sizes: [],
         colors: [
           {
-            imgSrc: "mug38--web.png",
-            className: "bright-green-swatch inner-shadow-dark",
-          },
-        ],
-      },
-      {
-        id: 9,
-        name: " mug",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "mug33--web.png",
+            imgSrc: "star tea cup/star-tea-cup--web.png",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
       },
       {
-        id: 10,
-        name: " mug",
+        id: 9,
+        name: "Mug",
         sizes: [],
         colors: [
           {
-            imgSrc: "mug28--web.png",
-            className: "purple-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 11,
-        name: " mug",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "mug23--web.png",
-            className: "yellow-swatch inner-shadow-dark",
-          },
-        ],
-      },
-      {
-        id: 12,
-        name: " mug",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "mug35--web.png",
-            className: "brown-swatch inner-shadow-dark",
+            imgSrc: "mug33--web.png",
+            className: "orange-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1751,11 +1722,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "kitchen-rack-set.png",
+            imgSrc: "kitchen rack/kitchen-rack-set.png",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "kitchen-rack-set-g.png",
+            imgSrc: "kitchen rack/r1--web.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -1766,11 +1737,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "office-paper-rack-set.png",
+            imgSrc: "office paper rack/office-paper-rack-set.png",
             className: "pink-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "office-paper-rack-g.png",
+            imgSrc: "office paper rack/office-paper-rack-g.png",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -1781,7 +1752,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "shoe-rack-set.png",
+            imgSrc: "shoe rack/shoe-rack-set.png",
             className: "blue-swatch inner-shadow-dark",
           },
         ],
@@ -1792,29 +1763,18 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "corner-rack--web.png",
+            imgSrc: "corner rack/corner.jpg",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
       },
       {
         id: 5,
-        name: " rack",
+        name: "Round rack",
         sizes: [],
         colors: [
           {
-            imgSrc: "r1--web.png",
-            className: "bright-green-swatch inner-shadow-dark",
-          },
-        ],
-      },
-      {
-        id: 6,
-        name: " rack",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "r2--web.png",
+            imgSrc: "round rack/round.jpg",
             className: "blue-swatch inner-shadow-dark",
           },
         ],
@@ -1829,24 +1789,47 @@ export const products = {
         id: 1,
         name: "Custard container",
         sizes: ["1L"],
-        colors: [{ imgSrc: "1l-custard--web.png", className: "clear-swatch" }],
+        colors: [
+          {
+            imgSrc: "custard/1l-custard--web--ps.png",
+            className: "clear-swatch",
+          },
+        ],
       },
       {
         id: 2,
-        name: "Ketchup container",
+        name: "Ketchup container round",
         sizes: [""],
         colors: [
-          { imgSrc: "ketchup-container--web.png", className: "clear-swatch" },
+          {
+            imgSrc: "ketchup container/ketchup-container--web.png",
+            className: "clear-swatch",
+          },
+        ],
+      },
+      {
+        id: 12,
+        name: "Ketchup container square",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "ketchup container/img-20250612-wa0124--web.png",
+            className: "clear-swatch",
+          },
         ],
       },
       {
         id: 3,
         name: "Tamper-proof container",
-        sizes: ["1L"],
+        sizes: ["125ml", "250ml", "330ml", "500ml"],
         colors: [
           {
-            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.png",
+            imgSrc: "tamper proof/img-20250611-wa0007--web.png",
             className: "clear-swatch",
+          },
+          {
+            imgSrc: "tamper proof/transparent.png",
+            className: "transparent-swatch",
           },
         ],
       },
@@ -1855,18 +1838,7 @@ export const products = {
         name: "Square container",
         sizes: ["500ml"],
         colors: [
-          { imgSrc: "500ml-square--web.png", className: "clear-swatch" },
-        ],
-      },
-      {
-        id: 5,
-        name: "Ice cream container",
-        sizes: ["1L"],
-        colors: [
-          {
-            imgSrc: "ice-cream-container-1000ml--web.png",
-            className: "clear-swatch",
-          },
+          { imgSrc: "square/500ml-square--web.png", className: "clear-swatch" },
         ],
       },
       {
