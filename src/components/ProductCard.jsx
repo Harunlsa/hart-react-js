@@ -32,6 +32,7 @@ const getColorCode = (colorClass) => {
     "multi-color-swatch": "linear-gradient(45deg, #ff0000, #00ff00, #0000ff)",
     "primary-color-swatch": "#106eea",
     "dark-blue-swatch": "#0d2a6b",
+    "plum-swatch": "#87214d",
   };
   return colorMap[colorName] || "#cccccc";
 };

@@ -1808,7 +1808,7 @@ export const products = {
         ],
       },
       {
-        id: 12,
+        id: 3,
         name: "Ketchup container square",
         sizes: [""],
         colors: [
@@ -1819,75 +1819,64 @@ export const products = {
         ],
       },
       {
-        id: 3,
+        id: 4,
         name: "Tamper-proof container",
         sizes: ["125ml", "250ml", "330ml", "500ml"],
         colors: [
           {
             imgSrc: "tamper proof/img-20250611-wa0007--web.png",
-            className: "clear-swatch",
+            className: "white-swatch",
           },
           {
             imgSrc: "tamper proof/transparent.png",
-            className: "transparent-swatch",
+            className: "clear-swatch",
           },
         ],
       },
       {
-        id: 4,
+        id: 5,
         name: "Square container",
-        sizes: ["500ml"],
+        sizes: ["500ml", "650ml", "750ml", "100ml"],
         colors: [
           { imgSrc: "square/500ml-square--web.png", className: "clear-swatch" },
         ],
       },
       {
         id: 6,
-        name: "Takeaway container",
-        sizes: ["1/2 L"],
+        name: "Take away container",
+        sizes: ["100ml", "125ml", "150ml", "350ml", "500ml"],
         colors: [
-          { imgSrc: "half-l-take-away--web.png", className: "clear-swatch" },
+          {
+            imgSrc: "takeaway/350-take--web--ps.png",
+            className: "clear-swatch",
+          },
+          {
+            imgSrc: "takeaway/tac6.png",
+            className: "white-swatch",
+          },
         ],
       },
       {
         id: 7,
-        name: "Square takeaway containers",
-        sizes: ["1L"],
+        name: "Take away container",
+        sizes: ["100ml", "125ml", "150ml"],
         colors: [
           {
-            imgSrc: "1000-750-500-650-square--web.png",
+            imgSrc: "takeaway/img-20250612-wa0213--web.png",
             className: "clear-swatch",
           },
         ],
       },
       {
         id: 8,
-        name: "Take away container",
-        sizes: ["650ml"],
-        colors: [{ imgSrc: "650-ta--web.png", className: "clear-swatch" }],
-      },
-      {
-        id: 9,
-        name: "Take away container",
-        sizes: ["100ml", "125ml", "150ml", "350ml", "500ml"],
+        name: "Custard",
+        sizes: ["1L"],
         colors: [
           {
-            imgSrc: "500-350-150-125-100ml-take-away--web.png",
+            imgSrc: "custard/1l-custard--web--ps.png",
             className: "clear-swatch",
           },
         ],
-      },
-      {
-        id: 10,
-        name: "Custard",
-        sizes: ["1L"],
-        colors: [{ imgSrc: "1l-custard--web.png", className: "clear-swatch" }],
-      },
-      {
-        id: 11,
-        name: "Custard",
-        sizes: ["1L"],
-        colors: [{ imgSrc: "1l-custard--web.png", className: "clear-swatch" }],
       },
     ],
   },
