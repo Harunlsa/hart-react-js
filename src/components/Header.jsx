@@ -4,37 +4,25 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-// import logo from "../assets/hart_logo.png";
-// import logo from "../assets/hart-logo-new.svg";
-// import logo from "./hartLogo.png";
 import logo from "/src/assets/hartLogo.png";
-// C:\Users\HLAbdulwahab\Documents\projects\hart-react-js\public\hart-logo.png
-
-// import "../assets/hart-logo.png" as Logo;
 
 const HeaderWrapper = styled(Navbar)`
-  // width: 100%;
-  // overflow-x: hidden; // scoped only here
-  // position: relative;
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
   min-height: 86px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 0;
-  button {
-    color: transparent;
-  }
+  // button {
+  //   color: transparent;
+  // border: transparent;
+  // }
 
   &.fixed-top {
     height: 70px;
   }
-  button {
-    border: transparent;
-  }
 
   @media (max-width: 380px) {
-    // width: 10px;
     min-height: 68px;
     button {
     }
@@ -65,11 +53,9 @@ const HeaderWrapper = styled(Navbar)`
 const LogoContainer = styled(Navbar.Brand)`
   display: flex;
   align-items: center;
-  // width: 40%;
 
   img {
     max-height: 60px;
-    // max-width: 0px;
     margin-right: 1rem;
   }
 
@@ -84,6 +70,7 @@ const LogoContainer = styled(Navbar.Brand)`
     color: #222222;
     width: 100% !important;
   }
+
   @media (max-width: 514px) {
     h1 {
       font-size: 1.5rem;
@@ -104,8 +91,8 @@ const LogoContainer = styled(Navbar.Brand)`
 `;
 
 const NavSection = styled(Nav)`
-  text-align: center;
-  border-color: transparent;
+  // text-align: center;
+  // border-color: transparent;
   .dropdown-menu.show {
     background-color: #fcfdff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -143,10 +130,8 @@ const NavSection = styled(Nav)`
   }
   .dropdown-item {
     margin: 0;
-    padding-left: 28px;
-    padding-right: 28px;
-    border-bottom: 2px solid #f1f1f1;
-    text-align: center;
+    // border-bottom: 2px solid #f1f1f1;
+    // text-align: center;
   }
   @media (max-width: 991px) {
     ul {
@@ -179,6 +164,45 @@ const NavSection = styled(Nav)`
   }
 `;
 
+const productCategories = [
+  {
+    title: "Household",
+    items: [
+      { name: "Baby Care", path: "/products/babyCare" },
+      { name: "Basins", path: "/products/basins" },
+      { name: "Baskets", path: "/products/baskets" },
+      { name: "Bowls", path: "/products/bowls" },
+      { name: "Buckets", path: "/products/buckets" },
+      { name: "Colanders & Plates", path: "/products/colandersAndPlates" },
+      { name: "Coolers", path: "/products/coolers" },
+      { name: "Drums", path: "/products/drums" },
+      { name: "Mugs & Cups", path: "/products/mugsAndCups" },
+      { name: "Racks", path: "/products/racks" },
+    ],
+  },
+  {
+    title: "Industrial",
+    items: [
+      { name: "Ice Cream Containers", path: "/products/iceCreamContainers" },
+      { name: "Jerry Cans", path: "/products/jerryCans" },
+      { name: "Take Away Containers", path: "/products/takeAwayContainers" },
+    ],
+  },
+  {
+    title: "Tanks",
+    items: [{ name: "Tanks", path: "/products/tanks" }],
+  },
+];
+
+const NavDropdownSecondary = styled(NavDropdown)`
+  padding-left: 0.5rem;
+  a {
+    margin-left: 0;
+    // padding: auto 16px;
+    // margin-left: 16px;
+  }
+`;
+
 const Header = () => {
   return (
     <HeaderWrapper sticky="top" expand="lg" className="bg-body-tertiary">
@@ -200,60 +224,32 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/about">
               About Us
             </Nav.Link>
-
             <NavDropdown title="Products" id="products">
-              {/* <div className="dropdown-menu-container">
-                <Container fluid>
-                  <Row>
-                    <Col>
-                      <h6 className="dropdown-header">Blow</h6>
-                    </Col>
-                  </Row>
-                </Container>
-              </div> */}
-              <NavDropdown.Item as={NavLink} to="/products/babyCare">
-                Baby Care
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/basins">
-                Basins
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/baskets">
-                Baskets
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/bowls">
-                Bowls
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/buckets">
-                Buckets
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/colandersAndPlates">
-                Colanders & Plates
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/coolers">
-                Coolers
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/drums">
-                Drums
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/iceCreamContainers">
-                Ice Cream Containers
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/jerryCans">
-                Jerry Cans
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/mugsAndCups">
-                Mugs & Cups
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/racks">
-                Racks
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/takeAwayContainers">
-                Take Away Containers
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/products/toys">
-                Toys
-              </NavDropdown.Item>
+              {productCategories.map((category) =>
+                category.items.length > 1 ? (
+                  <NavDropdownSecondary
+                    title={category.title}
+                    id={category.title.toLowerCase()}
+                    key={category.title}
+                  >
+                    {category.items.map((item) => (
+                      <NavDropdown.Item
+                        as={NavLink}
+                        to={item.path}
+                        key={item.name}
+                      >
+                        {item.name}
+                      </NavDropdown.Item>
+                    ))}
+                  </NavDropdownSecondary>
+                ) : (
+                  <NavDropdown.Item as={NavLink} to={category.items[0].path}>
+                    {category.title}
+                  </NavDropdown.Item>
+                )
+              )}
             </NavDropdown>
+
             <Nav.Link as={NavLink} to="/contact">
               Contact
             </Nav.Link>

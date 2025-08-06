@@ -68,8 +68,8 @@ export const products = {
       },
       {
         id: 2,
-        name: "Big sunny basin",
-        sizes: [],
+        name: "Sunny basin",
+        sizes: ["Small", "Big"],
         colors: [
           {
             imgSrc: "big-sunny-basin.--web.png",
@@ -80,7 +80,7 @@ export const products = {
       {
         id: 3,
         name: "Butterfly basin",
-        sizes: ["1L", "6L"],
+        sizes: ["11L", "16L", "18", "28L"],
         colors: [
           {
             imgSrc: "butterfly basin/butterfly-basin-16-ltrs--web.png",
@@ -99,7 +99,7 @@ export const products = {
       {
         id: 4,
         name: "Chinese basin",
-        sizes: ["9L", "20L", "40L", "60L"],
+        sizes: ["9L", "14L", "20L", "40L", "60L"],
         colors: [
           {
             imgSrc: "chinese basin/chinese-basin-20-ltrs--web.png",
@@ -129,7 +129,7 @@ export const products = {
       {
         id: 6,
         name: "Diamond basin",
-        sizes: ["7L", "9L"],
+        sizes: ["7L", "9L", "11L"],
         colors: [
           {
             imgSrc: "diamond basin/diamond-basin-9-lt--web.png",
@@ -152,7 +152,7 @@ export const products = {
       {
         id: 7,
         name: "Dolphin basin",
-        sizes: ["9L", "20L", "60L"],
+        sizes: ["9L", "14L", "20L", "32L", "40L", "50L", "60L"],
         colors: [
           {
             imgSrc: "dolphin basin/dolphin-basin-9-ltrs--web.png",
@@ -216,7 +216,7 @@ export const products = {
       {
         id: 11,
         name: "Eagle basin",
-        sizes: ["16L", "60L"],
+        sizes: ["16L", "60L", "80L"],
         colors: [
           {
             imgSrc: "eagle basin/eagle-basin-16-ltr--web.png",
@@ -269,21 +269,21 @@ export const products = {
           },
         ],
       },
-      {
-        id: 15,
-        name: "Harribino basin",
-        sizes: ["17L"],
-        colors: [
-          {
-            imgSrc: "harribino basin/harribino-basin-17-ltrs--web.png",
-            className: "purple-swatch inner-shadow-light",
-          },
-        ],
-      },
+      // {
+      //   id: 15,
+      //   name: "Harribino basin",
+      //   sizes: ["17L"],
+      //   colors: [
+      //     {
+      //       imgSrc: "harribino basin/harribino-basin-17-ltrs--web.png",
+      //       className: "purple-swatch inner-shadow-light",
+      //     },
+      //   ],
+      // },
       {
         id: 16,
         name: "Hot cake basin",
-        sizes: ["7L", "14L"],
+        sizes: ["5L", "7L", "11L", "14L"],
         colors: [
           {
             imgSrc: "hot cake basin/hot-cake-basin-9l--web.png",
@@ -321,17 +321,7 @@ export const products = {
           },
         ],
       },
-      {
-        id: 19,
-        name: "Lion basin",
-        sizes: ["15L"],
-        colors: [
-          {
-            imgSrc: "lion basin/lion-basin-15-ltrs--web.png",
-            className: "bright-green-swatch inner-shadow-dark",
-          },
-        ],
-      },
+
       {
         id: 20,
         name: "National basin",
@@ -491,7 +481,7 @@ export const products = {
       },
       {
         id: 31,
-        name: "Tiger basin kampala",
+        name: "Tiger basin",
         sizes: ["5L", "13L", "14L", "40L"],
         colors: [
           {
@@ -630,7 +620,7 @@ export const products = {
       {
         id: 4,
         name: "Hot cake Basket",
-        sizes: ["Small", "Big"],
+        sizes: ["Small", "Medium", "Big"],
         colors: [
           {
             imgSrc: "hot cake basket/basket10-removebg-preview (Custom).png",
@@ -712,7 +702,7 @@ export const products = {
       {
         id: 10,
         name: "Waste paper Basket",
-        sizes: ["Small", "Big"],
+        sizes: ["Small", "Medium", "Big"],
         colors: [
           {
             imgSrc: "waste paper basket/img-20250612-wa0035--web.png",
@@ -748,7 +738,7 @@ export const products = {
       {
         id: 2,
         name: "Chinese bowl",
-        sizes: ["1L", "20L", "40L"],
+        sizes: ["1L"],
         colors: [
           {
             imgSrc: "chinese bowl/chinese-soup-bowl--web.png",
@@ -813,7 +803,7 @@ export const products = {
       {
         id: 5,
         name: "Dolphin bowl",
-        sizes: ["1L", "3L", "14L", "20L"],
+        sizes: ["500ml", "1L", "1.7L", "3L"],
         colors: [
           {
             imgSrc: "dolphin bowl/dolphin-bowl-3ltr--web.png",
@@ -833,29 +823,26 @@ export const products = {
           },
         ],
       },
-      {
-        id: 6,
-        name: "England bowl",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "england bowl/england-bowl-jr.--web.png",
-            className: "pink-swatch inner-shadow-dark",
-          },
-        ],
-      },
+
       {
         id: 7,
         name: "Fancy bowl",
         sizes: [],
         colors: [
           {
-            imgSrc: "fancy bowl/facny-bowl-2.5-ltr---web.png",
-            className: "blue-swatch inner-shadow-light",
-          },
-          {
             imgSrc: "fancy bowl/bowl41.png",
             className: "dark-blue-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Fancy bowl 2.5",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fancy bowl/facny-bowl-2.5-ltr---web.png",
+            className: "blue-swatch inner-shadow-light",
           },
         ],
       },
@@ -989,17 +976,7 @@ export const products = {
           },
         ],
       },
-      {
-        id: 18,
-        name: "Super beach bowl",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "super beach bowl/super-beach-bowl---web.png",
-            className: "dull-green-swatch inner-shadow-light",
-          },
-        ],
-      },
+
       {
         id: 19,
         name: "Superstar bowl",
@@ -1111,17 +1088,7 @@ export const products = {
           },
         ],
       },
-      {
-        id: 28,
-        name: "National bowl",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "national bowl/img-20250612-wa0046--web.png",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
+
       {
         id: 29,
         name: "Oval bowl",
@@ -1210,7 +1177,7 @@ export const products = {
       {
         id: 2,
         name: "Chinese bucket",
-        sizes: [""],
+        sizes: ["1L"],
         colors: [
           {
             imgSrc: "chinese bucket/chinese bucket 1l trANS.jpg",
@@ -1218,17 +1185,17 @@ export const products = {
           },
         ],
       },
-      {
-        id: 3,
-        name: "Fancy bucket with cover",
-        sizes: [""],
-        colors: [
-          {
-            imgSrc: "fancy bucket/1 lt. Bucket Fancy with cover.jpg",
-            className: "bright-green-swatch",
-          },
-        ],
-      },
+      // {
+      //   id: 3,
+      //   name: "Fancy bucket with cover",
+      //   sizes: [""],
+      //   colors: [
+      //     {
+      //       imgSrc: "fancy bucket/1 lt. Bucket Fancy with cover.jpg",
+      //       className: "bright-green-swatch",
+      //     },
+      //   ],
+      // },
       {
         id: 4,
         name: "Open bucket",
@@ -1326,7 +1293,7 @@ export const products = {
       {
         id: 7,
         name: "Strainer",
-        sizes: ["S", "L"],
+        sizes: ["Mini", "Small", "Big"],
         colors: [
           {
             imgSrc: "strainer/img-20250612-wa0012--web.png",
@@ -1358,7 +1325,7 @@ export const products = {
       {
         id: 1,
         name: "Cooler",
-        sizes: ["1L"],
+        sizes: ["1L", "2L", "3L", "5L", "8L", "10L"],
         colors: [
           {
             imgSrc: "coolers0.png",
@@ -1417,7 +1384,7 @@ export const products = {
       {
         id: 1,
         name: "Drum",
-        sizes: ["30L", "40L", "50L"],
+        sizes: ["30L", "40L", "50L", "60L"],
         colors: [
           {
             imgSrc: "img-20240319-151615--web.png",
@@ -1781,6 +1748,221 @@ export const products = {
       },
     ],
   },
+  tanks: {
+    description:
+      "Durable and flexible plastic racks perfect for efficient storage and organisation in any setting.",
+    items: [
+      {
+        id: 1,
+        name: "Abidjan",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "abidjan--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Accra",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "accra--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Beijing",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "beijing--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Boston",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "boston--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Capetown",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "capetown--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Delhi",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "delhi--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Dubai",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "dubai--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Durban",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "durban--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: "Fish tanks",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fish-tanks--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 10,
+        name: "Lic chedus",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "lic-chedus--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 11,
+        name: "Mossco hammer",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mossco-hammer--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 12,
+        name: "Mumbai",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "mumbai--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 13,
+        name: "Nairobi",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "nairobi--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 14,
+        name: "Paris",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "paris--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 15,
+        name: "Shanghai",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "shanghai--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 16,
+        name: "Skeltorn",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "skeltorn--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 17,
+        name: "Sultan",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "sultan--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 18,
+        name: "Sydney",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "sydney--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 19,
+        name: "Uzokas",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "uzokas--web.png",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+    ],
+  },
   takeAwayContainers: {
     description:
       "Eco-friendly food packaging solutions. Microwave-safe containers with leak-proof designs.",
@@ -1821,7 +2003,7 @@ export const products = {
       {
         id: 4,
         name: "Tamper-proof container",
-        sizes: ["125ml", "250ml", "330ml", "500ml"],
+        sizes: ["150ml", "250ml", "330ml", "500ml"],
         colors: [
           {
             imgSrc: "tamper proof/img-20250611-wa0007--web.png",
@@ -1863,17 +2045,6 @@ export const products = {
         colors: [
           {
             imgSrc: "takeaway/img-20250612-wa0213--web.png",
-            className: "clear-swatch",
-          },
-        ],
-      },
-      {
-        id: 8,
-        name: "Custard",
-        sizes: ["1L"],
-        colors: [
-          {
-            imgSrc: "custard/1l-custard--web--ps.png",
             className: "clear-swatch",
           },
         ],

@@ -18,6 +18,7 @@ const categoryOptions = [
   { value: "mugsAndCups", label: "Mugs & Cups" },
   { value: "racks", label: "Racks" },
   { value: "takeAwayContainers", label: "Take Away Containers" },
+  { value: "tanks", label: "Tanks" },
   { value: "toys", label: "Toys" },
 ];
 
