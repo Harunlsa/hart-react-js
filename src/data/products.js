@@ -1533,7 +1533,7 @@ export const products = {
       {
         id: 1,
         name: "Chinese mug",
-        sizes: ["100ml", "250ml", "400ml", "700ml"],
+        sizes: ["250ml", "400ml", "700ml", "1000ml"],
         colors: [
           {
             imgSrc: "chinese mug/mug0--web.png",
@@ -1555,12 +1555,12 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "baby shai/mug36--web.png",
-            className: "bright-green-swatch inner-shadow-dark",
-          },
-          {
             imgSrc: "baby shai/mug25--web.png",
             className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "baby shai/mug36--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
           },
           {
             imgSrc: "baby shai/img-20250612-wa0164--web.png",
@@ -1574,7 +1574,7 @@ export const products = {
       },
       {
         id: 3,
-        name: "Best cup",
+        name: "Benz cup",
         sizes: [],
         colors: [
           {
@@ -1589,7 +1589,7 @@ export const products = {
       },
       {
         id: 4,
-        name: "Woven cup",
+        name: "Weaving cup",
         sizes: [],
         colors: [
           {
@@ -1631,15 +1631,22 @@ export const products = {
       {
         id: 7,
         name: "Joyo mug",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["950ml"],
+        colors: [
+          {
+            imgSrc: "joyo mug/joyo-mug--web.png",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+        ],
+      },
+      {
+        id: 37,
+        name: "Prince mug",
+        sizes: ["250ml", "400ml", "600ml", "950ml"],
         colors: [
           {
             imgSrc: "joyo mug/mug14--web.png",
             className: "light-blue-swatch inner-shadow-dark",
-          },
-          {
-            imgSrc: "joyo mug/joyo-mug--web.png",
-            className: "bright-green-swatch inner-shadow-dark",
           },
           {
             imgSrc: "joyo mug/mug11--web.png",

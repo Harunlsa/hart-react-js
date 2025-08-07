@@ -178,6 +178,7 @@ const productCategories = [
       { name: "Drums", path: "/products/drums" },
       { name: "Mugs & Cups", path: "/products/mugsAndCups" },
       { name: "Racks", path: "/products/racks" },
+      { name: "Take Away Containers", path: "/products/takeAwayContainers" },
     ],
   },
   {
