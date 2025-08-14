@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
@@ -33,7 +32,7 @@ const HeroSection = () => {
       description:
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
       imgSrc: "/assets/images/product-groups/coolersGroup.png",
-      color: "#914391",
+      color: "#BB99FF",
       link: "products/coolers",
       // minWidth: "80%",
     },
@@ -56,6 +55,18 @@ const HeroSection = () => {
         "Safe and sturdy jerry cans for transporting liquids, available in various sizes to suit your needs.",
       imgSrc: "/assets/images/product-groups/jerryCansGroup.png",
       color: "#ffff00",
+
+      link: "products/jerryCans",
+      // minWidth: "70%",
+    },
+    {
+      background: "/assets/images/hero-bg/bg-hero-purple.png",
+      title: "Reliable and Sturdy ",
+      highlight: "Tanks",
+      description:
+        "Engineered for strength and longevity, our tanks provide dependable storage solutions for water and other liquids in any environment.",
+      imgSrc: "/assets/images/product-groups/tanksGroup.png",
+      color: "#393743",
 
       link: "products/jerryCans",
       // minWidth: "70%",

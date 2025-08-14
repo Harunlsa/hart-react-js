@@ -1366,12 +1366,12 @@ export const products = {
         sizes: ["S", "L"],
         colors: [
           {
-            imgSrc: "water bottle/IMG-20250612-WA0200.jpg",
-            className: "purple-swatch inner-shadow-light",
-          },
-          {
             imgSrc: "water bottle/water botte big.jpg",
             className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "water bottle/IMG-20250612-WA0200.jpg",
+            className: "purple-swatch inner-shadow-light",
           },
         ],
       },
@@ -1409,6 +1409,17 @@ export const products = {
         colors: [
           {
             imgSrc: "img-20250611-wa0042--web.png",
+            className: "white-swatch",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Ice cream spoon",
+        sizes: [""],
+        colors: [
+          {
+            imgSrc: "ice cream spoon/ice-cream-spoon--web.png",
             className: "white-swatch",
           },
         ],
@@ -1757,7 +1768,7 @@ export const products = {
   },
   tanks: {
     description:
-      "Durable and flexible plastic racks perfect for efficient storage and organisation in any setting.",
+      "Engineered for strength, our plastic tanks deliver reliable storage for water and other liquids in any setting.",
     items: [
       {
         id: 1,

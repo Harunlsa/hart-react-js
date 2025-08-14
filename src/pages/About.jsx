@@ -87,7 +87,7 @@ const About = () => {
           </AboutText>
           <Col lg={6}>
             <AboutImageContainer>
-              <img src="\assets\images\recycling.png" alt="abt1" />
+              <img src="\assets\images\plasticPellets.jpg" alt="abt1" />
             </AboutImageContainer>
           </Col>
         </Row>

@@ -232,6 +232,7 @@ const SlideText = styled.div`
 const SlideImage = styled.img`
   slide.highlight == "Coolers" ? margin-top: 10px : 500px;
   max-height: 35vh;
+  max-width: 85%;
   @media (min-width: 1024px) {
     max-height: 50vh;
   }
@@ -245,85 +246,7 @@ const SlideImage = styled.img`
     padding-right: 10px;
   }
 `;
-// const SlideContent = styled.div`
-//   max-width: calc(100vw * 0.5);
-//   padding-left: 12%;
-//   color: #fff;
 
-//   h1 {
-//     font-size: 52px;
-//     letter-spacing: 2px;
-//     font-weight: 700;
-//     font-family: "Syne", sans-serif;
-//     margin-bottom: 20px;
-//   }
-
-//   p {
-//     font-size: 1.5rem;
-//     margin-bottom: 30px;
-//   }
-
-//   @media (max-width: 768px) {
-//     // height: 100vh;
-//     // padding-top: 15px;
-
-//     h1 {
-//       font-size: 2px;
-//       letter-spacing: 1px;
-//     }
-
-//   }
-//   @media (max-width: 576px) {
-//     padding: 0;
-//     margin-top: -32px;
-//     text-align: center;
-//     max-width: 100%;
-//     h1 {
-//       font-size: 40px;
-//       letter-spacing: 1px;
-//       line-height: 44px;
-//       margin-bottom: 20px;
-//     }
-
-//     p {
-//       font-size: 1.2rem;
-//       margin-bottom: 30px;
-//     }
-//   .slideImage {
-//     @media (max-width: 768px) {
-//       max-width: 70%;
-//       margin: 0 auto;
-//       height: auto;
-//   }
-//     @media (max-width: 576px) {
-//       max-width: 100%;
-//       margin: 0;
-//       height: auto;
-//   }}
-//   // .slideImage {
-//   //   @media (max-width: 576px) {
-//   //     max-width: 100%;
-//   //     margin: 0;
-//   //     height: auto;
-//   // }
-
-//   @media (max-width: 480px) {
-
-//   }
-// `;
-
-// const SlideText = styled.div`
-//   h1 {
-//     font-size: 3.4rem;
-//     line-height: 4rem;
-//     letter-spacing: 1.5px;
-//     margin-bottom: 20px;
-//   }
-//   p {
-//     font-size: 1.5rem;
-//     margin-bottom: 30px;
-//   }
-// `;
 const MobileSlideButton = styled.div`
   // margin-left: 100px;
   // color: red;
@@ -360,26 +283,6 @@ const MobileSlideButton = styled.div`
     }
   }
 `;
-
-// const SlideImage = styled.img`
-//   width: 30vw;
-//   height: auto;
-
-//   @media (max-width: 768px) {
-//     width: 70%;
-//     margin: 0 auto;
-//   }
-
-//   @media (max-width: 576px) {
-//     // max-height: ${(props) => props.minWidth};
-//     // max-width: 80%;
-//     // height: auto;
-//     // max-height: 25vh;
-//     // width: auto;
-//     padding: 0;
-//     margin-top: 10px;
-//   }
-// `;
 
 const MobileOnlyButton = styled.div`
   display: none;

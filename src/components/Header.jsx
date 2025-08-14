@@ -164,6 +164,30 @@ const NavSection = styled(Nav)`
   }
 `;
 
+const NavDropdownPrimary = styled(NavDropdown)`
+  .dropdown-menu .dropdown-toggle::after {
+    margin-left: 10px;
+    rotate: -90deg;
+  }
+  .dropdown-menu {
+    min-width: 20rem;
+    left: -100px;
+  }
+  .dropdown-item {
+    width: 25%;
+    // border-right: 2px solid red;
+  }
+`;
+
+const NavDropdownSecondary = styled(NavDropdown)`
+  padding-left: 0.5rem;
+  a {
+    margin-left: 0;
+    // padding: auto 16px;
+    // margin-left: 16px;
+  }
+`;
+
 const productCategories = [
   {
     title: "Household",
@@ -195,15 +219,6 @@ const productCategories = [
   },
 ];
 
-const NavDropdownSecondary = styled(NavDropdown)`
-  padding-left: 0.5rem;
-  a {
-    margin-left: 0;
-    // padding: auto 16px;
-    // margin-left: 16px;
-  }
-`;
-
 const Header = () => {
   return (
     <HeaderWrapper sticky="top" expand="lg" className="bg-body-tertiary">
@@ -212,7 +227,7 @@ const Header = () => {
           <img
             alt="Hart Industries Logo"
             src={logo}
-            className="d-inline-block align-top"
+            className="d-inline-lock align-top"
           />
           <h1>Hart Industries Limited</h1>
         </LogoContainer>
@@ -225,7 +240,7 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/about">
               About Us
             </Nav.Link>
-            <NavDropdown title="Products" id="products">
+            <NavDropdownPrimary title="Products" id="products">
               {productCategories.map((category) =>
                 category.items.length > 1 ? (
                   <NavDropdownSecondary
@@ -249,7 +264,7 @@ const Header = () => {
                   </NavDropdown.Item>
                 )
               )}
-            </NavDropdown>
+            </NavDropdownPrimary>
 
             <Nav.Link as={NavLink} to="/contact">
               Contact
