@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { BiMap, BiPhone, BiEnvelope } from "react-icons/bi";
+// import { Container, Row, Col } from "react-bootstrap";
+// import { BiMap, BiPhone, BiEnvelope } from "react-icons/bi";
 import styled from "styled-components";
 import ContactBanner from "../components/Contact/ContactBanner";
 import ContactMap from "../components/Contact/ContactMap";

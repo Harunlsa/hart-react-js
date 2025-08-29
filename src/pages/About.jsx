@@ -87,7 +87,7 @@ const About = () => {
           </AboutText>
           <Col lg={6}>
             <AboutImageContainer>
-              <img src="\assets\images\recycling.png" alt="abt1" />
+              <img src="\assets\images\plasticPellets.jpg" alt="abt1" />
             </AboutImageContainer>
           </Col>
         </Row>
@@ -96,32 +96,64 @@ const About = () => {
   );
 };
 const AboutPageWrapper = styled.section`
-  margin-top: 40px;
   margin-bottom: 100px;
+  margin-top: 28px;
+  text-align: center;
+  // outline: 2px solid red;
+
   h2 {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 32px;
-    // padding-top: 44px;
     span {
       color: #106eea;
     }
+  }
+
+  // /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+    // padding: 50px;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+
+  // /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
 `;
 const AboutContainer = styled.div`
-  height: ${({ isSmallContent }) => (isSmallContent ? "65vh" : "75vh")};
+  min-height: ${({ isSmallContent }) => (isSmallContent ? "65vh" : "75vh")};
+  padding-bottom: 20px;
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    margin-top: 40px;
+  }
 
   // box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 `;
 const AboutText = styled.div`
-  margin-top: ${({ isFullText }) => (isFullText ? "0" : "60px")};
   h1 {
     font-family: "Syne", sans-serif;
     font-weight: bold;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3.4rem;
+
     letter-spacing: -2px;
-    margin-bottom: 1.4rem;
+    // margin-bottom: 1.4rem;
     span {
       color: #106eea;
     }
@@ -137,17 +169,38 @@ const AboutText = styled.div`
     font-size: 1.25rem;
     line-height: 34px;
     letter-spacing: 1.4px;
-    // font-weight: 450;
-    // margin-left: 50px;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    margin-top: ${({ isFullText }) => (isFullText ? "0" : "60px")};
+
+    h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
   }
 `;
 const AboutImageContainer = styled.div`
   width: 100%;
   height: 70vh;
-  // background-color: #eeb390;
-  margin-left: ${({ imageIsLeft }) => (imageIsLeft ? "0" : "2%")};
-  padding-right: ${({ imageIsLeft }) => (imageIsLeft ? "2%" : "0")};
-  // padding-right: 2%;
+
   display: inline-block;
   vertical-align: top;
   margin-top: ${({ isSecond }) => (isSecond ? "60px" : "0")};
@@ -160,6 +213,8 @@ const AboutImageContainer = styled.div`
   &.twoImages {
     width: 45%;
     height: 50vh;
+    margin-left: ${({ imageIsLeft }) => (imageIsLeft ? "0" : "2%")};
+    padding-right: ${({ imageIsLeft }) => (imageIsLeft ? "2%" : "0")};
   }
 `;
 
@@ -170,6 +225,12 @@ const AboutIconContainer = styled.div`
   height: 100%;
   img {
     width: 60%;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    img {
+      width: 30%;
+    }
   }
 `;
 export default About;

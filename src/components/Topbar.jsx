@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const TopBar = styled.section`
+  // width: 100%;
+  // overflow-x: hidden; // scoped only here
+  // position: relative;
   background: #106eea;
   height: 40px;
   font-size: 14px;
@@ -13,7 +16,7 @@ const TopBar = styled.section`
   z-index: 10;
 
   @media (max-width: 375px) {
-    font-size: 12px;
+    font-size: 3.6vw;
   }
   .contact-info {
     display: flex;

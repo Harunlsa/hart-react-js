@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-// import racksGroup from "../../assets/images/hero-bg/bg-hero-blue.png";
-// import racksHeroBg from "../../assets/images/hero-bg/bg-hero-blue.png";
-// import racksGroup from "../../assets/images/product-group/racks-group.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import ActiveSlideContent from "./ActiveSlideContent";
 
 const HeroSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+
   const slides = [
     {
       background: "/assets/images/hero-bg/bg-hero-green.png",
@@ -16,7 +22,7 @@ const HeroSection = () => {
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
       imgSrc: "/assets/images/product-groups/racksGroup.png",
       color: "#bcff33",
-      link: "products/Racks",
+      link: "products/racks",
       // minWidth: "100%",
     },
     {
@@ -25,64 +31,105 @@ const HeroSection = () => {
       highlight: "Coolers",
       description:
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
-      imgSrc: "/assets/images/product-groups/coolers6.png",
-      color: "#914391",
-      link: "products/Coolers",
-      minWidth: "80%",
+      imgSrc: "/assets/images/product-groups/coolersGroup.png",
+      color: "#BB99FF",
+      link: "products/coolers",
+      // minWidth: "80%",
+    },
+    {
+      background: "/assets/images/hero-bg/bg-hero-orange.png",
+      title: "Durable and Stylish ",
+      highlight: "Bowls",
+      description:
+        "Perfect for everyday use, our plastic bowls offer a blend of durability and modern design.",
+      imgSrc: "/assets/images/product-groups/bowlsGroup.png",
+      color: "#C2690F",
+      link: "products/bowls",
+      // minWidth: "90%",
+    },
+    {
+      background: "/assets/images/hero-bg/bg-hero-yellow.png",
+      title: "High-Quality ",
+      highlight: "Jerry Cans",
+      description:
+        "Safe and sturdy jerry cans for transporting liquids, available in various sizes to suit your needs.",
+      imgSrc: "/assets/images/product-groups/jerryCansGroup.png",
+      color: "#ffff00",
+
+      link: "products/jerryCans",
+      // minWidth: "70%",
+    },
+    {
+      background: "/assets/images/hero-bg/bg-hero-purple.png",
+      title: "Reliable and Sturdy ",
+      highlight: "Tanks",
+      description:
+        "Engineered for strength and longevity, our tanks provide dependable storage solutions for water and other liquids in any environment.",
+      imgSrc: "/assets/images/product-groups/tanksGroup.png",
+      color: "#393743",
+
+      link: "products/jerryCans",
+      // minWidth: "70%",
     },
   ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
+  const swiperRef = useState(null);
   return (
-    <HeroWrapper>
-      <div className="hero-slider">
+    <HeroWrapper
+      onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+      onMouseLeave={() => swiperRef.current?.autoplay?.start()}
+    >
+      <Swiper
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        modules={[Navigation, Pagination, Autoplay]}
+        // virtualTranslate={false}
+        // speed={0}
+        loop={true}
+        onSlideChange={(swiper) => {
+          setActiveIndex(swiper.realIndex);
+        }}
+        onInit={(swiper) => {
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+        onMouseLeave={() => swiperRef.current?.autoplay?.start()}
+        // modules={[Navigation, Autoplay, EffectFade, Pagination]}
+        navigation={{
+          prevEl: navigationPrevRef.current,
+          nextEl: navigationNextRef.current,
+        }}
+        pagination={{
+          clickable: true,
+          // type: "progressbar",
+          dynamicBullets: true,
+        }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        className="hero-swiper"
+      >
         {slides.map((slide, index) => (
-          <Slide
+          <SwiperSlide
             key={index}
-            active={index === currentSlide}
-            bg={slide.background}
+            virtualIndex={index}
+            onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+            onMouseLeave={() => swiperRef.current?.autoplay?.start()}
           >
-            <Container fluid>
-              <Row className="align-items-center">
-                <Col md={7}>
-                  <SlideContent>
-                    <h1>
-                      {slide.title}
-                      <span style={{ color: slide.color }}>
-                        {slide.highlight}
-                      </span>
-                    </h1>
-                    <p>{slide.description}</p>
-                    <Button as={Link} to={slide.link}>
-                      View More
-                    </Button>
-                  </SlideContent>
-                </Col>
-                <Col md={5} className="text-center slideImage">
-                  <SlideImage
-                    src={slide.imgSrc}
-                    alt={slide.highlight}
-                    minWidth={slide.minWidth}
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </Slide>
+            <Slide bg={slide.background}>
+              {index === activeIndex && <ActiveSlideContent slide={slide} />}
+            </Slide>
+          </SwiperSlide>
         ))}
-        <ControlButton onClick={prevSlide} left>
-          &#x2190;
-        </ControlButton>
-        <ControlButton onClick={nextSlide}>&#x2192;</ControlButton>
-      </div>
+
+        {/* Navigation buttons */}
+        <NavButton ref={navigationPrevRef} className="swiper-button-prev" />
+        <NavButton ref={navigationNextRef} className="swiper-button-next" />
+      </Swiper>
     </HeroWrapper>
   );
 };
@@ -90,149 +137,122 @@ const HeroSection = () => {
 export default HeroSection;
 
 const HeroWrapper = styled.section`
-  width: 100vw;
+  width: 100%;
+  position: relative;
   height: 75vh;
   overflow: hidden;
   position: relative;
-  transition: transform 0.8s cubic-bezier(0.22, 1.61, 0.36, 1);
   padding: 0;
   margin: 0;
-  @media (min-width: 1024px) {
+
+  .row > * {
+    padding: 0;
+  }
+
+  .hero-swiper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    bottom: 20px;
+    // padding: 18px;
+
+    &-bullet {
+      width: 18px;
+      height: 18px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 1;
+
+      &-active {
+        background: #fff;
+        transform: scale(1.2);
+      }
+    }
+  }
+  @media (min-width: 600px) and (orientation: portrait) {
+    height: 75vh;
+  }
+  @media (min-width: 1024px) and (orientation: landscape) {
     background-attachment: fixed;
   }
-  @media (max-width: 768px) {
-    height: 100vh;
-    // margin-top: -10px;
-  }
-  @media (max-width: 576px) {
-    // height: auto;
-    // margin-top: -100px;
-  }
+
+  // @media (max-width: 768px) {
+  //   height: 75vh;
+  // }
+
+  // @media (max-width: 576px) {
+  //   height: 75vh;
+  // }
 `;
 
-const Slide = styled(Container)`
-  min-width: 100vw;
-  height: 75vh;
+const Slide = styled.div`
+  width: 100%;
+  height: 100%;
   background: url(${(props) => props.bg}) center/cover no-repeat;
   background-size: cover;
   background-position: center;
-  display: ${(props) => (props.active ? "flex" : "none")};
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  font-size: 3rem;
-  transition: transform 0.8s ease-in-out;
-  padding: 0 6%;
+  justify-content: center;
+  // padding: 0 6%;
+
   @media (max-width: 576px) {
     padding: 0;
   }
 `;
 
-const SlideContent = styled.div`
-  max-width: calc(100vw * 0.5);
-  padding: 0 12px;
+// const SlideImage = styled.img`
+//   max-width: ${(props) => props.minWidth || "100%"};
+//   height: auto;
+//   // padding-left: 10%;
 
-  h1 {
-    font-size: 56px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    line-height: 56px;
-    font-family: "Syne", sans-serif;
-    margin-bottom: 20px;
-  }
+//   @media (max-width: 768px) {
+//     max-width: 70%;
+//     margin: 0 auto;
+//   }
 
-  p {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-  }
-
-  a {
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #f04f47;
-    border: none;
-    transition: background-color 0.5s;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    @media (max-width: 768px) {
-      margin-bottom: 15px;
-    }
-  }
-
-  a:hover {
-    background-color: #c03d38;
-    font-size: scale(2);
-  }
-  @media (max-width: 768px) {
-    // height: 100vh;
-    padding-top: 15px;
-  }
-  @media (max-width: 576px) {
-    padding: 0;
-    margin-top: -32px;
-    text-align: center;
-    max-width: 100%;
-    h1 {
-      font-size: 40px;
-      letter-spacing: 1px;
-      line-height: 44px;
-      margin-bottom: 20px;
-    } 
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-  .slideImage {
-    @media (max-width: 768px) {
-      max-width: 70%;
-      margin: 0 auto;
-      height: auto;
-  }}
-  .slideImage {
-    @media (max-width: 576px) {
-      max-width: 100%;
-      margin: 0;
-      height: auto;
-  }}
-`;
-
-const SlideImage = styled.img`
-  max-width: ${(props) => props.minWidth || "100%"};
-  height: auto;
-  padding-left: 10%;
-  @media (max-width: 768px) {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-  @media (max-width: 576px) {
-    max-width: 80%;
-    height: auto;
-    padding: 0;
-    margin-top: 20px;
-  }
-`;
-
-const ControlButton = styled.button`
+//   @media (max-width: 576px) {
+//     max-width: 80%;
+//     height: auto;
+//     padding: 0;
+//     margin-top: 20px;
+//   }
+// `;
+const NavButton = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  ${(props) => (props.left ? "left: 1rem;" : "right: 1rem;")}
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.5);
-  border: none;
   width: 50px;
   height: 50px;
+  // background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
   cursor: pointer;
   font-size: 24px;
   border-radius: 0.25rem;
   transition: background 0.3s;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &:hover {
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
+  &.swiper-button-prev {
+    left: 1rem;
+  }
+
+  &.swiper-button-next {
+    right: 1rem;
+  }
+
+  // &:hover {
+  //   background: rgba(0, 0, 0, 0.2);
+  //   color: white;
+  // }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
 `;

@@ -1,5 +1,12 @@
-import ProductPageLayout from '../../components/ProductPageLayout';
+import ProductPageLayout from "../../components/ProductPageLayout";
 
- import { products } from '../../data/products';const Buckets = () => <ProductPageLayout categoryName='Buckets' bannerImage='buckets-group.png' products={products.buckets}/>;
+import { products } from "../../data/products";
+const Buckets = () => (
+  <ProductPageLayout
+    categoryName="Buckets"
+    bannerImage="buckets-group.png"
+    products={products.buckets}
+  />
+);
 
-export default Buckets
+export default Buckets;

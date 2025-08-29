@@ -20,13 +20,14 @@ const ClientsSection = () => {
 
   return (
     <Section>
+      {/* <ClientsHeading>Technology Partners</ClientsHeading> */}
       <Container>
         <Swiper
           ref={swiperRef}
           modules={[Autoplay, Pagination]}
           loop={true}
           speed={600}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 2000 }}
           slidesPerView="auto"
           // pagination={{ clickable: true }}
           breakpoints={{
@@ -66,19 +67,22 @@ const ClientsSection = () => {
 
 // Styled Components
 const Section = styled.section`
-  padding: 60px 0;
+  padding: 40px 0;
   background-color: #f1f6fe;
   .swiper-wrapper {
     align-items: center;
   }
+  margin-bottom: 60px;
 `;
 
-// const Container = styled.div`
-//   max-width: 1140px;
-//   margin: 0 auto;
-//   padding: 0 15px;
+// const ClientsHeading = styled.h4`
+//   text-align: center;
+//   margin-top: -25px;
+//   margin-bottom: 10px;
+//   font-size: 1rem;
+//   font-weight: 900;
+//   // padding: 0;
 // `;
-
 const ClientImage = styled.img`
   max-width: 116px;
   height: auto;

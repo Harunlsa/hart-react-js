@@ -1,5 +1,13 @@
-import ProductPageLayout from '../../components/ProductPageLayout';
+import ProductPageLayout from "../../components/ProductPageLayout";
 
- import { products } from '../../data/products';const Racks = () => <ProductPageLayout categoryName='Racks' bannerImage='racks-group.png' products={products.racks}/>;
+import { products } from "../../data/products";
 
-export default Racks
+const Racks = () => (
+  <ProductPageLayout
+    categoryName="Racks"
+    bannerImage="racks-group.png"
+    products={products.racks}
+  />
+);
+
+export default Racks;

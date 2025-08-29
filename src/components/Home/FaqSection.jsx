@@ -8,31 +8,37 @@ const faqData = [
     id: "faq1",
     question: "What quality control measures do you have in place?",
     answer:
-      "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.",
+      "We have rigorous quality control measures to ensure that all our products meet industry standards and customer expectations.",
   },
   {
     id: "faq2",
     question: "How can I request a quote for your products or services?",
     answer:
-      "Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.",
+      "You can contact our sales team directly at sales@hart-industries.com or call +234 902 083 8258 to discuss ",
   },
   {
     id: "faq3",
-    question: "Do you ship internationally? ",
+    question: "Do you deliver outside Kano?",
     answer:
-      "Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.",
+      "Yes, we deliver across Nigeria and also work with logistics partners to fulfil regional orders.",
   },
   {
     id: "faq4",
-    question: "How long does it take to receive an order? ",
+    question: "Do you supply to businesses or just individuals?",
     answer:
-      "Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.",
+      "We serve both. Our clients range from individual customers to major companies and distributors across Nigeria and beyond.",
   },
   {
     id: "faq5",
-    question: "Do you offer discounts for bulk orders?",
+    question: " Do your products meet regulatory and quality standards?",
     answer:
-      "Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.",
+      "Yes. Our products comply with Nigerian Industrial Standards (NIS) and are certified under SON MANCAP. We are also ISO 9001:2015 and ISO 22000:2018 certified.",
+  },
+  {
+    id: "faq6",
+    question: "Can I request custom-designed plastic products?",
+    answer:
+      "Yes, we offer custom design and moulding services to meet your specific needs and applications.",
   },
 ];
 

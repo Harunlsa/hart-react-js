@@ -5,7 +5,7 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { products } from "../data/products";
 
 const categoryOptions = [
-  { value: "babySets", label: "Baby Sets" },
+  { value: "babyCare", label: "Baby Care" },
   { value: "basins", label: "Basins" },
   { value: "baskets", label: "Baskets" },
   { value: "bowls", label: "Bowls" },
@@ -18,6 +18,7 @@ const categoryOptions = [
   { value: "mugsAndCups", label: "Mugs & Cups" },
   { value: "racks", label: "Racks" },
   { value: "takeAwayContainers", label: "Take Away Containers" },
+  { value: "tanks", label: "Tanks" },
   { value: "toys", label: "Toys" },
 ];
 
@@ -28,6 +29,7 @@ const ProductPageLayout = () => {
 
   /// Find current category data
   const currentCategory = categoryOptions.find((opt) => opt.value === category);
+  // console.log("currentCategory", currentCategory);
 
   // Find products for current category
   const categoryProducts = currentCategory
@@ -103,39 +105,126 @@ const ProductPageLayout = () => {
 const PageWrapper = styled.div`
   background-color: #f9f9f9;
 
-  .form-select {
-    max-width: 200px;
+  nav ol{
+    align-items: center;
+    // justify-content: center;
+    margin: auto 0;
+  
   }
+
+  .form-select {
+    max-width: 150px;
+    @media (min-width: 600px) {
+      max-width: 200px;
+      
+      
+    }
 `;
 
 const Banner = styled.section`
-  height: 326px;
   background: url(${(props) => props.bgImage}) no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
-
-  // padding: 60px 0;
+  overflow: hidden;
+  // padding-top: 180px;
+  height: 60vh;
+  text-align: center;
+  color: #ffffff;
 
   h1 {
-    font-size: 4rem;
+    font-size: 13vw;
+    font-weight: 600;
     font-family: "Syne", sans-serif;
-    color: #ffffff;
+    // margin-top: 10vh;
   }
 
   p {
-    color: white;
-    font-size: 1.2rem;
+    font-size: 5vw;
+    // line-height: 8vw;
+    // font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 426px) {
+    // height: 326px;
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) and (orientation: landscape) {
+  }
+
+  @media (min-width: 768px) {
+    height: 326px;
+    text-align: left;
+    // h1 {
+    //   font-size:
+    // }
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 3.4rem;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3.6rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+    }
   }
 `;
 
 const BannerImage = styled.img`
-  max-height: 300px;
-  width: auto;
-  padding-left: 10%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-height: 25vh;
+  max-width: 90vw;
+  margin: 25px auto;
+  align-items: center;
+
+  @media (min-width: 426px) {
+    max-height: 300px;
+    width: auto;
+    display: block;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) {
+    max-width: 40vw;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    padding-left: 10%;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
 `;
 
 const FilterSection = styled.section`
