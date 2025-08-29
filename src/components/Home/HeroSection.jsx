@@ -108,7 +108,7 @@ const HeroSection = () => {
           dynamicBullets: true,
         }}
         autoplay={{
-          delay: 5000000000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         className="hero-swiper"

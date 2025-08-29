@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+// import MegaMenu from "./components/MegaMenu";
 import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
 import ProductPageLayout from "./components/ProductPageLayout";
@@ -15,6 +16,7 @@ function App() {
     <>
       <Topbar />
       <Header />
+      {/* <MegaMenu /> */}
       <Routes>
         {/* Main pages */}
         <Route

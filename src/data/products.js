@@ -1408,7 +1408,7 @@ export const products = {
         sizes: ["500ml", "650ml"],
         colors: [
           {
-            imgSrc: "img-20250611-wa0042--web.png",
+            imgSrc: "img-20250611-wa0029--web.png",
             className: "white-swatch",
           },
         ],
@@ -1421,6 +1421,32 @@ export const products = {
           {
             imgSrc: "ice cream spoon/ice-cream-spoon--web.png",
             className: "white-swatch",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Tamper-proof container round",
+        sizes: ["330ml", "500ml"],
+        colors: [
+          {
+            imgSrc: "tac16.png",
+            className: "white-swatch",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Tamper-proof Industrial container",
+        sizes: ["150ml", "250ml", "330ml", "500ml"],
+        colors: [
+          {
+            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.png",
+            className: "white-swatch",
+          },
+          {
+            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.png",
+            className: "clear-swatch",
           },
         ],
       },
@@ -1585,7 +1611,7 @@ export const products = {
       },
       {
         id: 3,
-        name: "Benz cup",
+        name: "Best cup",
         sizes: [],
         colors: [
           {
@@ -1998,33 +2024,34 @@ export const products = {
       },
       {
         id: 2,
-        name: "Ketchup container round",
-        sizes: [""],
+        name: "Tamper-proof container round",
+        sizes: ["330ml", "500ml"],
         colors: [
           {
-            imgSrc: "ketchup container/ketchup-container--web.png",
-            className: "clear-swatch",
+            imgSrc: "takeaway/tac16.png",
+            className: "white-swatch",
           },
         ],
       },
       {
         id: 3,
-        name: "Ketchup container square",
+        name: "Ketchup container",
         sizes: [""],
         colors: [
           {
-            imgSrc: "ketchup container/img-20250612-wa0124--web.png",
+            imgSrc: "ketchup container/img-20250612-wa0117--web.png",
             className: "clear-swatch",
           },
         ],
       },
       {
         id: 4,
-        name: "Tamper-proof container",
+        name: "Tamper-proof Industrial container",
         sizes: ["150ml", "250ml", "330ml", "500ml"],
         colors: [
           {
-            imgSrc: "tamper proof/img-20250611-wa0007--web.png",
+            imgSrc:
+              "tamper proof/tamper-proof-containers-500-330-250-125ml--web.png",
             className: "white-swatch",
           },
           {
@@ -2038,16 +2065,19 @@ export const products = {
         name: "Square container",
         sizes: ["500ml", "650ml", "750ml", "100ml"],
         colors: [
-          { imgSrc: "square/500ml-square--web.png", className: "clear-swatch" },
+          {
+            imgSrc: "square/img-20250612-wa0108--web.png",
+            className: "clear-swatch",
+          },
         ],
       },
       {
         id: 6,
-        name: "Take away container",
+        name: "Take away container round",
         sizes: ["100ml", "125ml", "150ml", "350ml", "500ml"],
         colors: [
           {
-            imgSrc: "takeaway/350-take--web--ps.png",
+            imgSrc: "takeaway/500-350-150-125-100ml-take-away--web.png",
             className: "clear-swatch",
           },
           {
@@ -2059,10 +2089,21 @@ export const products = {
       {
         id: 7,
         name: "Take away container",
-        sizes: ["100ml", "125ml", "150ml"],
+        sizes: ["350ml"],
         colors: [
           {
             imgSrc: "takeaway/img-20250612-wa0213--web.png",
+            className: "clear-swatch",
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "Rectangular takeaway container",
+        sizes: ["650ml", "1000ml"],
+        colors: [
+          {
+            imgSrc: "img-20250611-wa0034--web.png",
             className: "clear-swatch",
           },
         ],

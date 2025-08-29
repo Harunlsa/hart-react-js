@@ -1,0 +1,471 @@
+{
+  "basins": {
+    "description": "Durable multi-purpose basins perfect for household and industrial use. Made from sturdy materials to withstand daily wear and tear.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Benz basin",
+        "sizes": ["13L", "18L"],
+        "colors": [
+          {
+            "imgSrc": "benz basin/benz-basin-13-ltrs--web.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "benz basin/benz-basin-18-ltrs--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "benz basin/benz-basin-18l--web.png",
+            "className": "orange-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "benz basin/basin17.png",
+            "className": "blue-swatch inner-shadow-dark"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sunny basin",
+        "sizes": ["Small", "Big"],
+        "colors": [
+          {
+            "imgSrc": "big-sunny-basin.--web.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Butterfly basin",
+        "sizes": ["11L", "16L", "18", "28L"],
+        "colors": [
+          {
+            "imgSrc": "butterfly basin/butterfly-basin-16-ltrs--web.png",
+            "className": "pink-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "butterfly basin/butterfly-basin-6--web.png",
+            "className": "black-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "butterfly basin/butterfly-6-basin--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Chinese basin",
+        "sizes": ["9L", "14L", "20L", "40L", "60L"],
+        "colors": [
+          {
+            "imgSrc": "chinese basin/chinese-basin-20-ltrs--web.png",
+            "className": "blue-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "chinese basin/chinese-basin-9l--web.png",
+            "className": "brown-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "chinese basin/chinese-basin-40--web.png",
+            "className": "black-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Cute basin",
+        "sizes": ["9L"],
+        "colors": [
+          {
+            "imgSrc": "cute basin/cute-basin-9-ltrs--web.png",
+            "className": "pink-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Diamond basin",
+        "sizes": ["7L", "9L", "11L"],
+        "colors": [
+          {
+            "imgSrc": "diamond basin/diamond-basin-9-lt--web.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "diamond basin/basin5.png",
+            "className": "purple-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "diamond basin/diamond-basin-7-lt--web.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "diamond basin/diamond-basin--web.png",
+            "className": "orange-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Dolphin basin",
+        "sizes": ["9L", "14L", "20L", "32L", "40L", "50L", "60L"],
+        "colors": [
+          {
+            "imgSrc": "dolphin basin/dolphin-basin-9-ltrs--web.png",
+            "className": "orange-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "dolphin basin/dolphin-basin-32-ltrs--web.png",
+            "className": "blue-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "dolphin basin/dolphin-basin-60-ltrs--web.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "dolphin basin/basin15.png",
+            "className": "dark-blue-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "dolphin basin/basin25.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "dolphin basin/dolphin-junior.--web.png",
+            "className": "pink-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Eagle basin",
+        "sizes": ["16L", "60L", "80L"],
+        "colors": [
+          {
+            "imgSrc": "eagle basin/eagle-basin-16-ltr--web.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "eagle basin/eagle-basi-60l--web.png",
+            "className": "brown-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "eagle basin/eagle-basin-60-ltr--web.png",
+            "className": "olive-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Elephant basin",
+        "sizes": ["25L"],
+        "colors": [
+          {
+            "imgSrc": "elephant basin/elephant-basin-25-ltr--web.png",
+            "className": "orange-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Emeka basin",
+        "sizes": ["9L"],
+        "colors": [
+          {
+            "imgSrc": "emeka basin/emeka-basin-9-ltr--web.png",
+            "className": "black-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Fura basin",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "fura basin/fura-basin--web.png",
+            "className": "orange-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "fura basin/fura-basin-p--web.png",
+            "className": "pink-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Hot cake basin",
+        "sizes": ["5L", "7L", "11L", "14L"],
+        "colors": [
+          {
+            "imgSrc": "hot cake basin/hot-cake-basin-9l--web.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "hot cake basin/hot-cake-basin-14-ltr--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Johny basin",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "johnny basin/johny-basin.--web.png",
+            "className": "bright-green-swatch inner-shadow-dark"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Kano basin",
+        "sizes": ["16L"],
+        "colors": [
+          {
+            "imgSrc": "kano basin/kano-basin-16-ltrs-kampala--web.png",
+            "className": "bright-green-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "kano basin/kano-basin-16--web.png",
+            "className": "black-swatch inner-shadow-dark"
+          }
+        ]
+      },
+
+      {
+        "id": 20,
+        "name": "National basin",
+        "sizes": ["12L", "22L"],
+        "colors": [
+          {
+            "imgSrc": "national basin/national-basin-12-ltr.--web.png",
+            "className": "blue-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "national basin/national-basin-22-ltr--web.png",
+            "className": "black-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "national basin/bowl66.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Princess basin",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "princess basin/princess-basin-kampala--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "princess basin/princess-basin--web.png",
+            "className": "black-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Rose basin",
+        "sizes": ["7L"],
+        "colors": [
+          {
+            "imgSrc": "rose basin/rose-basin-7-ltr--web.png",
+            "className": "black-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Round basin dansy",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "round basin dansy/round-basin-dansy.--web.png",
+            "className": "orange-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "round basin dansy/bowl56.png",
+            "className": "brown-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Round basin fancy",
+        "sizes": ["20L"],
+        "colors": [
+          {
+            "imgSrc": "round basin fancy/round-basin-fancy-20-ltrs--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Saminu basin",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "saminu basin/saminu-basin--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "saminu basin/saminu-basin-g--web.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Square basin",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "square basin/square-basin--web.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "square basin/sb.png",
+            "className": "bright-green-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Stripe basin",
+        "sizes": ["10L"],
+        "colors": [
+          {
+            "imgSrc": "stripe basin/stripe-basin-10-ltr--web.png",
+            "className": "purple-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "stripe basin/stripe-basin-10l--web.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Super fine basin",
+        "sizes": [],
+        "colors": [
+          {
+            "imgSrc": "super fine basin/super-fine-basin.--web.png",
+            "className": "turquoise-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "super fine basin/basin7.png",
+            "className": "pink-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Superstar basin",
+        "sizes": ["7L", "12L"],
+        "colors": [
+          {
+            "imgSrc": "superstar basin/super-star-basin-7-ltr--web.png",
+            "className": "dull-green-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "superstar basin/super-star-basin-12-ltrs--web.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Tiger basin",
+        "sizes": ["5L", "13L", "14L", "40L"],
+        "colors": [
+          {
+            "imgSrc": "tiger basin/tiger-basin-5-ltr-kampala--web.png",
+            "className": "bright-green-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "tiger basin/tiger-basin-13ltr-kampala--web.png",
+            "className": "dull-green-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "tiger basin/tiger-basin-14-ltrs-kampala--web.png",
+            "className": "pink-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "tiger basin/tiger-basin-40-ltr-gp--web.png",
+            "className": "black-swatch inner-shadow-light"
+          },
+          {
+            "imgSrc": "tiger basin/tiger-3--web.png",
+            "className": "blue-swatch inner-shadow-light"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Wave basin",
+        "sizes": ["5L", "60L"],
+        "colors": [
+          {
+            "imgSrc": "wave basin/wave-basin-60-ltrs--web.png",
+            "className": "pink-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "wave basin/wave-5l-basin--web.png",
+            "className": "bright-green-swatch inner-shadow-dark"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Combo basin",
+        "sizes": ["14L"],
+        "colors": [
+          {
+            "imgSrc": "combo basin/combo-basin-14-ltr--web.png",
+            "className": "bright-green-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "combo basin/combo-basin-14l--web.png",
+            "className": "dull-green-swatch inner-shadow-dark"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "name": "Fruit basin",
+        "sizes": ["14L"],
+        "colors": [
+          {
+            "imgSrc": "fruit basin/fruit-basin-8l--web.png",
+            "className": "black-swatch inner-shadow-dark"
+          },
+          {
+            "imgSrc": "fruit basin/new-fruit-basin-8-ltr--web.png",
+            "className": "grey-swatch inner-shadow-dark"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "name": "Musa basin",
+        "sizes": ["Small", "Big"],
+        "colors": [
+          {
+            "imgSrc": "musa basin/musa-basin-big--web.png",
+            "className": "dark-blue-swatch inner-shadow-dark"
+          }
+        ]
+      }
+    ]
+  }
+}
