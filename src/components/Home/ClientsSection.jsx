@@ -1,0 +1,104 @@
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import styled from "styled-components";
+import { Container } from "react-bootstrap";
+
+const clients = [
+  "milacron.png",
+  "windsor.png",
+  "haitian.png",
+  "jagmohan.png",
+  "cat.png",
+  "prasad.png",
+  // "cummins.png",
+  "cummins (Custom).png",
+];
+
+const ClientsSection = () => {
+  const swiperRef = useRef(null);
+
+  return (
+    <Section>
+      {/* <ClientsHeading>Technology Partners</ClientsHeading> */}
+      <Container>
+        <Swiper
+          ref={swiperRef}
+          modules={[Autoplay, Pagination]}
+          loop={true}
+          speed={600}
+          autoplay={{ delay: 2000 }}
+          slidesPerView="auto"
+          // pagination={{ clickable: true }}
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 60,
+            },
+            640: {
+              slidesPerView: 4,
+              spaceBetween: 80,
+            },
+            992: {
+              slidesPerView: 6,
+              spaceBetween: 120,
+            },
+          }}
+          className="init-swiper"
+        >
+          {clients.map((client, index) => (
+            <SwiperSlide key={index}>
+              <ClientImage
+                src={`/assets/images/clients/${client}`}
+                alt={`${client.substring(0, client.lastIndexOf("."))}`}
+                className="img-fluid"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Container>
+    </Section>
+  );
+};
+
+// Styled Components
+const Section = styled.section`
+  padding: 40px 0;
+  background-color: #f1f6fe;
+  .swiper-wrapper {
+    align-items: center;
+  }
+  margin-bottom: 60px;
+`;
+
+// const ClientsHeading = styled.h4`
+//   text-align: center;
+//   margin-top: -25px;
+//   margin-bottom: 10px;
+//   font-size: 1rem;
+//   font-weight: 900;
+//   // padding: 0;
+// `;
+const ClientImage = styled.img`
+  max-width: 116px;
+  height: auto;
+  // max-height: 50px;
+  margin-right: 120px;
+  object-fit: contain;
+
+  @media (max-width: 992px) {
+    margin-right: 80px;
+  }
+  @media (max-width: 640px) {
+    margin-right: 60px;
+  }
+  @media (max-width: 480px) {
+    margin-right: 40px;
+  }
+`;
+
+export default ClientsSection;
