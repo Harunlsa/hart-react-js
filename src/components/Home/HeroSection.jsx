@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+// import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
@@ -20,7 +20,9 @@ const HeroSection = () => {
       highlight: "Racks",
       description:
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
-      imgSrc: "/assets/images/product-groups/racksGroup.png",
+      imgSrc: `${
+        import.meta.env.BASE_URL
+      }assets/images/product-groups/racksGroup.png`,
       color: "#bcff33",
       link: "products/racks",
       // minWidth: "100%",
@@ -31,7 +33,9 @@ const HeroSection = () => {
       highlight: "Coolers",
       description:
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
-      imgSrc: "/assets/images/product-groups/coolersGroup.png",
+      imgSrc: `${
+        import.meta.env.BASE_URL
+      }assets/images/product-groups/coolersGroup.png`,
       color: "#BB99FF",
       link: "products/coolers",
       // minWidth: "80%",
@@ -42,7 +46,9 @@ const HeroSection = () => {
       highlight: "Bowls",
       description:
         "Perfect for everyday use, our plastic bowls offer a blend of durability and modern design.",
-      imgSrc: "/assets/images/product-groups/bowlsGroup.png",
+      imgSrc: `${
+        import.meta.env.BASE_URL
+      }assets/images/product-groups/bowlsGroup.png`,
       color: "#C2690F",
       link: "products/bowls",
       // minWidth: "90%",
@@ -53,7 +59,9 @@ const HeroSection = () => {
       highlight: "Jerry Cans",
       description:
         "Safe and sturdy jerry cans for transporting liquids, available in various sizes to suit your needs.",
-      imgSrc: "/assets/images/product-groups/jerryCansGroup.png",
+      imgSrc: `${
+        import.meta.env.BASE_URL
+      }assets/images/product-groups/jerryCansGroup.png`,
       color: "#ffff00",
 
       link: "products/jerryCans",
@@ -65,7 +73,9 @@ const HeroSection = () => {
       highlight: "Tanks",
       description:
         "Engineered for strength and longevity, our tanks provide dependable storage solutions for water and other liquids in any environment.",
-      imgSrc: "/assets/images/product-groups/tanksGroup.png",
+      imgSrc: `${
+        import.meta.env.BASE_URL
+      }assets/images/product-groups/tanksGroup.png`,
       color: "#393743",
 
       link: "products/jerryCans",
@@ -120,7 +130,7 @@ const HeroSection = () => {
             onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
             onMouseLeave={() => swiperRef.current?.autoplay?.start()}
           >
-            <Slide bg={slide.background}>
+            <Slide bg={`${import.meta.env.BASE_URL}${slide.background}`}>
               {index === activeIndex && <ActiveSlideContent slide={slide} />}
             </Slide>
           </SwiperSlide>
