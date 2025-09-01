@@ -17,14 +17,14 @@ const HeroSection = () => {
     {
       background: `${
         import.meta.env.BASE_URL
-      }/assets/images/hero-bg/bg-hero-green.png`,
+      }assets/images/hero-bg/bg-hero-green.png`,
       title: "Organise with Versatile ",
       highlight: "Racks",
       description:
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
       imgSrc: `${
         import.meta.env.BASE_URL
-      }/assets/images/product-groups/racksGroup.png`,
+      }assets/images/product-groups/racksGroup.png`,
       color: "#bcff33",
       link: "products/racks",
       // minWidth: "100%",
@@ -32,7 +32,7 @@ const HeroSection = () => {
     {
       background: `${
         import.meta.env.BASE_URL
-      }/assets/images/hero-bg/bg-hero-blue.png`,
+      }assets/images/hero-bg/bg-hero-blue.png`,
       title: "Efficient and Reliable ",
       highlight: "Coolers",
       description:
@@ -47,14 +47,14 @@ const HeroSection = () => {
     {
       background: `${
         import.meta.env.BASE_URL
-      }/assets/images/hero-bg/bg-hero-orange.png`,
+      }assets/images/hero-bg/bg-hero-orange.png`,
       title: "Durable and Stylish ",
       highlight: "Bowls",
       description:
         "Perfect for everyday use, our plastic bowls offer a blend of durability and modern design.",
       imgSrc: `${
         import.meta.env.BASE_URL
-      }/assets/images/product-groups/bowlsGroup.png`,
+      }assets/images/product-groups/bowlsGroup.png`,
       color: "#C2690F",
       link: "products/bowls",
       // minWidth: "90%",
@@ -62,7 +62,7 @@ const HeroSection = () => {
     {
       background: `${
         import.meta.env.BASE_URL
-      }/assets/images/hero-bg/bg-hero-yellow.png`,
+      }assets/images/hero-bg/bg-hero-yellow.png`,
       title: "High-Quality ",
       highlight: "Jerry Cans",
       description:
@@ -78,14 +78,14 @@ const HeroSection = () => {
     {
       background: `${
         import.meta.env.BASE_URL
-      }/assets/images/hero-bg/bg-hero-purple.png`,
+      }assets/images/hero-bg/bg-hero-purple.png`,
       title: "Reliable and Sturdy ",
       highlight: "Tanks",
       description:
         "Engineered for strength and longevity, our tanks provide dependable storage solutions for water and other liquids in any environment.",
       imgSrc: `${
         import.meta.env.BASE_URL
-      }/assets/images/product-groups/tanksGroup.png`,
+      }assets/images/product-groups/tanksGroup.png`,
       color: "#393743",
 
       link: "products/jerryCans",
