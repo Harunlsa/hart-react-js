@@ -2,7 +2,14 @@ import styled from "styled-components";
 import { Container, Row } from "react-bootstrap";
 
 const ContactBanner = () => (
-  <BannerSection id="contact-banner">
+  <BannerSection
+    id="contact-banner"
+    style={{
+      backgroundImage: `url(${
+        import.meta.env.BASE_URL
+      }/assets/images/contact-banner.png)`,
+    }}
+  >
     <Container>
       <Row className="h-100 align-items-center">
         <BannerContent>
@@ -16,7 +23,7 @@ const ContactBanner = () => (
 
 const BannerSection = styled.section`
   height: 326px;
-  background: url("/assets/images/contact-banner.png");
+  // background: url("/assets/images/contact-banner.png");
   background-size: cover;
   position: relative;
   display: flex;

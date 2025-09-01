@@ -20,12 +20,15 @@ const About = () => {
           </AboutText>
           <Col lg={6}>
             <AboutImageContainer className="twoImages">
-              <img src="/assets/images/abt1.png" alt="abt1" />
+              <img
+                src={`${import.meta.env.BASE_URL}/assets/images/abt1.png`}
+                alt="abt1"
+              />
             </AboutImageContainer>
             <AboutImageContainer isSecond className="twoImages">
               <img
                 className="second"
-                src="/assets/images/abt2.jpg"
+                src={`${import.meta.env.BASE_URL}/assets/images/abt2.jpg`}
                 alt="abt2"
               />
             </AboutImageContainer>
@@ -51,7 +54,10 @@ const About = () => {
           </AboutText>
           <Col lg={3}>
             <AboutIconContainer>
-              <img src="\assets\images\visionIcon.png" alt="abt1" />
+              <img
+                src={`${import.meta.env.BASE_URL}/assets/images/visionIcon.png`}
+                alt="abt1"
+              />
             </AboutIconContainer>
           </Col>
         </Row>
@@ -65,7 +71,12 @@ const About = () => {
           </AboutText>
           <Col lg={3}>
             <AboutIconContainer>
-              <img src="\assets\images\missionIcon.png" alt="abt1" />
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }/assets/images/missionIcon.png`}
+                alt="abt1"
+              />
             </AboutIconContainer>
           </Col>
         </Row>
@@ -87,7 +98,12 @@ const About = () => {
           </AboutText>
           <Col lg={6}>
             <AboutImageContainer>
-              <img src="\assets\images\plasticPellets.jpg" alt="abt1" />
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }/assets/images/plasticPellets.jpg`}
+                alt="abt1"
+              />
             </AboutImageContainer>
           </Col>
         </Row>

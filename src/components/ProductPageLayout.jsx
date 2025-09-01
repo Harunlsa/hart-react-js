@@ -44,7 +44,9 @@ const ProductPageLayout = () => {
   return (
     <PageWrapper>
       <Banner
-        bgImage={`/assets/images/product-banners/banner-${currentCategory.value}.png`}
+        bgImage={`${
+          import.meta.env.BASE_URL
+        }/assets/images/product-banners/banner-${currentCategory.value}.png`}
       >
         <Container>
           <Row className="h-100 align-items-center">
@@ -54,7 +56,11 @@ const ProductPageLayout = () => {
             </Col>
             <Col md={5} className="text-right">
               <BannerImage
-                src={`/assets/images/product-groups/${currentCategory.value}Group.png`}
+                src={`${
+                  import.meta.env.BASE_URL
+                }/assets/images/product-groups/${
+                  currentCategory.value
+                }Group.png`}
                 alt={currentCategory.label}
               />
             </Col>
