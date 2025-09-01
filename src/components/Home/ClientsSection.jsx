@@ -55,7 +55,7 @@ const ClientsSection = () => {
               <ClientImage
                 src={`${
                   import.meta.env.BASE_URL
-                }/assets/images/clients/${client}`}
+                }assets/images/clients/${client}`}
                 alt={`${client.substring(0, client.lastIndexOf("."))}`}
                 className="img-fluid"
               />

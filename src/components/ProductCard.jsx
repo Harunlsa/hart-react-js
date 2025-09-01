@@ -44,9 +44,7 @@ const ProductCard = ({ product, category }) => {
     <CardWrapper sm={6} md={4} lg={3}>
       <Card>
         <ProductImage
-          src={`${
-            import.meta.env.BASE_URL
-          }/assets/images/products/${category}/${
+          src={`${import.meta.env.BASE_URL}assets/images/products/${category}/${
             product.colors[selectedColor].imgSrc
           }`}
           alt={product.name}

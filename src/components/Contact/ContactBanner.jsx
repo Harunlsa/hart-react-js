@@ -7,7 +7,7 @@ const ContactBanner = () => (
     style={{
       backgroundImage: `url(${
         import.meta.env.BASE_URL
-      }/assets/images/contact-banner.png)`,
+      }assets/images/contact-banner.png)`,
     }}
   >
     <Container>
