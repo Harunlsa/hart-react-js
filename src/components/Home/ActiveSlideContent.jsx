@@ -70,7 +70,19 @@ const ActiveSlideContent = ({ slide }) => {
         </Col>
         <Col md={5} className="text-center imageCol">
           <animated.div style={imageSpring}>
-            <SlideImage src={slide.imgSrc} alt={slide.highlight} />
+            <picture>
+              {Array.isArray(slide.imgSrc) &&
+                slide.imgSrc.map((source, i) => <source key={i} {...source} />)}
+              {/* Fallback <img> for browsers that don’t support AVIF/WebP */}
+              <SlideImage
+                src={
+                  slide.imgSrc?.[0]?.srcset
+                    ? slide.imgSrc[0].srcset.split(" ")[0] // grab first `URL` if srcset exists
+                    : slide.imgSrc?.[0]?.src || "" // otherwise fall back to `src`
+                }
+                alt={slide.highlight}
+              />
+            </picture>
           </animated.div>
           <MobileOnlyButton>
             <Button as={Link} to={slide.link}>

@@ -8,6 +8,21 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ActiveSlideContent from "./ActiveSlideContent";
 
+// import heroGreenBg from "";
+import heroGreenBg from "@/assets/images/hero-bg/bg-hero-green.png?preset=hero";
+import heroBlueBg from "@/assets/images/hero-bg/bg-hero-blue.png?preset=hero";
+import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.png?preset=hero";
+import heroYellowBg from "@/assets/images/hero-bg/bg-hero-yellow.png?preset=hero";
+import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.png?preset=hero";
+// import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.png?preset=hero";
+// import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.png"
+
+import racksGroup from "@/assets/images/product-groups/racksGroup.png?preset=productGroup";
+import coolersGroup from "@/assets/images/product-groups/coolersGroup.png?preset=productGroup";
+import bowlsGroup from "@/assets/images/product-groups/bowlsGroup.png?preset=productGroup";
+import jerryCansGroup from "@/assets/images/product-groups/jerryCansGroup.png?preset=productGroup";
+import tanksGroup from "@/assets/images/product-groups/tanksGroup.png?preset=productGroup";
+
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const navigationPrevRef = useRef(null);
@@ -15,83 +30,66 @@ const HeroSection = () => {
 
   const slides = [
     {
-      background: `${
-        import.meta.env.BASE_URL
-      }assets/images/hero-bg/bg-hero-green.png`,
+      background: heroGreenBg,
       title: "Organise with Versatile ",
       highlight: "Racks",
       description:
         "Durable and flexible plastic racks perfect for efficient storage and organization in any setting.",
-      imgSrc: `${
-        import.meta.env.BASE_URL
-      }assets/images/product-groups/racksGroup.png`,
+      imgSrc: racksGroup,
       color: "#bcff33",
       link: "products/racks",
       // minWidth: "100%",
     },
     {
-      background: `${
-        import.meta.env.BASE_URL
-      }assets/images/hero-bg/bg-hero-blue.png`,
+      background: heroBlueBg,
       title: "Efficient and Reliable ",
       highlight: "Coolers",
       description:
         "Keep your items fresh and cool with our high-performance plastic coolers, ideal for all occasions.",
-      imgSrc: `${
-        import.meta.env.BASE_URL
-      }/assets/images/product-groups/coolersGroup.png`,
+      imgSrc: coolersGroup,
       color: "#BB99FF",
       link: "products/coolers",
       // minWidth: "80%",
     },
     {
-      background: `${
-        import.meta.env.BASE_URL
-      }assets/images/hero-bg/bg-hero-orange.png`,
+      background: heroOrangeBg,
       title: "Durable and Stylish ",
       highlight: "Bowls",
       description:
         "Perfect for everyday use, our plastic bowls offer a blend of durability and modern design.",
-      imgSrc: `${
-        import.meta.env.BASE_URL
-      }assets/images/product-groups/bowlsGroup.png`,
+      imgSrc: bowlsGroup,
       color: "#C2690F",
       link: "products/bowls",
       // minWidth: "90%",
     },
     {
-      background: `${
-        import.meta.env.BASE_URL
-      }assets/images/hero-bg/bg-hero-yellow.png`,
+      background: heroYellowBg,
       title: "High-Quality ",
       highlight: "Jerry Cans",
       description:
         "Safe and sturdy jerry cans for transporting liquids, available in various sizes to suit your needs.",
-      imgSrc: `${
-        import.meta.env.BASE_URL
-      }/assets/images/product-groups/jerryCansGroup.png`,
+      imgSrc: jerryCansGroup,
       color: "#ffff00",
 
       link: "products/jerryCans",
       // minWidth: "70%",
     },
     {
-      background: `${
-        import.meta.env.BASE_URL
-      }assets/images/hero-bg/bg-hero-purple.png`,
+      background: heroPurpleBg,
       title: "Reliable and Sturdy ",
       highlight: "Tanks",
       description:
         "Engineered for strength and longevity, our tanks provide dependable storage solutions for water and other liquids in any environment.",
-      imgSrc: `${
-        import.meta.env.BASE_URL
-      }assets/images/product-groups/tanksGroup.png`,
+      imgSrc: tanksGroup,
       color: "#393743",
 
       link: "products/jerryCans",
       // minWidth: "70%",
     },
   ];
+
+  console.log(heroGreenBg);
+
   const swiperRef = useState(null);
   return (
     <HeroWrapper
@@ -140,7 +138,15 @@ const HeroSection = () => {
             onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
             onMouseLeave={() => swiperRef.current?.autoplay?.start()}
           >
-            <Slide bg={slide.background}>
+            <Slide
+              bg={
+                Array.isArray(slide.background)
+                  ? slide.background[0]?.srcset?.split(" ")[0] ||
+                    slide.background[0]?.src ||
+                    ""
+                  : slide.background || ""
+              }
+            >
               {index === activeIndex && <ActiveSlideContent slide={slide} />}
             </Slide>
           </SwiperSlide>

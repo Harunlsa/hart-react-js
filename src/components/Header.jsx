@@ -585,7 +585,7 @@ const RailButton = styled.button`
   }
 
   span {
-    color: red;
+    // color: red;
     flex: 0 !important;
   }
 
