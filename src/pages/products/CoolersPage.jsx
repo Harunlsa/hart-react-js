@@ -1,5 +1,12 @@
-import ProductPageLayout from '../../components/ProductPageLayout';
+import ProductPageLayout from "../../components/ProductPageLayout";
 
- import { products } from '../../data/products';const CoolersPage = () => <ProductPageLayout categoryName='Coolers' bannerImage='coolers-group.png' products={products.coolers}/>;
+import { products } from "../../data/products";
+const CoolersPage = () => (
+  <ProductPageLayout
+    categoryName="Coolers"
+    bannerImage="coolers-group.webp"
+    products={products.coolers}
+  />
+);
 
-export default CoolersPage
+export default CoolersPage;

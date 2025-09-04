@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ProductCard from "./ProductCard";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { products } from "../data/products";
+import LazyImage from "./LazyImage";
 
 const categoryOptions = [
   { value: "babyCare", label: "Baby Care" },
@@ -46,7 +47,7 @@ const ProductPageLayout = () => {
       <Banner
         bgImage={`${
           import.meta.env.BASE_URL
-        }assets/images/product-banners/banner-${currentCategory.value}.png`}
+        }assets/images/product-banners/banner-${currentCategory.value}.webp`}
       >
         <Container>
           <Row className="h-100 align-items-center">
@@ -58,7 +59,7 @@ const ProductPageLayout = () => {
               <BannerImage
                 src={`${import.meta.env.BASE_URL}assets/images/product-groups/${
                   currentCategory.value
-                }Group.png`}
+                }Group.webp`}
                 alt={currentCategory.label}
               />
             </Col>
@@ -120,9 +121,9 @@ const PageWrapper = styled.div`
     max-width: 150px;
     @media (min-width: 600px) {
       max-width: 200px;
-      
-      
     }
+
+
 `;
 
 const Banner = styled.section`
@@ -200,7 +201,7 @@ const Banner = styled.section`
   }
 `;
 
-const BannerImage = styled.img`
+const BannerImage = styled(LazyImage)`
   max-height: 25vh;
   max-width: 90vw;
   margin: 25px auto;

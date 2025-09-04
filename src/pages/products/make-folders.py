@@ -8,7 +8,7 @@ kebabCaseNames = ["baby-care", "basins", "baskets", "bowls", "buckets", "colande
 #     fileName = fileName.capitalize()
 #     try:
 #         f = open(f"{fileName}.jsx", "w")
-#         f.write("import ProductPageLayout from '../../components/ProductPageLayout';\n\n import { products } from '../../data/products';" + f"const {fileName} = () => <ProductPageLayout categoryName='{fileName}' bannerImage='{fileName.lower()}-group.png' products="+"{" + f"products.{fileName.lower()}" + "}" + f"/>;\n\nexport default {fileName}")
+#         f.write("import ProductPageLayout from '../../components/ProductPageLayout';\n\n import { products } from '../../data/products';" + f"const {fileName} = () => <ProductPageLayout categoryName='{fileName}' bannerImage='{fileName.lower()}-group.webp' products="+"{" + f"products.{fileName.lower()}" + "}" + f"/>;\n\nexport default {fileName}")
 #         print(f"Page created {fileName}")
 #     except: FileNotFoundError
 
@@ -24,7 +24,7 @@ for file in kebabCaseNames:
 #         sizes: ["Small", "Medium", "Large"],
 #         colors: [
 #           {
-#             imgSrc: "bowl-red.jpg",
+#             imgSrc: "bowl-red.webp",
 #             className: "red-swatch",
 #           },
 #         ],

@@ -9,13 +9,18 @@ import "swiper/css/pagination";
 import ActiveSlideContent from "./ActiveSlideContent";
 
 // import heroGreenBg from "";
-import heroGreenBg from "@/assets/images/hero-bg/bg-hero-green.png?preset=hero";
-import heroBlueBg from "@/assets/images/hero-bg/bg-hero-blue.png?preset=hero";
-import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.png?preset=hero";
-import heroYellowBg from "@/assets/images/hero-bg/bg-hero-yellow.png?preset=hero";
-import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.png?preset=hero";
-// import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.png?preset=hero";
-// import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.png"
+import heroGreenBg from "@/assets/images/hero-bg/bg-hero-green-compressed.webp";
+import heroBlueBg from "@/assets/images/hero-bg/bg-hero-blue-compressed.webp";
+import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange-compressed.webp";
+import heroYellowBg from "@/assets/images/hero-bg/bg-hero-yellow.png";
+import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple-compressed.webp";
+// import heroGreenBg from "@/assets/images/hero-bg/bg-hero-green.webp?preset=hero";
+// import heroBlueBg from "@/assets/images/hero-bg/bg-hero-blue.webp?preset=hero";
+// import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.webp?preset=hero";
+// import heroYellowBg from "@/assets/images/hero-bg/bg-hero-yellow.webp?preset=hero";
+// import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.webp?preset=hero";
+// import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.webp?preset=hero";
+// import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.webp"
 
 import racksGroup from "@/assets/images/product-groups/racksGroup.png?preset=productGroup";
 import coolersGroup from "@/assets/images/product-groups/coolersGroup.png?preset=productGroup";

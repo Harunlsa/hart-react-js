@@ -5,14 +5,14 @@ import styled from "styled-components";
 import { Container } from "react-bootstrap";
 
 const clients = [
-  "milacron.png",
-  "windsor.png",
-  "haitian.png",
-  "jagmohan.png",
-  "cat.png",
-  "prasad.png",
-  // "cummins.png",
-  "cummins (Custom).png",
+  "milacron.webp",
+  "windsor.webp",
+  "haitian.webp",
+  "jagmohan.webp",
+  "cat.webp",
+  "prasad.webp",
+  // "cummins.webp",
+  "cummins (Custom).webp",
 ];
 
 const ClientsSection = () => {

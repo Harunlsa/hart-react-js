@@ -21,14 +21,14 @@ const About = () => {
           <Col lg={6}>
             <AboutImageContainer className="twoImages">
               <img
-                src={`${import.meta.env.BASE_URL}assets/images/abt1.png`}
+                src={`${import.meta.env.BASE_URL}assets/images/abt1.webp`}
                 alt="abt1"
               />
             </AboutImageContainer>
             <AboutImageContainer isSecond className="twoImages">
               <img
                 className="second"
-                src={`${import.meta.env.BASE_URL}assets/images/abt2.jpg`}
+                src={`${import.meta.env.BASE_URL}assets/images/abt2.webp`}
                 alt="abt2"
               />
             </AboutImageContainer>
@@ -55,7 +55,7 @@ const About = () => {
           <Col lg={3}>
             <AboutIconContainer>
               <img
-                src={`${import.meta.env.BASE_URL}assets/images/visionIcon.png`}
+                src={`${import.meta.env.BASE_URL}assets/images/visionIcon.webp`}
                 alt="abt1"
               />
             </AboutIconContainer>
@@ -74,7 +74,7 @@ const About = () => {
               <img
                 src={`${
                   import.meta.env.BASE_URL
-                }/assets/images/missionIcon.png`}
+                }assets/images/missionIcon.webp`}
                 alt="abt1"
               />
             </AboutIconContainer>
@@ -101,7 +101,7 @@ const About = () => {
               <img
                 src={`${
                   import.meta.env.BASE_URL
-                }assets/images/plasticPellets.jpg`}
+                }assets/images/plasticPellets.webp`}
                 alt="abt1"
               />
             </AboutImageContainer>

@@ -1,5 +1,12 @@
-import ProductPageLayout from '../../components/ProductPageLayout';
+import ProductPageLayout from "../../components/ProductPageLayout";
 
- import { products } from '../../data/products';const Takeawaycontainers = () => <ProductPageLayout categoryName='Takeawaycontainers' bannerImage='takeawaycontainers-group.png' products={products.takeawaycontainers}/>;
+import { products } from "../../data/products";
+const Takeawaycontainers = () => (
+  <ProductPageLayout
+    categoryName="Takeawaycontainers"
+    bannerImage="takeawaycontainers-group.webp"
+    products={products.takeawaycontainers}
+  />
+);
 
-export default Takeawaycontainers
+export default Takeawaycontainers;

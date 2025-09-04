@@ -4,7 +4,7 @@
 // import NavDropdown from "react-bootstrap/NavDropdown";
 // import { NavLink } from "react-router-dom";
 // import styled from "styled-components";
-// import logo from "/src/assets/hartLogo.png";
+// import logo from "/src/assets/hartLogo.webp";
 
 // const HeaderWrapper = styled(Navbar)`
 //   background: #fff;
@@ -664,6 +664,7 @@ const MobilePanel = styled(Dialog.Panel)`
   background: #fff;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  overflow-y: scroll;
 `;
 
 const MobileNav = styled.nav`

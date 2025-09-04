@@ -8,7 +8,11 @@ export const products = {
         name: "Baby set",
         sizes: [],
         colors: [
-          { imgSrc: "babyCareGroup.png", className: "light-blue-swatch" },
+          { imgSrc: "babyCareGroup.webp", className: "light-blue-swatch" },
+          {
+            imgSrc: "babyCareGroup-pscol2.webp",
+            className: "bright-green-swatch",
+          },
         ],
       },
       {
@@ -17,8 +21,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "chamber pot/chamber-pot.jpg",
+            imgSrc: "chamber pot/chamber-pot.webp",
             className: "orange-swatch",
+          },
+          {
+            imgSrc: "chamber pot/chamber-pot-bright-greenps.webp",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "chamber pot/chamber-pot-dark-green-ps.webp",
+            className: "dull-green-swatch",
+          },
+          {
+            imgSrc: "chamber pot/chamber-pot-purple-ps.webp",
+            className: "purple-swatch",
           },
         ],
       },
@@ -28,12 +44,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "baby feeder/IMG-20250612-WA0181.jpg",
+            imgSrc: "baby feeder/IMG-20250612-WA0181.webp",
             className: "plum-swatch",
           },
           {
-            imgSrc: "baby feeder/IMG-20250612-WA0171.jpg",
+            imgSrc: "baby feeder/IMG-20250612-WA0171.webp",
             className: "orange-swatch",
+          },
+          {
+            imgSrc: "baby feeder/baby-feeder-purple-ps.webp",
+            className: "purple-swatch",
+          },
+          {
+            imgSrc: "baby feeder/baby-feeder-dark-green-ps.webp",
+            className: "dull-green-swatch",
           },
         ],
       },
@@ -49,19 +73,19 @@ export const products = {
         sizes: ["13L", "18L"],
         colors: [
           {
-            imgSrc: "benz basin/benz-basin-13-ltrs--web.png",
+            imgSrc: "benz basin/benz-basin-13-ltrs--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "benz basin/benz-basin-18-ltrs--web.png",
+            imgSrc: "benz basin/benz-basin-18-ltrs--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "benz basin/benz-basin-18l--web.png",
+            imgSrc: "benz basin/benz-basin-18l--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "benz basin/basin17.png",
+            imgSrc: "benz basin/basin17.webp",
             className: "blue-swatch inner-shadow-dark",
           },
         ],
@@ -72,7 +96,7 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "big-sunny-basin.--web.png",
+            imgSrc: "big-sunny-basin.--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -83,15 +107,15 @@ export const products = {
         sizes: ["11L", "16L", "18", "28L"],
         colors: [
           {
-            imgSrc: "butterfly basin/butterfly-basin-16-ltrs--web.png",
+            imgSrc: "butterfly basin/butterfly-basin-16-ltrs--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
           {
-            imgSrc: "butterfly basin/butterfly-basin-6--web.png",
+            imgSrc: "butterfly basin/butterfly-basin-6--web.webp",
             className: "black-swatch inner-shadow-light",
           },
           {
-            imgSrc: "butterfly basin/butterfly-6-basin--web.png",
+            imgSrc: "butterfly basin/butterfly-6-basin--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -102,15 +126,15 @@ export const products = {
         sizes: ["9L", "14L", "20L", "40L", "60L"],
         colors: [
           {
-            imgSrc: "chinese basin/chinese-basin-20-ltrs--web.png",
+            imgSrc: "chinese basin/chinese-basin-20-ltrs--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "chinese basin/chinese-basin-9l--web.png",
+            imgSrc: "chinese basin/chinese-basin-9l--web.webp",
             className: "brown-swatch inner-shadow-light",
           },
           {
-            imgSrc: "chinese basin/chinese-basin-40--web.png",
+            imgSrc: "chinese basin/chinese-basin-40--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -121,7 +145,7 @@ export const products = {
         sizes: ["9L"],
         colors: [
           {
-            imgSrc: "cute basin/cute-basin-9-ltrs--web.png",
+            imgSrc: "cute basin/cute-basin-9-ltrs--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -132,19 +156,19 @@ export const products = {
         sizes: ["7L", "9L", "11L"],
         colors: [
           {
-            imgSrc: "diamond basin/diamond-basin-9-lt--web.png",
+            imgSrc: "diamond basin/diamond-basin-9-lt--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "diamond basin/basin5.png",
+            imgSrc: "diamond basin/basin5.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "diamond basin/diamond-basin-7-lt--web.png",
+            imgSrc: "diamond basin/diamond-basin-7-lt--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "diamond basin/diamond-basin--web.png",
+            imgSrc: "diamond basin/diamond-basin--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -155,27 +179,27 @@ export const products = {
         sizes: ["9L", "14L", "20L", "32L", "40L", "50L", "60L"],
         colors: [
           {
-            imgSrc: "dolphin basin/dolphin-basin-9-ltrs--web.png",
+            imgSrc: "dolphin basin/dolphin-basin-9-ltrs--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin basin/dolphin-basin-32-ltrs--web.png",
+            imgSrc: "dolphin basin/dolphin-basin-32-ltrs--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin basin/dolphin-basin-60-ltrs--web.png",
+            imgSrc: "dolphin basin/dolphin-basin-60-ltrs--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin basin/basin15.png",
+            imgSrc: "dolphin basin/basin15.webp",
             className: "dark-blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin basin/basin25.png",
+            imgSrc: "dolphin basin/basin25.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin basin/dolphin-junior.--web.png",
+            imgSrc: "dolphin basin/dolphin-junior.--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -186,7 +210,7 @@ export const products = {
       //   sizes: [],
       //   colors: [
       //     {
-      //       imgSrc: "dolphin-basin-gp--web.png",
+      //       imgSrc: "dolphin-basin-gp--web.webp",
       //       className: "bright-green-swatch inner-shadow-light",
       //     },
       //   ],
@@ -197,7 +221,7 @@ export const products = {
       //   sizes: [],
       //   colors: [
       //     {
-      //       imgSrc: "dolphin-basin-kampala.--web.png",
+      //       imgSrc: "dolphin-basin-kampala.--web.webp",
       //       className: "bright-green-swatch inner-shadow-light",
       //     },
       //   ],
@@ -208,7 +232,7 @@ export const products = {
       //   sizes: [],
       //   colors: [
       //     {
-      //       imgSrc: "dolphin-junior.--web.png",
+      //       imgSrc: "dolphin-junior.--web.webp",
       //       className: "pink-swatch inner-shadow-light",
       //     },
       //   ],
@@ -219,15 +243,15 @@ export const products = {
         sizes: ["16L", "60L", "80L"],
         colors: [
           {
-            imgSrc: "eagle basin/eagle-basin-16-ltr--web.png",
+            imgSrc: "eagle basin/eagle-basin-16-ltr--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "eagle basin/eagle-basi-60l--web.png",
+            imgSrc: "eagle basin/eagle-basi-60l--web.webp",
             className: "brown-swatch inner-shadow-light",
           },
           {
-            imgSrc: "eagle basin/eagle-basin-60-ltr--web.png",
+            imgSrc: "eagle basin/eagle-basin-60-ltr--web.webp",
             className: "olive-swatch inner-shadow-light",
           },
         ],
@@ -238,7 +262,7 @@ export const products = {
         sizes: ["25L"],
         colors: [
           {
-            imgSrc: "elephant basin/elephant-basin-25-ltr--web.png",
+            imgSrc: "elephant basin/elephant-basin-25-ltr--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -249,7 +273,7 @@ export const products = {
         sizes: ["9L"],
         colors: [
           {
-            imgSrc: "emeka basin/emeka-basin-9-ltr--web.png",
+            imgSrc: "emeka basin/emeka-basin-9-ltr--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -260,11 +284,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fura basin/fura-basin--web.png",
+            imgSrc: "fura basin/fura-basin--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "fura basin/fura-basin-p--web.png",
+            imgSrc: "fura basin/fura-basin-p--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -275,7 +299,7 @@ export const products = {
       //   sizes: ["17L"],
       //   colors: [
       //     {
-      //       imgSrc: "harribino basin/harribino-basin-17-ltrs--web.png",
+      //       imgSrc: "harribino basin/harribino-basin-17-ltrs--web.webp",
       //       className: "purple-swatch inner-shadow-light",
       //     },
       //   ],
@@ -286,11 +310,11 @@ export const products = {
         sizes: ["5L", "7L", "11L", "14L"],
         colors: [
           {
-            imgSrc: "hot cake basin/hot-cake-basin-9l--web.png",
+            imgSrc: "hot cake basin/hot-cake-basin-9l--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "hot cake basin/hot-cake-basin-14-ltr--web.png",
+            imgSrc: "hot cake basin/hot-cake-basin-14-ltr--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -301,7 +325,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "johnny basin/johny-basin.--web.png",
+            imgSrc: "johnny basin/johny-basin.--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -312,11 +336,11 @@ export const products = {
         sizes: ["16L"],
         colors: [
           {
-            imgSrc: "kano basin/kano-basin-16-ltrs-kampala--web.png",
+            imgSrc: "kano basin/kano-basin-16-ltrs-kampala--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "kano basin/kano-basin-16--web.png",
+            imgSrc: "kano basin/kano-basin-16--web.webp",
             className: "black-swatch inner-shadow-dark",
           },
         ],
@@ -328,15 +352,15 @@ export const products = {
         sizes: ["12L", "22L"],
         colors: [
           {
-            imgSrc: "national basin/national-basin-12-ltr.--web.png",
+            imgSrc: "national basin/national-basin-12-ltr.--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "national basin/national-basin-22-ltr--web.png",
+            imgSrc: "national basin/national-basin-22-ltr--web.webp",
             className: "black-swatch inner-shadow-light",
           },
           {
-            imgSrc: "national basin/bowl66.png",
+            imgSrc: "national basin/bowl66.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -347,7 +371,7 @@ export const products = {
       //   sizes: ["8L"],
       //   colors: [
       //     {
-      //       imgSrc: "new-fruit-basin-8-ltr--web.png",
+      //       imgSrc: "new-fruit-basin-8-ltr--web.webp",
       //       className: "grey-swatch inner-shadow-dark",
       //     },
       //   ],
@@ -358,11 +382,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "princess basin/princess-basin-kampala--web.png",
+            imgSrc: "princess basin/princess-basin-kampala--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "princess basin/princess-basin--web.png",
+            imgSrc: "princess basin/princess-basin--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -373,7 +397,7 @@ export const products = {
         sizes: ["7L"],
         colors: [
           {
-            imgSrc: "rose basin/rose-basin-7-ltr--web.png",
+            imgSrc: "rose basin/rose-basin-7-ltr--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -384,11 +408,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "round basin dansy/round-basin-dansy.--web.png",
+            imgSrc: "round basin dansy/round-basin-dansy.--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "round basin dansy/bowl56.png",
+            imgSrc: "round basin dansy/bowl56.webp",
             className: "brown-swatch inner-shadow-light",
           },
         ],
@@ -399,7 +423,7 @@ export const products = {
         sizes: ["20L"],
         colors: [
           {
-            imgSrc: "round basin fancy/round-basin-fancy-20-ltrs--web.png",
+            imgSrc: "round basin fancy/round-basin-fancy-20-ltrs--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -410,11 +434,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "saminu basin/saminu-basin--web.png",
+            imgSrc: "saminu basin/saminu-basin--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "saminu basin/saminu-basin-g--web.png",
+            imgSrc: "saminu basin/saminu-basin-g--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -425,11 +449,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "square basin/square-basin--web.png",
+            imgSrc: "square basin/square-basin--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "square basin/sb.png",
+            imgSrc: "square basin/sb.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -440,11 +464,11 @@ export const products = {
         sizes: ["10L"],
         colors: [
           {
-            imgSrc: "stripe basin/stripe-basin-10-ltr--web.png",
+            imgSrc: "stripe basin/stripe-basin-10-ltr--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "stripe basin/stripe-basin-10l--web.png",
+            imgSrc: "stripe basin/stripe-basin-10l--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -455,11 +479,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "super fine basin/super-fine-basin.--web.png",
+            imgSrc: "super fine basin/super-fine-basin.--web.webp",
             className: "turquoise-swatch inner-shadow-light",
           },
           {
-            imgSrc: "super fine basin/basin7.png",
+            imgSrc: "super fine basin/basin7.webp",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -470,11 +494,11 @@ export const products = {
         sizes: ["7L", "12L"],
         colors: [
           {
-            imgSrc: "superstar basin/super-star-basin-7-ltr--web.png",
+            imgSrc: "superstar basin/super-star-basin-7-ltr--web.webp",
             className: "dull-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "superstar basin/super-star-basin-12-ltrs--web.png",
+            imgSrc: "superstar basin/super-star-basin-12-ltrs--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -485,23 +509,23 @@ export const products = {
         sizes: ["5L", "13L", "14L", "40L"],
         colors: [
           {
-            imgSrc: "tiger basin/tiger-basin-5-ltr-kampala--web.png",
+            imgSrc: "tiger basin/tiger-basin-5-ltr-kampala--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "tiger basin/tiger-basin-13ltr-kampala--web.png",
+            imgSrc: "tiger basin/tiger-basin-13ltr-kampala--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "tiger basin/tiger-basin-14-ltrs-kampala--web.png",
+            imgSrc: "tiger basin/tiger-basin-14-ltrs-kampala--web.webp",
             className: "pink-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "tiger basin/tiger-basin-40-ltr-gp--web.png",
+            imgSrc: "tiger basin/tiger-basin-40-ltr-gp--web.webp",
             className: "black-swatch inner-shadow-light",
           },
           {
-            imgSrc: "tiger basin/tiger-3--web.png",
+            imgSrc: "tiger basin/tiger-3--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -512,11 +536,11 @@ export const products = {
         sizes: ["5L", "60L"],
         colors: [
           {
-            imgSrc: "wave basin/wave-basin-60-ltrs--web.png",
+            imgSrc: "wave basin/wave-basin-60-ltrs--web.webp",
             className: "pink-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "wave basin/wave-5l-basin--web.png",
+            imgSrc: "wave basin/wave-5l-basin--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -527,11 +551,11 @@ export const products = {
         sizes: ["14L"],
         colors: [
           {
-            imgSrc: "combo basin/combo-basin-14-ltr--web.png",
+            imgSrc: "combo basin/combo-basin-14-ltr--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "combo basin/combo-basin-14l--web.png",
+            imgSrc: "combo basin/combo-basin-14l--web.webp",
             className: "dull-green-swatch inner-shadow-dark",
           },
         ],
@@ -542,11 +566,11 @@ export const products = {
         sizes: ["14L"],
         colors: [
           {
-            imgSrc: "fruit basin/fruit-basin-8l--web.png",
+            imgSrc: "fruit basin/fruit-basin-8l--web.webp",
             className: "black-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "fruit basin/new-fruit-basin-8-ltr--web.png",
+            imgSrc: "fruit basin/new-fruit-basin-8-ltr--web.webp",
             className: "grey-swatch inner-shadow-dark",
           },
         ],
@@ -557,7 +581,7 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "musa basin/musa-basin-big--web.png",
+            imgSrc: "musa basin/musa-basin-big--web.webp",
             className: "dark-blue-swatch inner-shadow-dark",
           },
         ],
@@ -574,12 +598,24 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "diamond basket/basket3-removebg-preview (Custom).png",
+            imgSrc: "diamond basket/basket3-removebg-preview (Custom).webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "diamond basket/basket5-removebg-preview (Custom).png",
+            imgSrc: "diamond basket/basket5-removebg-preview (Custom).webp",
             className: "dull-green-swatch",
+          },
+          {
+            imgSrc: "diamond basket/diamond-blue-ps.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "diamond basket/diamond-purple-ps.webp",
+            className: "purple-swatch",
+          },
+          {
+            imgSrc: "diamond basket/diamond-red-ps.webp",
+            className: "red-swatch",
           },
         ],
       },
@@ -589,12 +625,24 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "family basket/basket3--web.png",
+            imgSrc: "family basket/basket3--web.webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "family basket/family-basket--web.png",
+            imgSrc: "family basket/family-basket--web.webp",
             className: "orange-swatch",
+          },
+          {
+            imgSrc: "family basket/small-family-blue-ps---web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "family basket/small-family-red-ps---web.webp",
+            className: "red-swatch",
+          },
+          {
+            imgSrc: "family basket/small-family-yellow-ps---web.webp",
+            className: "yellow-swatch",
           },
         ],
       },
@@ -604,15 +652,15 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "fancy basket/basket13-removebg-preview (Custom).png",
+            imgSrc: "fancy basket/basket13-removebg-preview (Custom).webp",
             className: "orange-swatch",
           },
           {
-            imgSrc: "fancy basket/basket17-removebg-preview (Custom).png",
+            imgSrc: "fancy basket/basket17-removebg-preview (Custom).webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "fancy basket/small-fancy-basket--web.png",
+            imgSrc: "fancy basket/small-fancy-basket--web.webp",
             className: "blue-swatch",
           },
         ],
@@ -623,15 +671,15 @@ export const products = {
         sizes: ["Small", "Medium", "Big"],
         colors: [
           {
-            imgSrc: "hot cake basket/basket10-removebg-preview (Custom).png",
+            imgSrc: "hot cake basket/basket10-removebg-preview (Custom).webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "hot cake basket/basket12-removebg-preview (Custom).png",
+            imgSrc: "hot cake basket/basket12-removebg-preview (Custom).webp",
             className: "orange-swatch",
           },
           {
-            imgSrc: "hot cake basket/hot-cake-basket-big--web.png",
+            imgSrc: "hot cake basket/hot-cake-basket-big--web.webp",
             className: "blue-swatch",
           },
         ],
@@ -642,12 +690,16 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "laundry basket/basket6-removebg-preview (Custom).png",
+            imgSrc: "laundry basket/basket6-removebg-preview (Custom).webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "laundry basket/small-laundry-basket--web.png",
+            imgSrc: "laundry basket/small-laundry-basket--web.webp",
             className: "orange-swatch",
+          },
+          {
+            imgSrc: "laundry basket/laundry-blue-ps.webp",
+            className: "blue-swatch",
           },
         ],
       },
@@ -657,12 +709,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "oval family basket/basket1--web.png",
+            imgSrc: "oval family basket/basket1--web.webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "oval family basket/oval-family-basket--web.png",
+            imgSrc: "oval family basket/oval-family-basket--web.webp",
             className: "blue-swatch",
+          },
+          {
+            imgSrc: "oval family basket/oval-purple-ps.webp",
+            className: "pink-swatch",
+          },
+          {
+            imgSrc: "oval family basket/oval-red-ps.webp",
+            className: "red-swatch",
           },
         ],
       },
@@ -672,8 +732,16 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "round basket/round-basket--web.png",
+            imgSrc: "round basket/round-basket--web.webp",
             className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "round basket/round-basket-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "round basket/round-basket-pink-ps--web.webp",
+            className: "pink-swatch",
           },
         ],
       },
@@ -683,7 +751,19 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tisco basket/tisco-basket--web.png",
+            imgSrc: "tisco basket/tisco-basket--web.webp",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "tisco basket/tisco-basket-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "tisco basket/tisco-basket-red-ps--web.webp",
+            className: "red-swatch",
+          },
+          {
+            imgSrc: "tisco basket/tisco-basket-green-ps--web.webp",
             className: "bright-green-swatch",
           },
         ],
@@ -694,8 +774,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "vegetable basket/veg-bas--web.png",
+            imgSrc: "vegetable basket/veg-bas--web.webp",
             className: "blue-swatch",
+          },
+          {
+            imgSrc: "vegetable basket/veg-bas-green-ps--web.webp",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "vegetable basket/veg-bas-red-ps--web.webp",
+            className: "red-swatch",
+          },
+          {
+            imgSrc: "vegetable basket/veg-bas-purple-ps--web.webp",
+            className: "purple-swatch",
           },
         ],
       },
@@ -705,12 +797,24 @@ export const products = {
         sizes: ["Small", "Medium", "Big"],
         colors: [
           {
-            imgSrc: "waste paper basket/img-20250612-wa0035--web.png",
+            imgSrc: "waste paper basket/img-20250612-wa0035--web.webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "waste paper basket/small-waste-basket--web.png",
+            imgSrc: "waste paper basket/small-waste-basket--web.webp",
             className: "blue-swatch",
+          },
+          {
+            imgSrc: "waste paper basket/waste-pink-ps.webp",
+            className: "pink-swatch",
+          },
+          {
+            imgSrc: "waste paper basket/waste-purple-ps.webp",
+            className: "purple-swatch",
+          },
+          {
+            imgSrc: "waste paper basket/waste-red-ps.webp",
+            className: "red-swatch",
           },
         ],
       },
@@ -726,11 +830,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "apple bowl/apple-bowl--web.png",
+            imgSrc: "apple bowl/apple-bowl--web.webp",
             className: "yellow-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "apple bowl/img-20250612-wa0156--web.png",
+            imgSrc: "apple bowl/img-20250612-wa0156--web.webp",
             className: "blue-swatch inner-shadow-dark",
           },
         ],
@@ -741,27 +845,27 @@ export const products = {
         sizes: ["1L"],
         colors: [
           {
-            imgSrc: "chinese bowl/chinese-soup-bowl--web.png",
+            imgSrc: "chinese bowl/chinese-soup-bowl--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "chinese bowl/bowl54.png",
+            imgSrc: "chinese bowl/bowl54.webp",
             className: "brown-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "chinese bowl/bowl44.png",
+            imgSrc: "chinese bowl/bowl44.webp",
             className: "dark-blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "chinese bowl/img-20250612-wa0052--web.png",
+            imgSrc: "chinese bowl/img-20250612-wa0052--web.webp",
             className: "dull-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "chinese bowl/chinese-bowl--web.png",
+            imgSrc: "chinese bowl/chinese-bowl--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "chinese bowl/chinese-bowl-pink--web.png",
+            imgSrc: "chinese bowl/chinese-bowl-pink--web.webp",
             className: "pink-swatch inner-shadow-dark",
           },
         ],
@@ -772,19 +876,19 @@ export const products = {
         sizes: ["500ml", "2L"],
         colors: [
           {
-            imgSrc: "combo bowl/combo-bowl-2lt--web.png",
+            imgSrc: "combo bowl/combo-bowl-2lt--web.webp",
             className: "red-swatch inner-shadow-light",
           },
           {
-            imgSrc: "combo bowl/bowl45.png",
+            imgSrc: "combo bowl/bowl45.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "combo bowl/bowl48.png",
+            imgSrc: "combo bowl/bowl48.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "combo bowl/combo-bowl-2l-2---web.png",
+            imgSrc: "combo bowl/combo-bowl-2l-2---web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -795,7 +899,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "dessert bowl/desert-bowl--web.png",
+            imgSrc: "dessert bowl/desert-bowl--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -806,19 +910,19 @@ export const products = {
         sizes: ["500ml", "1L", "1.7L", "3L"],
         colors: [
           {
-            imgSrc: "dolphin bowl/dolphin-bowl-3ltr--web.png",
+            imgSrc: "dolphin bowl/dolphin-bowl-3ltr--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin bowl/dolphin-bowl-14--web.png",
+            imgSrc: "dolphin bowl/dolphin-bowl-14--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin bowl/dolphin-bowl-1l--web.png",
+            imgSrc: "dolphin bowl/dolphin-bowl-1l--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "dolphin bowl/bowl33.png",
+            imgSrc: "dolphin bowl/bowl33.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -830,7 +934,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fancy bowl/bowl41.png",
+            imgSrc: "fancy bowl/bowl41.webp",
             className: "dark-blue-swatch inner-shadow-light",
           },
         ],
@@ -841,7 +945,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fancy bowl/facny-bowl-2.5-ltr---web.png",
+            imgSrc: "fancy bowl/facny-bowl-2.5-ltr---web.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -852,7 +956,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fancy bowl ribs/fancy-bowl-ribs--web.png",
+            imgSrc: "fancy bowl ribs/fancy-bowl-ribs--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -863,11 +967,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "football bowl/football-bowl---web.png",
+            imgSrc: "football bowl/football-bowl---web.webp",
             className: "yellow-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "football bowl/bowl1.png",
+            imgSrc: "football bowl/bowl1.webp",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
@@ -878,7 +982,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "oval bowl fancy/oval-bowl-fancy-with-cover--web.png",
+            imgSrc: "oval bowl fancy/oval-bowl-fancy-with-cover--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
@@ -889,11 +993,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "party bowl/party-bowl--web.png",
+            imgSrc: "party bowl/party-bowl--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "party bowl/party-bowl-dg--web.png",
+            imgSrc: "party bowl/party-bowl-dg--web.webp",
             className: "dull-green-swatch inner-shadow-dark",
           },
         ],
@@ -904,11 +1008,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "pilot bowl/pilot-bowl--web.png",
+            imgSrc: "pilot bowl/pilot-bowl--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "pilot bowl/pilot-bowl-g--web.png",
+            imgSrc: "pilot bowl/pilot-bowl-g--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -919,11 +1023,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "ricky bowl/ricky-bowl---web.png",
+            imgSrc: "ricky bowl/ricky-bowl---web.webp",
             className: "turquoise-swatch inner-shadow-light",
           },
           {
-            imgSrc: "ricky bowl/img-20250612-wa0048--web.png",
+            imgSrc: "ricky bowl/img-20250612-wa0048--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -934,7 +1038,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "rose bowl/rose-bowl--web.png",
+            imgSrc: "rose bowl/rose-bowl--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -945,7 +1049,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "salad bowl/salad-bowl-stripe---web.png",
+            imgSrc: "salad bowl/salad-bowl-stripe---web.webp",
             className: "yellow-swatch inner-shadow-dark",
           },
         ],
@@ -956,11 +1060,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "shanghai bowl/sanghai-bowl-small-with-cover--web.png",
+            imgSrc: "shanghai bowl/sanghai-bowl-small-with-cover--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "shanghai bowl/img-20250612-wa0154--web.png",
+            imgSrc: "shanghai bowl/img-20250612-wa0154--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -971,7 +1075,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "sugar bowl/sugar-bowl---web.png",
+            imgSrc: "sugar bowl/sugar-bowl---web.webp",
             className: "turquoise-swatch inner-shadow-dark",
           },
         ],
@@ -983,11 +1087,11 @@ export const products = {
         sizes: ["1L"],
         colors: [
           {
-            imgSrc: "superstar bowl/super-star-bowl-1-ltr--web.png",
+            imgSrc: "superstar bowl/super-star-bowl-1-ltr--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "superstar bowl/bowl2.png",
+            imgSrc: "superstar bowl/bowl2.webp",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -998,11 +1102,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tisco bowl/tisco-bowl--web.png",
+            imgSrc: "tisco bowl/tisco-bowl--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "tisco bowl/bowl49.png",
+            imgSrc: "tisco bowl/bowl49.webp",
             className: "dark-blue-swatch inner-shadow-light",
           },
         ],
@@ -1013,7 +1117,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tutty-frutty bowl/tutty-fruity-bowl---web.png",
+            imgSrc: "tutty-frutty bowl/tutty-fruity-bowl---web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -1024,7 +1128,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "zigzag bowl/zigzag-bowl---web.png",
+            imgSrc: "zigzag bowl/zigzag-bowl---web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -1035,11 +1139,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "afrika bowl/africa-bowl--web.png",
+            imgSrc: "afrika bowl/africa-bowl--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
           {
-            imgSrc: "afrika bowl/bowl6.png",
+            imgSrc: "afrika bowl/bowl6.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -1050,7 +1154,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "benz bowl/benz-bowl-2l--web.png",
+            imgSrc: "benz bowl/benz-bowl-2l--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -1061,7 +1165,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "diamond bowl/bowl7.png",
+            imgSrc: "diamond bowl/bowl7.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -1072,7 +1176,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fish bowl/fish-bowl--web.png",
+            imgSrc: "fish bowl/fish-bowl--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -1083,7 +1187,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fruit bowl/fruit--web.png",
+            imgSrc: "fruit bowl/fruit--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
         ],
@@ -1095,7 +1199,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "oval bowl/oval-bowl-2---web.png",
+            imgSrc: "oval bowl/oval-bowl-2---web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -1106,11 +1210,11 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "star bowl/bowl17.png",
+            imgSrc: "star bowl/bowl17.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "star bowl/sbo--web.png",
+            imgSrc: "star bowl/sbo--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -1121,15 +1225,15 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "utility bowl/big-utility-bowl--web.png",
+            imgSrc: "utility bowl/big-utility-bowl--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "utility bowl/ub.png",
+            imgSrc: "utility bowl/ub.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "utility bowl/ubp--web.png",
+            imgSrc: "utility bowl/ubp--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
         ],
@@ -1140,11 +1244,11 @@ export const products = {
         sizes: ["Small", "Big"],
         colors: [
           {
-            imgSrc: "wave bowl/img-20250612-wa0163--web.png",
+            imgSrc: "wave bowl/img-20250612-wa0163--web.webp",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "wave bowl/wave-bowl-g--web.png",
+            imgSrc: "wave bowl/wave-bowl-g--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -1161,15 +1265,15 @@ export const products = {
         sizes: ["9L", "13L", "21L"],
         colors: [
           {
-            imgSrc: "bucket/img-20250612-wa0092--web.png",
+            imgSrc: "bucket/img-20250612-wa0092--web.webp",
             className: "blue-swatch",
           },
           {
-            imgSrc: "bucket/IMG-20250612-WA0070.jpg",
+            imgSrc: "bucket/IMG-20250612-WA0070.webp",
             className: "bright-green-swatch",
           },
           {
-            imgSrc: "bucket/transparent.jpg",
+            imgSrc: "bucket/transparent.webp",
             className: "white-swatch",
           },
         ],
@@ -1180,7 +1284,7 @@ export const products = {
         sizes: ["1L"],
         colors: [
           {
-            imgSrc: "chinese bucket/chinese bucket 1l trANS.jpg",
+            imgSrc: "chinese bucket/chinese bucket 1l trANS.webp",
             className: "white-swatch",
           },
         ],
@@ -1191,7 +1295,7 @@ export const products = {
       //   sizes: [""],
       //   colors: [
       //     {
-      //       imgSrc: "fancy bucket/1 lt. Bucket Fancy with cover.jpg",
+      //       imgSrc: "fancy bucket/1 lt. Bucket Fancy with cover.webp",
       //       className: "bright-green-swatch",
       //     },
       //   ],
@@ -1202,8 +1306,20 @@ export const products = {
         sizes: ["7L"],
         colors: [
           {
-            imgSrc: "open bucket/img-20250612-wa0085--web.png",
+            imgSrc: "open bucket/img-20250612-wa0085--web.webp",
             className: "dull-green-swatch",
+          },
+          {
+            imgSrc: "open bucket/7l-open-bucket-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "open bucket/7l-open-bucket-green-ps--web.webp",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "open bucket/7l-open-bucket-purple-ps--web.webp",
+            className: "purple-swatch",
           },
         ],
       },
@@ -1213,8 +1329,39 @@ export const products = {
         sizes: ["11L"],
         colors: [
           {
-            imgSrc: "shanghai bucket/shanghai-bucket-11l--web.png",
+            imgSrc: "shanghai bucket/shanghai-bucket-11l--web.webp",
             className: "blue-swatch",
+          },
+          {
+            imgSrc: "shanghai bucket/shanghai-bucket-green-ps.webp",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "shanghai bucket/shanghai-bucket-pink-ps.webp",
+            className: "pink-swatch",
+          },
+          {
+            imgSrc: "shanghai bucket/shanghai-bucket-purple-ps.webp",
+            className: "purple-swatch",
+          },
+          {
+            imgSrc: "shanghai bucket/shanghai-bucket-red-ps.webp",
+            className: "red-swatch",
+          },
+          {
+            imgSrc: "shanghai bucket/shanghai-bucket-turquoise-ps.webp",
+            className: "aqua-swatch",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Super Star bucket",
+        sizes: ["11L"],
+        colors: [
+          {
+            imgSrc: "super star bucket/Super Star Buckets.webp",
+            className: "clear-swatch",
           },
         ],
       },
@@ -1230,8 +1377,16 @@ export const products = {
         sizes: [""],
         colors: [
           {
-            imgSrc: "combo plate/combo-plate--web.png",
+            imgSrc: "combo plate/combo-plate--web.webp",
             className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "combo plate/combo-plate-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "combo plate/combo-plate-red-ps--web.webp",
+            className: "red-swatch",
           },
         ],
       },
@@ -1241,7 +1396,7 @@ export const products = {
         sizes: [""],
         colors: [
           {
-            imgSrc: "cute tray/cue-tray--web.png",
+            imgSrc: "cute tray/cute-tray--web.webp",
             className: "bright-green-swatch",
           },
         ],
@@ -1252,8 +1407,16 @@ export const products = {
         sizes: ["S", "L"],
         colors: [
           {
-            imgSrc: "fancy plate/fancy-plate-big--web.png",
+            imgSrc: "fancy plate/fancy-plate-big--web.webp",
             className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "fancy plate/fancy-plate-big-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "fancy plate/fancy-plate-big-red-ps--web.webp",
+            className: "red-swatch",
           },
         ],
       },
@@ -1263,8 +1426,20 @@ export const products = {
         sizes: ['8"', '9"'],
         colors: [
           {
-            imgSrc: "floral plate/floral-plate-8-inches--web.png",
+            imgSrc: "floral plate/floral-plate-8-inches--web.webp",
             className: "orange-swatch",
+          },
+          {
+            imgSrc: "floral plate/floral-plate-8-inches-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "floral plate/floral-plate-8-inches-green-ps--web.webp",
+            className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "floral plate/floral-plate-8-inches-yellow-ps--web.webp",
+            className: "yellow-swatch",
           },
         ],
       },
@@ -1274,8 +1449,24 @@ export const products = {
         sizes: [""],
         colors: [
           {
-            imgSrc: "oval strainer/oval-strainer--web.png",
+            imgSrc: "oval strainer/oval-strainer--web.webp",
             className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "oval strainer/oval-strainer-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "oval strainer/oval-strainer-red-ps--web.webp",
+            className: "red-swatch",
+          },
+          {
+            imgSrc: "oval strainer/oval-strainer-orange-ps--web.webp",
+            className: "orange-swatch",
+          },
+          {
+            imgSrc: "oval strainer/oval-strainer-green-ps--web.webp",
+            className: "dull-green-swatch",
           },
         ],
       },
@@ -1285,8 +1476,20 @@ export const products = {
         sizes: ["S", "M", "L"],
         colors: [
           {
-            imgSrc: "round tray/round-tray-9inch--web.png",
+            imgSrc: "round tray/round-tray-9inch--web.webp",
             className: "orange-swatch",
+          },
+          {
+            imgSrc: "round tray/9inches-round-tray-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "round tray/9inches-round-tray-purple-ps--web.webp",
+            className: "purple-swatch",
+          },
+          {
+            imgSrc: "round tray/9inches-round-tray-green-ps--web.webp",
+            className: "bright-green-swatch",
           },
         ],
       },
@@ -1296,12 +1499,24 @@ export const products = {
         sizes: ["Mini", "Small", "Big"],
         colors: [
           {
-            imgSrc: "strainer/img-20250612-wa0012--web.png",
+            imgSrc: "strainer/img-20250612-wa0012--web.webp",
             className: "orange-swatch",
           },
           {
-            imgSrc: "strainer/img-20250612-wa0185--web.png",
+            imgSrc: "strainer/img-20250612-wa0185--web.webp",
             className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "strainer/big-strainer-blue-ps--web.webp",
+            className: "blue-swatch",
+          },
+          {
+            imgSrc: "strainer/big-strainer-pink-ps--web.webp",
+            className: "pink-swatch",
+          },
+          {
+            imgSrc: "strainer/big-strainer-purple-ps--web.webp",
+            className: "purple-swatch",
           },
         ],
       },
@@ -1311,8 +1526,20 @@ export const products = {
         sizes: [""],
         colors: [
           {
-            imgSrc: "weaving plate/weaving-plate--web.png",
+            imgSrc: "weaving plate/weaving-plate--web.webp",
             className: "bright-green-swatch",
+          },
+          {
+            imgSrc: "weaving plate/weaving-plate-pink-ps--web.webp",
+            className: "pink-swatch",
+          },
+          {
+            imgSrc: "weaving plate/weaving-plate-red-ps--web.webp",
+            className: "red-swatch",
+          },
+          {
+            imgSrc: "weaving plate/weaving-plate-blue-ps--web.webp",
+            className: "blue-swatch",
           },
         ],
       },
@@ -1328,19 +1555,19 @@ export const products = {
         sizes: ["1L", "2L", "3L", "5L", "8L", "10L"],
         colors: [
           {
-            imgSrc: "coolers0.png",
+            imgSrc: "coolers0.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "coolers6.png",
+            imgSrc: "coolers6.webp",
             className: "blue-swatch inner-shadow-light",
           },
           {
-            imgSrc: "flask-g.png",
+            imgSrc: "flask-g.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "flask-r.png",
+            imgSrc: "flask-r.webp",
             className: "red-swatch inner-shadow-light",
           },
         ],
@@ -1351,12 +1578,20 @@ export const products = {
         sizes: ["S", "L"],
         colors: [
           {
-            imgSrc: "food flask/food-flask-big--web.png",
+            imgSrc: "food flask/food-flask-big--web.webp",
             className: "pink-swatch inner-shadow-light",
           },
           {
-            imgSrc: "food flask/food-flask-small--web.png",
+            imgSrc: "food flask/food-flask-small--web.webp",
             className: "blue-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "food flask/food-flask-green-ps.webp",
+            className: "dull-green-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "food flask/food-flask-red-ps.webp",
+            className: "red-swatch inner-shadow-light",
           },
         ],
       },
@@ -1366,11 +1601,11 @@ export const products = {
         sizes: ["S", "L"],
         colors: [
           {
-            imgSrc: "water bottle/water botte big.jpg",
+            imgSrc: "water bottle/water botte big.webp",
             className: "orange-swatch inner-shadow-light",
           },
           {
-            imgSrc: "water bottle/IMG-20250612-WA0200.jpg",
+            imgSrc: "water bottle/IMG-20250612-WA0200.webp",
             className: "purple-swatch inner-shadow-light",
           },
         ],
@@ -1387,11 +1622,11 @@ export const products = {
         sizes: ["30L", "40L", "50L", "60L"],
         colors: [
           {
-            imgSrc: "img-20240319-151615--web.png",
+            imgSrc: "img-20240319-151615--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "img-20240319-151645--web.png",
+            imgSrc: "img-20240319-151645--web.webp",
             className: "blue-swatch inner-shadow-light",
           },
         ],
@@ -1408,7 +1643,7 @@ export const products = {
         sizes: ["500ml", "650ml"],
         colors: [
           {
-            imgSrc: "img-20250611-wa0029--web.png",
+            imgSrc: "img-20250611-wa0029--web.webp",
             className: "white-swatch",
           },
         ],
@@ -1419,7 +1654,7 @@ export const products = {
         sizes: [""],
         colors: [
           {
-            imgSrc: "ice cream spoon/ice-cream-spoon--web.png",
+            imgSrc: "ice cream spoon/ice-cream-spoon--web.webp",
             className: "white-swatch",
           },
         ],
@@ -1430,7 +1665,7 @@ export const products = {
         sizes: ["330ml", "500ml"],
         colors: [
           {
-            imgSrc: "tac16.png",
+            imgSrc: "tac16.webp",
             className: "white-swatch",
           },
         ],
@@ -1441,11 +1676,11 @@ export const products = {
         sizes: ["150ml", "250ml", "330ml", "500ml"],
         colors: [
           {
-            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.png",
+            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.webp",
             className: "white-swatch",
           },
           {
-            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.png",
+            imgSrc: "tamper-proof-containers-500-330-250-125ml--web.webp",
             className: "clear-swatch",
           },
         ],
@@ -1462,15 +1697,15 @@ export const products = {
         sizes: ["1L", "4L", "10L", "18L", "20L"],
         colors: [
           {
-            imgSrc: "plain/jc53.png",
+            imgSrc: "plain/jc53.webp",
             className: "amber-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "plain/jc134.png",
+            imgSrc: "plain/jc134.webp",
             className: "white-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "plain/jc150.png",
+            imgSrc: "plain/jc150.webp",
             className: "bright-yellow-swatch inner-shadow-dark",
           },
         ],
@@ -1481,11 +1716,11 @@ export const products = {
         sizes: ["2L"],
         colors: [
           {
-            imgSrc: "cross neck/2-ltr-cross-neck--web.png",
+            imgSrc: "cross neck/2-ltr-cross-neck--web.webp",
             className: "black-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "cross neck/jerry-can-2l-crossneck--web.png",
+            imgSrc: "cross neck/jerry-can-2l-crossneck--web.webp",
             className: "grey-swatch inner-shadow-dark",
           },
         ],
@@ -1496,11 +1731,11 @@ export const products = {
         sizes: ["4L"],
         colors: [
           {
-            imgSrc: "liberty/4-liter-jerry-can-liberty--web.png",
+            imgSrc: "liberty/4-liter-jerry-can-liberty--web.webp",
             className: "white-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "liberty/4l-jerry-can-liberty--web.png",
+            imgSrc: "liberty/4l-jerry-can-liberty--web.webp",
             className: "amber-swatch inner-shadow-dark",
           },
         ],
@@ -1511,11 +1746,11 @@ export const products = {
         sizes: ["4L", "10L", "20L"],
         colors: [
           {
-            imgSrc: "with steps/20l-jerry-can-steps--web.png",
+            imgSrc: "with steps/20l-jerry-can-steps--web.webp",
             className: "amber-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "with steps/jc27.png",
+            imgSrc: "with steps/jc27.webp",
             className: "grey-swatch inner-shadow-light",
           },
         ],
@@ -1526,7 +1761,7 @@ export const products = {
         sizes: ["25L"],
         colors: [
           {
-            imgSrc: "25L/25-ltr-jerry-can.png",
+            imgSrc: "25L/25-ltr-jerry-can.webp",
             className: "black-swatch inner-shadow-dark",
           },
         ],
@@ -1537,15 +1772,15 @@ export const products = {
         sizes: ["25L"],
         colors: [
           {
-            imgSrc: "tall/jc24.png",
+            imgSrc: "tall/jc24.webp",
             className: "yellow-swatch inner-shadow-light",
           },
           {
-            imgSrc: "tall/jc70.png",
+            imgSrc: "tall/jc70.webp",
             className: "black-swatch inner-shadow-light",
           },
           {
-            imgSrc: "tall/jc161.png",
+            imgSrc: "tall/jc161.webp",
             className: "bright-yellow-swatch inner-shadow-light",
           },
         ],
@@ -1556,7 +1791,7 @@ export const products = {
         sizes: ["2L"],
         colors: [
           {
-            imgSrc: "taperneck/jc86.png",
+            imgSrc: "taperneck/jc86.webp",
             className: "white-swatch inner-shadow-light",
           },
         ],
@@ -1573,15 +1808,15 @@ export const products = {
         sizes: ["250ml", "400ml", "700ml", "1000ml"],
         colors: [
           {
-            imgSrc: "chinese mug/mug0--web.png",
+            imgSrc: "chinese mug/mug0--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "chinese mug/mug2--web.png",
+            imgSrc: "chinese mug/mug2--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "chinese mug/mug4--web.png",
+            imgSrc: "chinese mug/mug4--web.webp",
             className: "bright-green-swatch inner-shadow-light",
           },
         ],
@@ -1592,19 +1827,19 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "baby shai/mug25--web.png",
+            imgSrc: "baby shai/mug25--web.webp",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "baby shai/mug36--web.png",
+            imgSrc: "baby shai/mug36--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "baby shai/img-20250612-wa0164--web.png",
+            imgSrc: "baby shai/img-20250612-wa0164--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "baby shai/mug23--web.png",
+            imgSrc: "baby shai/mug23--web.webp",
             className: "bright-yellow-swatch inner-shadow-dark",
           },
         ],
@@ -1615,11 +1850,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "best cup/best-cup--web.png",
+            imgSrc: "best cup/best-cup--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "best cup/mug29--web.png",
+            imgSrc: "best cup/mug29--web.webp",
             className: "purple-swatch inner-shadow-dark",
           },
         ],
@@ -1630,8 +1865,16 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "woven cup/woven-cup--web.png",
+            imgSrc: "woven cup/woven-cup--web.webp",
             className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "woven cup/woven-cup-yellow-ps--web.webp",
+            className: "yellow-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "woven cup/woven-cup-purple-ps--web.webp",
+            className: "purple-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1641,11 +1884,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "tea cup/tea-cup--web.png",
+            imgSrc: "tea cup/tea-cup--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "tea cup/mug41--web.png",
+            imgSrc: "tea cup/mug41--web.webp",
             className: "blue-swatch inner-shadow-dark",
           },
         ],
@@ -1656,12 +1899,16 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "mug with handle/mug-with-handle--web.png",
+            imgSrc: "mug with handle/mug-with-handle--web.webp",
             className: "dull-green-swatch inner-shadow-light",
           },
           {
-            imgSrc: "mug with handle/mug18--web.png",
+            imgSrc: "mug with handle/mug18--web.webp",
             className: "orange-swatch inner-shadow-light",
+          },
+          {
+            imgSrc: "mug with handle/mug-with-handle-blue-ps--web.webp",
+            className: "blue-swatch inner-shadow-light",
           },
         ],
       },
@@ -1671,7 +1918,7 @@ export const products = {
         sizes: ["950ml"],
         colors: [
           {
-            imgSrc: "joyo mug/joyo-mug--web.png",
+            imgSrc: "joyo mug/joyo-mug--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -1682,19 +1929,19 @@ export const products = {
         sizes: ["250ml", "400ml", "600ml", "950ml"],
         colors: [
           {
-            imgSrc: "joyo mug/mug14--web.png",
+            imgSrc: "joyo mug/mug14--web.webp",
             className: "light-blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "joyo mug/mug11--web.png",
+            imgSrc: "joyo mug/mug11--web.webp",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "joyo mug/mug9--web.png",
+            imgSrc: "joyo mug/mug9--web.webp",
             className: "purple-swatch inner-shadow-light",
           },
           {
-            imgSrc: "joyo mug/mug7--web.png",
+            imgSrc: "joyo mug/mug7--web.webp",
             className: "orange-swatch inner-shadow-light",
           },
         ],
@@ -1705,8 +1952,16 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "star tea cup/star-tea-cup--web.png",
+            imgSrc: "star tea cup/star-tea-cup--web.webp",
             className: "orange-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "star tea cup/star-tea-cup-dark-green-ps--web.webp",
+            className: "dull-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "star tea cup/star-tea-cup-purple-ps--web.webp",
+            className: "purple-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1716,7 +1971,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "mug33--web.png",
+            imgSrc: "mug33--web.webp",
             className: "orange-swatch inner-shadow-dark",
           },
         ],
@@ -1733,12 +1988,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "kitchen rack/kitchen-rack-set.png",
+            imgSrc: "kitchen rack/kitchen-rack-set.webp",
             className: "blue-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "kitchen rack/r1--web.png",
+            imgSrc: "kitchen rack/r1--web.webp",
             className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "kitchen rack/kitchen-rack-red-ps.webp",
+            className: "red-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "kitchen rack/kitchen-rack-pink-ps.webp",
+            className: "pink-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1748,11 +2011,11 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "office paper rack/office-paper-rack-set.png",
+            imgSrc: "office paper rack/office-paper-rack-set.webp",
             className: "pink-swatch inner-shadow-dark",
           },
           {
-            imgSrc: "office paper rack/office-paper-rack-g.png",
+            imgSrc: "office paper rack/office-paper-rack-g.webp",
             className: "bright-green-swatch inner-shadow-dark",
           },
         ],
@@ -1763,8 +2026,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "shoe rack/shoe-rack-set.png",
+            imgSrc: "shoe rack/shoe-rack-set.webp",
             className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "shoe rack/shoe-rack-set-green-ps.webp",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "shoe rack/shoe-rack-set-pink-ps.webp",
+            className: "pink-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "shoe rack/shoe-rack-set-red-ps.webp",
+            className: "red-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1774,8 +2049,20 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "corner rack/corner.jpg",
+            imgSrc: "corner rack/corner.webp",
             className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "corner rack/corner-blue-ps.webp",
+            className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "corner rack/corner-dark-green-ps.webp",
+            className: "dull-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "corner rack/corner-pink-ps.webp",
+            className: "pink-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1785,8 +2072,16 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "round rack/round.jpg",
+            imgSrc: "round rack/round.webp",
             className: "blue-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "round rack/round-green-ps.webp",
+            className: "bright-green-swatch inner-shadow-dark",
+          },
+          {
+            imgSrc: "round rack/round-purple-ps.webp",
+            className: "purple-swatch inner-shadow-dark",
           },
         ],
       },
@@ -1802,7 +2097,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "abidjan--web.png",
+            imgSrc: "abidjan--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1813,7 +2108,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "accra--web.png",
+            imgSrc: "accra--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1824,7 +2119,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "beijing--web.png",
+            imgSrc: "beijing--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1835,7 +2130,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "boston--web.png",
+            imgSrc: "boston--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1846,7 +2141,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "capetown--web.png",
+            imgSrc: "capetown--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1857,7 +2152,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "delhi--web.png",
+            imgSrc: "delhi--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1868,7 +2163,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "dubai--web.png",
+            imgSrc: "dubai--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1879,7 +2174,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "durban--web.png",
+            imgSrc: "durban--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1890,7 +2185,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "fish-tanks--web.png",
+            imgSrc: "fish-tanks--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1901,7 +2196,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "lic-chedus--web.png",
+            imgSrc: "lic-chedus--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1912,7 +2207,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "mossco-hammer--web.png",
+            imgSrc: "mossco-hammer--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1923,7 +2218,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "mumbai--web.png",
+            imgSrc: "mumbai--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1934,7 +2229,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "nairobi--web.png",
+            imgSrc: "nairobi--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1945,7 +2240,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "paris--web.png",
+            imgSrc: "paris--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1956,7 +2251,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "shanghai--web.png",
+            imgSrc: "shanghai--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1967,7 +2262,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "skeltorn--web.png",
+            imgSrc: "skeltorn--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1978,7 +2273,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "sultan--web.png",
+            imgSrc: "sultan--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -1989,7 +2284,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "sydney--web.png",
+            imgSrc: "sydney--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -2000,7 +2295,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "uzokas--web.png",
+            imgSrc: "uzokas--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],
@@ -2017,7 +2312,7 @@ export const products = {
         sizes: ["1L"],
         colors: [
           {
-            imgSrc: "custard/1l-custard--web--ps.png",
+            imgSrc: "custard/1l-custard--web--ps.webp",
             className: "clear-swatch",
           },
         ],
@@ -2028,7 +2323,7 @@ export const products = {
         sizes: ["330ml", "500ml"],
         colors: [
           {
-            imgSrc: "takeaway/tac16.png",
+            imgSrc: "takeaway/tac16.webp",
             className: "white-swatch",
           },
         ],
@@ -2039,7 +2334,7 @@ export const products = {
         sizes: [""],
         colors: [
           {
-            imgSrc: "ketchup container/img-20250612-wa0117--web.png",
+            imgSrc: "ketchup container/img-20250612-wa0117--web.webp",
             className: "clear-swatch",
           },
         ],
@@ -2051,11 +2346,11 @@ export const products = {
         colors: [
           {
             imgSrc:
-              "tamper proof/tamper-proof-containers-500-330-250-125ml--web.png",
+              "tamper proof/tamper-proof-containers-500-330-250-125ml--web.webp",
             className: "white-swatch",
           },
           {
-            imgSrc: "tamper proof/transparent.png",
+            imgSrc: "tamper proof/transparent.webp",
             className: "clear-swatch",
           },
         ],
@@ -2066,7 +2361,7 @@ export const products = {
         sizes: ["500ml", "650ml", "750ml", "100ml"],
         colors: [
           {
-            imgSrc: "square/img-20250612-wa0108--web.png",
+            imgSrc: "square/img-20250612-wa0108--web.webp",
             className: "clear-swatch",
           },
         ],
@@ -2077,11 +2372,11 @@ export const products = {
         sizes: ["100ml", "125ml", "150ml", "350ml", "500ml"],
         colors: [
           {
-            imgSrc: "takeaway/500-350-150-125-100ml-take-away--web.png",
+            imgSrc: "takeaway/500-350-150-125-100ml-take-away--web.webp",
             className: "clear-swatch",
           },
           {
-            imgSrc: "takeaway/tac6.png",
+            imgSrc: "takeaway/tac6.webp",
             className: "white-swatch",
           },
         ],
@@ -2092,7 +2387,7 @@ export const products = {
         sizes: ["350ml"],
         colors: [
           {
-            imgSrc: "takeaway/img-20250612-wa0213--web.png",
+            imgSrc: "takeaway/img-20250612-wa0213--web.webp",
             className: "clear-swatch",
           },
         ],
@@ -2103,7 +2398,7 @@ export const products = {
         sizes: ["650ml", "1000ml"],
         colors: [
           {
-            imgSrc: "img-20250611-wa0034--web.png",
+            imgSrc: "img-20250611-wa0034--web.webp",
             className: "clear-swatch",
           },
         ],
@@ -2120,7 +2415,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "teddy bear/teddy-bear--web.png",
+            imgSrc: "teddy bear/teddy-bear--web.webp",
             className: "bright-green-swatch",
           },
         ],
@@ -2131,7 +2426,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft toy strawberry/soft-toys-strawberry--web.png",
+            imgSrc: "soft toy strawberry/soft-toys-strawberry--web.webp",
             className: "orange-swatch",
           },
         ],
@@ -2142,7 +2437,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft toy elephant/soft-toy-elephant--web.png",
+            imgSrc: "soft toy elephant/soft-toy-elephant--web.webp",
             className: "orange-swatch",
           },
         ],
@@ -2153,7 +2448,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft toy apple/soft-toy-apple--web.png",
+            imgSrc: "soft toy apple/soft-toy-apple--web.webp",
             className: "blue-swatch",
           },
         ],
@@ -2164,7 +2459,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "soft toy mango/soft-toy-mango--web.png",
+            imgSrc: "soft toy mango/soft-toy-mango--web.webp",
             className: "bright-green-swatch",
           },
         ],
@@ -2175,7 +2470,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "baby doll soft/baby-doll-soft--web.png",
+            imgSrc: "baby doll soft/baby-doll-soft--web.webp",
             className: "blue-swatch",
           },
         ],
@@ -2186,7 +2481,7 @@ export const products = {
         sizes: [],
         colors: [
           {
-            imgSrc: "duck soft toy/duck-soft-toy--web.png",
+            imgSrc: "duck soft toy/duck-soft-toy--web.webp",
             className: "orange-swatch",
           },
         ],
@@ -2195,7 +2490,7 @@ export const products = {
         id: 7,
         name: "Hard balls",
         sizes: [],
-        colors: [{ imgSrc: "hb--web.png", className: "" }],
+        colors: [{ imgSrc: "hb--web.webp", className: "" }],
       },
     ],
   },

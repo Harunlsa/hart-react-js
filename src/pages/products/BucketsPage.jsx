@@ -4,7 +4,7 @@ import { products } from "../../data/products";
 const BucketsPage = () => (
   <ProductPageLayout
     categoryName="Buckets"
-    bannerImage="buckets-group.png"
+    bannerImage="buckets-group.webp"
     products={products.buckets}
   />
 );

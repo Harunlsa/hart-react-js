@@ -33,6 +33,7 @@ const getColorCode = (colorClass) => {
     "primary-color-swatch": "#106eea",
     "dark-blue-swatch": "#0d2a6b",
     "plum-swatch": "#87214d",
+    "aqua-swatch": "#01c9e7",
   };
   return colorMap[colorName] || "#cccccc";
 };

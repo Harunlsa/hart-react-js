@@ -1,5 +1,12 @@
-import ProductPageLayout from '../../components/ProductPageLayout';
+import ProductPageLayout from "../../components/ProductPageLayout";
 
- import { products } from '../../data/products';const BasketsPage = () => <ProductPageLayout categoryName='Baskets' bannerImage='baskets-group.png' products={products.baskets}/>;
+import { products } from "../../data/products";
+const BasketsPage = () => (
+  <ProductPageLayout
+    categoryName="Baskets"
+    bannerImage="baskets-group.webp"
+    products={products.baskets}
+  />
+);
 
-export default BasketsPage
+export default BasketsPage;

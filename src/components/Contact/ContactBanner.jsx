@@ -7,7 +7,7 @@ const ContactBanner = () => (
     style={{
       backgroundImage: `url(${
         import.meta.env.BASE_URL
-      }assets/images/contact-banner.png)`,
+      }assets/images/contact-banner.webp)`,
     }}
   >
     <Container>
@@ -23,7 +23,7 @@ const ContactBanner = () => (
 
 const BannerSection = styled.section`
   height: 326px;
-  // background: url("/assets/images/contact-banner.png");
+  // background: url("/assets/images/contact-banner.webp");
   background-size: cover;
   position: relative;
   display: flex;
