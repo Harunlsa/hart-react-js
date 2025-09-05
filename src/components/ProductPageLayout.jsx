@@ -4,6 +4,7 @@ import ProductCard from "./ProductCard";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { products } from "../data/products";
 import LazyImage from "./LazyImage";
+import { useEffect } from "react";
 
 const categoryOptions = [
   { value: "babyCare", label: "Baby Care" },
@@ -36,6 +37,15 @@ const ProductPageLayout = () => {
   const categoryProducts = currentCategory
     ? products[currentCategory.value]
     : null;
+
+  // ✅ Preload banner image when category changes
+  // useEffect(() => {
+  //   if (!currentCategory) return;
+  //   const fullImg = new Image();
+  //   fullImg.src = `${import.meta.env.BASE_URL}assets/images/product-groups/${
+  //     currentCategory.value
+  //   }Group.png`;
+  // }, [currentCategory]);
 
   // Redirect if invalid category
   if (!currentCategory || !categoryProducts) {
@@ -78,7 +88,7 @@ const ProductPageLayout = () => {
               value={currentCategory.value}
               onChange={(e) => navigate(`/products/${e.target.value}`)}
             >
-              <option value="all">All Categories</option>
+              {/* <option value="all">All Categories</option> */}
               {categoryOptions.map(({ value, label }) => (
                 <option key={value} value={value}>
                   {label}

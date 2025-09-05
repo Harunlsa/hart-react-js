@@ -27,7 +27,8 @@ const LazyImage = ({ src, alt, className, ...props }) => {
       alt={alt}
       className={className}
       style={{
-        transition: "filter 0.5s ease",
+        opacity: loaded ? 1 : 0.5,
+        transition: "opacity 0.5s ease, filter 0.5s ease",
         filter: loaded ? "blur(0)" : "blur(20px)",
       }}
       {...props}

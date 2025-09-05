@@ -929,7 +929,7 @@ export const products = {
       },
 
       {
-        id: 7,
+        id: 6,
         name: "Fancy bowl",
         sizes: [],
         colors: [
@@ -2465,7 +2465,7 @@ export const products = {
         ],
       },
       {
-        id: 5,
+        id: 6,
         name: "Soft toy baby doll",
         sizes: [],
         colors: [
@@ -2476,7 +2476,7 @@ export const products = {
         ],
       },
       {
-        id: 6,
+        id: 7,
         name: "Soft toy duck",
         sizes: [],
         colors: [
@@ -2487,7 +2487,7 @@ export const products = {
         ],
       },
       {
-        id: 7,
+        id: 8,
         name: "Hard balls",
         sizes: [],
         colors: [{ imgSrc: "hb--web.webp", className: "" }],

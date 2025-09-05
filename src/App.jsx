@@ -16,7 +16,6 @@ function App() {
     <>
       <Topbar />
       <Header />
-      {/* <MegaMenu /> */}
       <Routes>
         {/* Main pages */}
         <Route
@@ -34,12 +33,11 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
 
-        <Route path="/products/:category" element={<ProductPageLayout />} />
+        <Route
+          path="/products/:category"
+          element={<ProductPageLayout key={location.pathname} />}
+        />
         <Route path="*" element={<Navigate to="/" replace />} />
-        {/* <Route
-          path="*"
-          element={<Navigate to="/products/bowls" replace />}
-        /> */}
       </Routes>
       <Footer />
     </>
