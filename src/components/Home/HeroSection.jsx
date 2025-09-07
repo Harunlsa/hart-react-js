@@ -22,11 +22,11 @@ import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple-compressed.webp
 // import heroOrangeBg from "@/assets/images/hero-bg/bg-hero-orange.webp?preset=hero";
 // import heroPurpleBg from "@/assets/images/hero-bg/bg-hero-purple.webp"
 
-import racksGroup from "@/assets/images/product-groups/racksGroup.png?preset=productGroup";
-import coolersGroup from "@/assets/images/product-groups/coolersGroup.png?preset=productGroup";
-import bowlsGroup from "@/assets/images/product-groups/bowlsGroup.png?preset=productGroup";
-import jerryCansGroup from "@/assets/images/product-groups/jerryCansGroup.png?preset=productGroup";
-import tanksGroup from "@/assets/images/product-groups/tanksGroup.png?preset=productGroup";
+import racksGroup from "@/assets/images/product-groups/racksGroup.webp";
+import coolersGroup from "@/assets/images/product-groups/coolersGroup.webp";
+import bowlsGroup from "@/assets/images/product-groups/bowlsGroup.png";
+import jerryCansGroup from "@/assets/images/product-groups/jerryCansGroup.png";
+import tanksGroup from "@/assets/images/product-groups/tanksGroup.png";
 
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -131,7 +131,7 @@ const HeroSection = () => {
           dynamicBullets: true,
         }}
         autoplay={{
-          delay: 5000,
+          delay: 50000,
           disableOnInteraction: false,
         }}
         className="hero-swiper"

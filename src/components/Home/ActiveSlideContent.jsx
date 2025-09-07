@@ -70,10 +70,9 @@ const ActiveSlideContent = ({ slide }) => {
         </Col>
         <Col md={5} className="text-center imageCol">
           <animated.div style={imageSpring}>
-            <picture>
+            {/* <picture>
               {Array.isArray(slide.imgSrc) &&
                 slide.imgSrc.map((source, i) => <source key={i} {...source} />)}
-              {/* Fallback <img> for browsers that don’t support AVIF/WebP */}
               <SlideImage
                 src={
                   slide.imgSrc?.[0]?.srcset
@@ -82,7 +81,8 @@ const ActiveSlideContent = ({ slide }) => {
                 }
                 alt={slide.highlight}
               />
-            </picture>
+            </picture> */}
+            <SlideImage src={slide.imgSrc} alt={slide.hightlight} />
           </animated.div>
           <MobileOnlyButton>
             <Button as={Link} to={slide.link}>
@@ -255,6 +255,7 @@ const SlideImage = styled.img`
 
   @media (min-width: 1440px) and (orientation: landscape){
     max-height: 60vh;
+    min-height: 40vh;
     padding-right: 10px;
   }
 `;
