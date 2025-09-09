@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
+import LazyImage from "./LazyImage";
 
 // Color mapping utility
 const getColorCode = (colorClass) => {
@@ -44,12 +45,19 @@ const ProductCard = ({ product, category }) => {
   return (
     <CardWrapper sm={6} md={4} lg={3}>
       <Card>
+        {/* <ProductImageWrapper> */}
         <ProductImage
           src={`${import.meta.env.BASE_URL}assets/images/products/${category}/${
             product.colors[selectedColor].imgSrc
           }`}
           alt={product.name}
+          style={{
+            width: "100%",
+            height: "250px",
+            objectFit: "contain",
+          }}
         />
+        {/* </ProductImageWrapper> */}
         <CardBody>
           <Title>{product.name}</Title>
           <OptionsWrapper>
@@ -85,8 +93,10 @@ const Card = styled.div`
   border-radius: 8px;
   box-shadow: 0 0 29px rgba(68, 88, 144, 0.12);
   overflow: hidden;
+  align-items: center;
+  justify-content: middle;
   transition: transform 0.3s ease;
-
+  // height: 100%;
   &:hover {
     transform: translateY(-5px);
   }
@@ -111,12 +121,13 @@ const OptionsWrapper = styled.div`
   // margin-top: 15px;
 `;
 
-const ProductImage = styled.img`
-  width: 100%;
-  height: 250px;
-  object-fit: contain;
+// const ProductImageWrapper = styled.div`
+//   height: 250px;
+//   // padding: 10px;
+// `;
+const ProductImage = styled(LazyImage)`
+  // height: 250px;
   padding: 20px;
-  border-bottom: 1px solid #eee;
 `;
 
 const SizeOptions = styled.div`

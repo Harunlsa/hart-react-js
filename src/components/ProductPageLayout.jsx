@@ -4,7 +4,8 @@ import ProductCard from "./ProductCard";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { products } from "../data/products";
 import LazyImage from "./LazyImage";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+// import { useEffect } from "react";
 
 const categoryOptions = [
   { value: "babyCare", label: "Baby Care" },
@@ -28,10 +29,20 @@ const ProductPageLayout = () => {
   // React Router hooks
   const navigate = useNavigate();
   const { category } = useParams();
+  const [loading, setLoading] = useState(true);
+
+  // simulate data load on route change
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 400); // delay gives loader time to show (tweak as needed)
+
+    return () => clearTimeout(timer);
+  }, [category]);
 
   /// Find current category data
   const currentCategory = categoryOptions.find((opt) => opt.value === category);
-  // console.log("currentCategory", currentCategory);
 
   // Find products for current category
   const categoryProducts = currentCategory
@@ -47,9 +58,17 @@ const ProductPageLayout = () => {
   //   }Group.png`;
   // }, [currentCategory]);
 
+  if (loading) {
+    return (
+      <div className="page-loader">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
   // Redirect if invalid category
   if (!currentCategory || !categoryProducts) {
-    return <Navigate to="/products" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return (

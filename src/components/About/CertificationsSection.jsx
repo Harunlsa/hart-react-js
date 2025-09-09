@@ -12,9 +12,7 @@ const CertificationsSection = () => {
           <Col md={3}>
             <LogoContainer>
               <img
-                src={`${
-                  import.meta.env.BASE_URL
-                }/assets/images/SON-MANCAP.webp`}
+                src={`${import.meta.env.BASE_URL}assets/images/SON-MANCAP.webp`}
                 alt="SON and MANCAP logos"
               />
             </LogoContainer>
