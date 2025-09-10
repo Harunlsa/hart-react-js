@@ -84,12 +84,32 @@ const ProductPageLayout = () => {
               <h1>{currentCategory.label}</h1>
               <p>{categoryProducts.description}</p>
             </Col>
-            <Col md={5} className="text-right">
+            <Col
+              md={5}
+              className="text-right"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <BannerImage
                 src={`${import.meta.env.BASE_URL}assets/images/product-groups/${
                   currentCategory.value
                 }Group.webp`}
                 alt={currentCategory.label}
+                style={
+                  {
+                    // maxWidth: "34vw",
+                    // maxHeight: "40vh",
+                    // display: "inline",
+                    // maxHeight: "100%",
+                    // maxWidth: "90%",
+                    // margin: "25px auto",
+                    // alignItems: "center",
+                    // justifyContent: "center",
+                  }
+                }
               />
             </Col>
           </Row>
@@ -231,10 +251,11 @@ const Banner = styled.section`
 `;
 
 const BannerImage = styled(LazyImage)`
-  max-height: 25vh;
-  max-width: 90vw;
+  // max-height: 40vh !important;
+  // max-width: 34vw !important;
   margin: 25px auto;
   align-items: center;
+  // margin: 20px auto;
 
   @media (min-width: 426px) {
     max-height: 300px;
@@ -244,7 +265,7 @@ const BannerImage = styled(LazyImage)`
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media (min-width: 600px) {
-    max-width: 40vw;
+    // max-width: 40vw;
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
@@ -253,7 +274,7 @@ const BannerImage = styled(LazyImage)`
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media (min-width: 992px) {
-    padding-left: 10%;
+    // padding-left: 10%;
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */

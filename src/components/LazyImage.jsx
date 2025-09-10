@@ -18,11 +18,36 @@ const Wrapper = styled.div`
 `;
 
 const StyledImg = styled.img`
-  width: 100%;
-  height: auto;
-  display: block;
+  max-width: 100%;
+  max-height: 26vh;
+  object-fit: contain;
+
   opacity: ${(props) => (props.loaded ? 1 : 0)};
   transition: opacity 0.6s ease-in-out;
+
+  @media (min-width: 426px) {
+    max-height: 300px;
+    width: auto;
+    display: block;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) {
+    // max-width: 40vw;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    // padding-left: 10%;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
 `;
 
 // ✨ Shimmer overlay (only visible when loading)
