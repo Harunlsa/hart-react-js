@@ -2,12 +2,12 @@ import ProductPageLayout from "../../components/ProductPageLayout";
 
 import { products } from "../../data/products";
 
-const Tanks = () => (
+const LibertyTanks = () => (
   <ProductPageLayout
     categoryName="Tanks"
     bannerImage="tanks-group.webp"
-    products={products.tanks}
+    products={products.LibertyTanks}
   />
 );
 
-export default Tanks;
+export default LibertyTanks;

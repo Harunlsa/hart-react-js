@@ -2087,7 +2087,85 @@ export const products = {
       },
     ],
   },
-  tanks: {
+  hartTanks: {
+    description:
+      "Engineered for strength, our plastic tanks deliver reliable storage for water and other liquids in any setting.",
+    items: [
+      {
+        id: 1,
+        name: "Lic chedus",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "lic-chedus--web.webp",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Paris",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "paris--web.webp",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Skeltorn",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "skeltorn--web.webp",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Sultan",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "sultan--web.webp",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Uzokas",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "uzokas--web.webp",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+    ],
+  },
+  fishTanks: {
+    description:
+      "Engineered for strength, our plastic tanks deliver reliable storage for water and other liquids in any setting.",
+    items: [
+      {
+        id: 1,
+        name: "Fish tanks",
+        sizes: [],
+        colors: [
+          {
+            imgSrc: "fish-tanks--web.webp",
+            className: "black-swatch inner-shadow-light",
+          },
+        ],
+      },
+    ],
+  },
+  libertyTanks: {
     description:
       "Engineered for strength, our plastic tanks deliver reliable storage for water and other liquids in any setting.",
     items: [
@@ -2181,28 +2259,6 @@ export const products = {
       },
       {
         id: 9,
-        name: "Fish tanks",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "fish-tanks--web.webp",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 10,
-        name: "Lic chedus",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "lic-chedus--web.webp",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 11,
         name: "Mossco hammer",
         sizes: [],
         colors: [
@@ -2213,7 +2269,7 @@ export const products = {
         ],
       },
       {
-        id: 12,
+        id: 10,
         name: "Mumbai",
         sizes: [],
         colors: [
@@ -2224,7 +2280,7 @@ export const products = {
         ],
       },
       {
-        id: 13,
+        id: 11,
         name: "Nairobi",
         sizes: [],
         colors: [
@@ -2235,18 +2291,7 @@ export const products = {
         ],
       },
       {
-        id: 14,
-        name: "Paris",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "paris--web.webp",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 15,
+        id: 12,
         name: "Shanghai",
         sizes: [],
         colors: [
@@ -2257,45 +2302,12 @@ export const products = {
         ],
       },
       {
-        id: 16,
-        name: "Skeltorn",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "skeltorn--web.webp",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 17,
-        name: "Sultan",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "sultan--web.webp",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 18,
+        id: 13,
         name: "Sydney",
         sizes: [],
         colors: [
           {
             imgSrc: "sydney--web.webp",
-            className: "black-swatch inner-shadow-light",
-          },
-        ],
-      },
-      {
-        id: 19,
-        name: "Uzokas",
-        sizes: [],
-        colors: [
-          {
-            imgSrc: "uzokas--web.webp",
             className: "black-swatch inner-shadow-light",
           },
         ],

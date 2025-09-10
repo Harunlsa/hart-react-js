@@ -69,7 +69,7 @@ const ActiveSlideContent = ({ slide }) => {
           </animated.div>
         </Col>
         <Col md={5} className="text-center imageCol">
-          <animated.div style={imageSpring}>
+          <animated.div style={imageSpring} alt={slide.highlight}>
             {/* <picture>
               {Array.isArray(slide.imgSrc) &&
                 slide.imgSrc.map((source, i) => <source key={i} {...source} />)}

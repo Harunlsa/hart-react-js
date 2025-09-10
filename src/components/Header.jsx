@@ -446,8 +446,9 @@ const productCategories = [
     title: "Tanks",
     icon: BiDroplet,
     items: [
-      { name: "Hart Tanks", path: "/products/tanks" },
-      { name: "Liberty Tanks", path: "/products/tanks" },
+      { name: "Hart Tanks", path: "/products/hartTanks" },
+      { name: "Liberty Tanks", path: "/products/libertyTanks" },
+      { name: "Fish Tanks", path: "/products/fishTanks" },
     ],
   },
 ];
