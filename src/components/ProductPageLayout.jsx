@@ -1,4 +1,11 @@
-import { Container, Row, Col, Breadcrumb, Form } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Breadcrumb,
+  Form,
+  Spinner,
+} from "react-bootstrap";
 import styled from "styled-components";
 import ProductCard from "./ProductCard";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
@@ -63,9 +70,11 @@ const ProductPageLayout = () => {
 
   if (loading) {
     return (
-      <div className="page-loader">
-        <p>Loading...</p>
-      </div>
+      <SpinnerContainer>
+        <Spinner animation="border" role="status" variant="primary">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </SpinnerContainer>
     );
   }
 
@@ -291,6 +300,12 @@ const FilterSection = styled.section`
 
 const ProductGrid = styled.section`
   // padding: 40px 0;
+`;
+const SpinnerContainer = styled.div`
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default ProductPageLayout;
