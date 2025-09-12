@@ -25,7 +25,7 @@ const categoryOptions = [
   { value: "libertyTanks", label: "Liberty Tanks" },
   { value: "fishTanks", label: "Fish Tanks" },
   { value: "toys", label: "Toys" },
-  { value: "others", label: "Others" },
+  { value: "others", label: "Household Essentials" },
 ];
 
 const ProductPageLayout = () => {

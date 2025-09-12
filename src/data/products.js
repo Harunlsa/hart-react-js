@@ -1,7 +1,7 @@
 export const products = {
   babyCare: {
     description:
-      "Safe and adorable baby care essentials designed for comfort and convenience. Our baby sets combine practicality with charming designs perfect for modern parenting needs.",
+      "Safe, durable, and parent-friendly baby essentials. From bath sets to feeders, our products make everyday care simple and joyful.",
     items: [
       {
         id: 1,
@@ -722,7 +722,7 @@ export const products = {
   },
   bowls: {
     description:
-      "Food-grade plastic bowls for everyday use. Microwave-safe and dishwasher-friendly designs for modern kitchens.",
+      "Sturdy and versatile bowls for everyday use. Ideal for serving, mixing, or storage at home and beyond.",
     items: [
       {
         id: 1,
@@ -1171,7 +1171,7 @@ export const products = {
   },
   buckets: {
     description:
-      "Heavy-duty buckets built to last. Perfect for construction, cleaning, and agricultural applications.",
+      "Durable plastic buckets designed for utility and convenience. Great for cleaning, carrying, or storage tasks.",
     items: [
       {
         id: 1,
@@ -1283,7 +1283,7 @@ export const products = {
   },
   colandersAndPlates: {
     description:
-      "Essential kitchen tools for food preparation. Our colanders and plates feature ergonomic designs for efficient cooking.",
+      "Practical colanders and plates built for daily dining and kitchen needs. Lightweight, durable, and easy to clean.",
     items: [
       {
         id: 1,
@@ -1528,7 +1528,7 @@ export const products = {
   },
   drums: {
     description:
-      "Industrial-grade storage drums for chemicals and liquids. UN-certified containers with secure sealing systems.",
+      "Strong, space-saving plastic drums for versatile storage. Perfect for organizing everything from kitchen goods to household items.",
     items: [
       {
         id: 1,
@@ -1549,7 +1549,7 @@ export const products = {
   },
   iceCreamContainers: {
     description:
-      "Commercial-grade containers for ice cream storage and display. Perfect for parlors and bulk storage.",
+      "Reliable and hygienic plastic containers for ice cream and frozen treats. Built to preserve freshness and withstand freezing temperatures.",
     items: [
       {
         id: 1,
@@ -1714,7 +1714,7 @@ export const products = {
   },
   mugsAndCups: {
     description:
-      "Ergonomic drinkware for home and office use. Heat-resistant and dishwasher-safe designs.",
+      "Comfortable, durable mugs and cups for daily beverages. Stylish and functional for home, work, or travel.",
     items: [
       {
         id: 1,
@@ -2064,7 +2064,7 @@ export const products = {
   },
   fishTanks: {
     description:
-      "Engineered for strength, our plastic tanks deliver reliable storage for water and other liquids in any setting.",
+      "Durable fish tanks designed to showcase aquatic life beautifully while providing a safe, healthy environment.",
     items: [
       {
         id: 1,
@@ -2230,7 +2230,7 @@ export const products = {
   },
   takeAwayContainers: {
     description:
-      "Eco-friendly food packaging solutions. Microwave-safe containers with leak-proof designs.",
+      "Secure and hygienic takeaway containers. Perfect for food storage, delivery, or meals on the go.",
     items: [
       {
         id: 1,
@@ -2333,7 +2333,7 @@ export const products = {
   },
   toys: {
     description:
-      "Our collection of plastic soft toys offers a delightful combination of entertainment and learning for children of all ages. Crafted with the highest quality materials, these toys provide numerous benefits and endless hours of enjoyment.",
+      "Safe, colorful plastic toys that spark imagination and bring joy to kids while being easy to clean and durable.",
     items: [
       {
         id: 1,
@@ -2476,7 +2476,8 @@ export const products = {
     ],
   },
   others: {
-    description: "Other items",
+    description:
+      "Handy everyday essentials like funnels, soap cases, fans, toothbrush holders, and more to simplify daily life.",
     items: [
       {
         id: 1,
