@@ -21,11 +21,11 @@ const categoryOptions = [
   { value: "mugsAndCups", label: "Mugs & Cups" },
   { value: "racks", label: "Racks" },
   { value: "takeAwayContainers", label: "Take Away Containers" },
-  { value: "tanks", label: "Tanks" },
   { value: "hartTanks", label: "Hart Tanks" },
   { value: "libertyTanks", label: "Liberty Tanks" },
   { value: "fishTanks", label: "Fish Tanks" },
   { value: "toys", label: "Toys" },
+  { value: "others", label: "Others" },
 ];
 
 const ProductPageLayout = () => {

@@ -429,6 +429,7 @@ const productCategories = [
       { name: "Racks", path: "/products/racks" },
       { name: "Toys", path: "/products/toys" },
       { name: "Take Away Containers", path: "/products/takeAwayContainers" },
+      { name: "Others", path: "/products/others" },
     ],
   },
   {

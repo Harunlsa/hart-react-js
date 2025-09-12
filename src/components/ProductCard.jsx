@@ -30,6 +30,7 @@ const getColorCode = (colorClass) => {
     "turquoise-swatch": "#007ba3",
     "lime-yellow-swatch": "#b7c900",
     "bright-yellow-swatch": "#ffe11d",
+    "tan-swatch": "#dcd28dff",
     "multi-color-swatch": "linear-gradient(45deg, #ff0000, #00ff00, #0000ff)",
     "primary-color-swatch": "#106eea",
     "dark-blue-swatch": "#0d2a6b",
