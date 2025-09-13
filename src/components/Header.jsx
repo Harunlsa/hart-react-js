@@ -425,6 +425,7 @@ const productCategories = [
       { name: "Colanders and Plates", path: "/products/colandersAndPlates" },
       { name: "Coolers", path: "/products/coolers" },
       { name: "Drums", path: "/products/drums" },
+      { name: "Kettles", path: "/products/kettles" },
       { name: "Mugs and Cups", path: "/products/mugsAndCups" },
       { name: "Racks", path: "/products/racks" },
       { name: "Toys", path: "/products/toys" },

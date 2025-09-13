@@ -12,9 +12,11 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { products } from "../data/products";
 import LazyImage from "./LazyImage";
 import { useEffect, useState } from "react";
+import AdditionalInfo from "./AdditionalInfo";
 // import { useEffect } from "react";
 
 const categoryOptions = [
+  // { value: "all", label: "All Products" },
   { value: "babyCare", label: "Baby Care" },
   { value: "basins", label: "Basins" },
   { value: "baskets", label: "Baskets" },
@@ -25,6 +27,7 @@ const categoryOptions = [
   { value: "drums", label: "Drums" },
   { value: "iceCreamContainers", label: "Ice Cream Containers" },
   { value: "jerryCans", label: "Jerry Cans" },
+  { value: "kettles", label: "Kettles" },
   { value: "mugsAndCups", label: "Mugs & Cups" },
   { value: "racks", label: "Racks" },
   { value: "takeAwayContainers", label: "Take Away Containers" },
@@ -55,9 +58,19 @@ const ProductPageLayout = () => {
   const currentCategory = categoryOptions.find((opt) => opt.value === category);
 
   // Find products for current category
-  const categoryProducts = currentCategory
-    ? products[currentCategory.value]
-    : null;
+  let categoryProducts;
+
+  if (currentCategory?.value === "all") {
+    // Merge all category items into one flat array
+    const allItems = Object.values(products).flatMap((cat) => cat.items || []);
+
+    categoryProducts = {
+      description: "Explore our full range of products across all categories.",
+      items: allItems,
+    };
+  } else {
+    categoryProducts = currentCategory ? products[currentCategory.value] : null;
+  }
 
   // ✅ Preload banner image when category changes
   // useEffect(() => {
@@ -93,7 +106,12 @@ const ProductPageLayout = () => {
         <Container>
           <Row className="h-100 align-items-center">
             <Col md={7}>
-              <h1>{currentCategory.label}</h1>
+              <h1>
+                {currentCategory.label}
+                <sup>
+                  <AdditionalInfo category={currentCategory.value} />
+                </sup>
+              </h1>
               <p>{categoryProducts.description}</p>
             </Col>
             <Col
@@ -110,18 +128,6 @@ const ProductPageLayout = () => {
                   currentCategory.value
                 }Group.webp`}
                 alt={currentCategory.label}
-                style={
-                  {
-                    // maxWidth: "34vw",
-                    // maxHeight: "40vh",
-                    // display: "inline",
-                    // maxHeight: "100%",
-                    // maxWidth: "90%",
-                    // margin: "25px auto",
-                    // alignItems: "center",
-                    // justifyContent: "center",
-                  }
-                }
               />
             </Col>
           </Row>
