@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
 import ProductPageLayout from "./components/ProductPageLayout";
+import Catalogue from "./pages/Catalogue";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         ></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+
+        <Route path="/catalogue" element={<Catalogue />}></Route>
 
         <Route
           path="/products/:category"
