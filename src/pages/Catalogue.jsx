@@ -24,10 +24,12 @@ const Catalogue = () => {
   const isSmallScreen = window.innerWidth < 768;
   // const aspect = width / height;
 
+  // const getPageSrc = (i) =>
+  //   `${import.meta.env.BASE_URL}assets/images/catalogue/page${String(
+  //     i + 1
+  //   ).padStart(2, "0")}.svg`;
   const getPageSrc = (i) =>
-    `${import.meta.env.BASE_URL}assets/images/catalogue/page${String(
-      i + 1
-    ).padStart(2, "0")}.svg`;
+    `/assets/images/catalogue/page${String(i + 1).padStart(2, "0")}.svg`;
 
   return (
     <div
