@@ -4,6 +4,7 @@ import { BsFullscreen } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import styled from "styled-components";
 import { useRef, useState } from "react";
+import LazyImage from "../components/LazyImage";
 
 const Catalogue = () => {
   const [page, setPage] = useState(0);
@@ -59,13 +60,24 @@ const Catalogue = () => {
         >
           {Array.from({ length: totalPages }, (_, i) => (
             <div className="demoPage" key={i}>
-              <img
+              {/* <img
                 src={getPageSrc(i)}
                 alt={`Page ${i + 1}`}
                 style={{
                   width: "100%",
                   height: "100%",
                   objectFit: "contain",
+                }}
+              /> */}
+              <LazyImage
+                src={getPageSrc(i)}
+                alt={`Page ${i + 1}`}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  // maxHeight: "600px",
+                  maxHeight: `${normalHeight}px`,
                 }}
               />
             </div>
