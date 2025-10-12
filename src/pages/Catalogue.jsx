@@ -1,10 +1,9 @@
-// import { useEffect, useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { BsFullscreen } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import styled from "styled-components";
 import { useRef, useState } from "react";
-import LazyImage from "../components/LazyImage";
+// import LazyImage from "../components/LazyImage";
 
 const Catalogue = () => {
   const [page, setPage] = useState(0);
@@ -25,12 +24,15 @@ const Catalogue = () => {
   const isSmallScreen = window.innerWidth < 768;
   // const aspect = width / height;
 
-  // const getPageSrc = (i) =>
-  //   `${import.meta.env.BASE_URL}assets/images/catalogue/page${String(
-  //     i + 1
-  //   ).padStart(2, "0")}.svg`;
   const getPageSrc = (i) =>
-    `/assets/images/catalogue/page${String(i + 1).padStart(2, "0")}.svg`;
+    `${import.meta.env.BASE_URL}assets/images/catalogue/converted/page${String(
+      i + 1
+    ).padStart(2, "0")}.webp`;
+  // const getPageSrc = (i) =>
+  //   `/assets/images/catalogue/converted/page${String(i + 1).padStart(
+  //     2,
+  //     "0"
+  //   )}.webp`;
 
   return (
     <div
@@ -60,7 +62,7 @@ const Catalogue = () => {
         >
           {Array.from({ length: totalPages }, (_, i) => (
             <div className="demoPage" key={i}>
-              {/* <img
+              <img
                 src={getPageSrc(i)}
                 alt={`Page ${i + 1}`}
                 style={{
@@ -68,8 +70,8 @@ const Catalogue = () => {
                   height: "100%",
                   objectFit: "contain",
                 }}
-              /> */}
-              <LazyImage
+              />
+              {/* <LazyImage
                 src={getPageSrc(i)}
                 alt={`Page ${i + 1}`}
                 style={{
@@ -79,7 +81,7 @@ const Catalogue = () => {
                   // maxHeight: "600px",
                   maxHeight: `${normalHeight}px`,
                 }}
-              />
+              /> */}
             </div>
           ))}
         </HTMLFlipBook>

@@ -148,7 +148,7 @@ h6 {
   position: absolute;
   bottom: 0;
   margin-bottom: 0 !important;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s ease;
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
