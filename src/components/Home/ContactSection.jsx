@@ -17,21 +17,58 @@ const ContactSection = () => {
     success: false,
   });
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus({ loading: true, error: "", success: false });
+
+  //   try {
+  //     await new Promise((resolve) => setTimeout(resolve, 1000));
+  //     setStatus({ loading: false, error: "", success: true });
+  //     setFormData({ name: "", email: "", subject: "", message: "" });
+  //   } catch (error) {
+  //     setStatus({
+  //       loading: false,
+  //       error: "Failed to send message",
+  //       success: false,
+  //     });
+  //     console.log(error);
+  //   }
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus({ loading: true, error: "", success: false });
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setStatus({ loading: false, error: "", success: true });
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "d48c76d4-263a-4738-ba8e-c0b2b256d432",
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          from_name: "Hart Industries Website",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({ loading: false, error: "", success: true });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
     } catch (error) {
       setStatus({
         loading: false,
-        error: "Failed to send message",
+        error: "Failed to send message. Please try again.",
         success: false,
       });
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -147,7 +184,9 @@ const ContactSection = () => {
                 </Col>
 
                 <Col md={12} className="text-center">
-                  {status.loading && <StatusMessage>Loading</StatusMessage>}
+                  {status.loading && (
+                    <StatusMessage>Sending message...</StatusMessage>
+                  )}
                   {status.error && <ErrorMessage>{status.error}</ErrorMessage>}
                   {status.success && (
                     <SuccessMessage>
@@ -159,6 +198,13 @@ const ContactSection = () => {
                     Send Message
                   </SubmitButton>
                 </Col>
+
+                {/* Spam protection */}
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  style={{ display: "none" }}
+                />
               </Row>
             </Form>
           </Col>
