@@ -3,7 +3,7 @@ import FeaturedServices from "../components/Home/FeaturedServices";
 import ClientsSection from "../components/Home/ClientsSection";
 import FaqSection from "../components/Home/FaqSection";
 import ContactSection from "../components/Home/ContactSection";
-import PortfolioSection from "../components/Home/PortfolioSection";
+// import PortfolioSection from "../components/Home/PortfolioSection";
 
 const Home = () => {
   return (

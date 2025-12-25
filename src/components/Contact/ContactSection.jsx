@@ -100,7 +100,7 @@ const ContactSection = ({ formData, setFormData, handleSubmit, status }) => (
                 required
               />
             </Form.Group>
-
+            {/* 
             <StatusMessages>
               {status.loading && <div className="loading">Loading</div>}
               {status.error && (
@@ -111,9 +111,18 @@ const ContactSection = ({ formData, setFormData, handleSubmit, status }) => (
                   Your message has been sent. Thank you!
                 </div>
               )}
-            </StatusMessages>
+            </StatusMessages> */}
 
-            <SubmitButton type="submit">Send Message</SubmitButton>
+            {/* Spam protection */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              style={{ display: "none" }}
+            />
+
+            <SubmitButton type="submit" disabled={status.loading}>
+              {status.loading ? "Sending..." : "Send Message"}
+            </SubmitButton>
           </Form>
         </FormCol>
       </Row>

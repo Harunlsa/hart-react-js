@@ -11,6 +11,7 @@ import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
 import ProductPageLayout from "./components/ProductPageLayout";
 import Catalogue from "./pages/Catalogue";
+import { Bounce, ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -43,6 +44,18 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
+
+      <ToastContainer
+        position="bottom-right"
+        autoClose={4000}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        pauseOnFocusLoss
+        draggable
+        theme="light"
+        transition={Bounce}
+      />
     </>
   );
 }
