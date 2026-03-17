@@ -1,26 +1,36 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useForm } from "react-hook-form";
 import { BiPhone, BiEnvelope } from "react-icons/bi";
 import { BsGeoAlt } from "react-icons/bs";
 import { toast } from "react-toastify";
 import styled from "styled-components";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [status, setStatus] = useState({
-    loading: false,
-    error: "",
-    success: false,
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm({
+    mode: "onBlur",
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus({ loading: true, error: "", success: false });
+  // const [status, setStatus] = useState({
+  //   loading: false,
+  //   error: "",
+  //   success: false,
+  // });
+
+  const onSubmit = async (data) => {
+    // e.preventDefault();
+    // setStatus({ loading: true, error: "", success: false });
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -30,10 +40,7 @@ const ContactSection = () => {
         },
         body: JSON.stringify({
           access_key: "d48c76d4-263a-4738-ba8e-c0b2b256d432",
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
+          ...data,
           from_name: "Hart Industries Website",
         }),
       });
@@ -43,24 +50,25 @@ const ContactSection = () => {
       if (!result.success)
         throw new Error(result.message || "Submission failed");
 
-      setStatus({ loading: false, error: "", success: true });
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      // setStatus({ loading: false, error: "", success: true });
+      // setFormData({ name: "", email: "", subject: "", message: "" });
+      reset();
 
       toast.success("Your message has been sent successfully!");
     } catch (error) {
       toast.error("Failed to send message. Please try again.");
-      setStatus({
-        loading: false,
-        error: "Failed to send message. Please try again.",
-        success: false,
-      });
+      // setStatus({
+      //   loading: false,
+      //   error: "Failed to send message. Please try again.",
+      //   success: false,
+      // });
       console.error(error);
     }
   };
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
   return (
     <Section id="contact" className="section">
@@ -120,7 +128,7 @@ const ContactSection = () => {
 
           <Col lg={7}>
             <Form
-              onSubmit={handleSubmit}
+              onSubmit={handleSubmit(onSubmit)}
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -129,49 +137,85 @@ const ContactSection = () => {
                   <Label>Your Name</Label>
                   <Input
                     type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
+                    // name="name"
+                    // value={formData.name}
+                    // onChange={handleChange}
+                    {...register("name", {
+                      required: "Name is required",
+                      minLength: {
+                        value: 2,
+                        message: "Name must be at least 2 characters",
+                      },
+                    })}
+                    // required
                   />
+                  {errors.name && (
+                    <ErrorMessage>{errors.name.message}</ErrorMessage>
+                  )}
                 </Col>
 
                 <Col md={6}>
                   <Label>Your Email</Label>
                   <Input
                     type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
+                    // name="email"
+                    // value={formData.email}
+                    // onChange={handleChange}
+                    {...register("email", {
+                      required: "Email is required",
+                      pattern: {
+                        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                        message: "Enter a valid email address",
+                      },
+                    })}
+                    // required
                   />
+                  {errors.email && (
+                    <ErrorMessage>{errors.email.message}</ErrorMessage>
+                  )}
                 </Col>
 
                 <Col md={12}>
                   <Label>Subject</Label>
                   <Input
                     type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
+                    // name="subject"
+                    // value={formData.subject}
+                    // onChange={handleChange}
+                    // required
+                    {...register("subject", {
+                      required: "Subject is required",
+                    })}
                   />
+                  {errors.subject && (
+                    <ErrorMessage>{errors.subject.message}</ErrorMessage>
+                  )}
                 </Col>
 
                 <Col md={12}>
                   <Label>Message</Label>
                   <TextArea
-                    name="message"
+                    // name="message"
                     rows="10"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
+                    // value={formData.message}
+                    // onChange={handleChange}
+                    // required
+                    {...register("messsage", {
+                      required: "Message is required",
+                      minLength: {
+                        value: 20,
+                        message: "Message must be at least 20 characters",
+                      },
+                    })}
                   />
+                  {errors.message && (
+                    <ErrorMessage>{errors.message.message}</ErrorMessage>
+                  )}
                 </Col>
 
                 <Col md={12} className="text-center">
-                  <SubmitButton type="submit" disabled={status.loading}>
-                    {status.loading ? "Sending..." : "Send Message"}
+                  <SubmitButton type="submit" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </SubmitButton>
                 </Col>
 
@@ -312,52 +356,45 @@ const Label = styled.label`
   padding-bottom: 8px;
 `;
 
+const sharedInputStyles = `
+width: 100%;
+font-size: 14px;
+padding: 10px 15px;
+box-shadow: none;
+border-radius: 0.5;
+color: ${({ theme }) => theme.defaultColor || "#212529"};
+background-color: #ffffff;
+border: 0.8px solid #d3d3d4;
+
+&:focus {
+  border-color: ${({ theme }) => theme.accentColor || "#106eea"};
+  outline: none;
+  }
+  `;
+
 const Input = styled.input`
-  width: 100%;
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: ${({ theme }) => theme.defaultColor || "#212529"};
-  background-color: ${({ theme }) => theme.surfaceColor || "#ffffff"};
-  border: 1px solid
-    ${({ theme }) =>
-      theme.defaultColor
-        ? `color-mix(in srgb, ${theme.defaultColor}, transparent 80%)`
-        : "rgba(33, 37, 41, 0.2)"};
-
-  &:focus {
-    border-color: ${({ theme }) => theme.accentColor || "#106eea"};
-    outline: none;
-  }
-
-  &::placeholder {
-    color: ${({ theme }) =>
-      theme.defaultColor
-        ? `color-mix(in srgb, ${theme.defaultColor}, transparent 70%)`
-        : "rgba(33, 37, 41, 0.7)"};
-  }
+  ${sharedInputStyles}
 `;
 
 const TextArea = styled.textarea`
-  ${Input.styles}
+  ${sharedInputStyles}
   resize: vertical;
   min-height: 100px;
-  width: 100%;
-  border: 0.8px solid #d3d3d4;
 `;
 
 const StatusMessage = styled.div`
-  padding: 10px 0;
+  padding: 2px 0;
 `;
 
 const ErrorMessage = styled(StatusMessage)`
   color: #dc3545;
+  font-size: 13px;
+  margin-top: 4px;
 `;
 
-const SuccessMessage = styled(StatusMessage)`
-  color: #28a745;
-`;
+// const SuccessMessage = styled(StatusMessage)`
+//   color: #28a745;
+// `;
 
 const SubmitButton = styled.button`
   color: ${({ theme }) => theme.contrastColor || "#fff"};

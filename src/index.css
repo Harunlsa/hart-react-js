@@ -1,11 +1,11 @@
-/* :root {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
 html {
   scrollbar-width: none;
   box-sizing: border-box;
@@ -83,11 +83,6 @@ h6 {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 600px), (orientation: portrait) {
   .heroRow > div:nth-child(1) {
-    /* color: red !important;
-    outline: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    text-align: center; */
     justify-content: center;
   }
 }

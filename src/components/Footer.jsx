@@ -58,7 +58,10 @@ const Footer = () => {
               Reserved
             </Col>
             <Col md={6} className="credits">
-              Designed by <CreditLink href="#">HLAbdulwahab</CreditLink>
+              Designed by{" "}
+              <CreditLink href="mailto:harunlabdulwahab@gmail.com">
+                HLAbdulwahab
+              </CreditLink>
             </Col>
           </Row>
         </Container>
