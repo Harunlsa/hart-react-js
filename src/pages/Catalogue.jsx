@@ -3,6 +3,7 @@ import { BsFullscreen } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import styled from "styled-components";
 import { useRef, useState } from "react";
+import SEO from "../components/SEO";
 // import LazyImage from "../components/LazyImage";
 
 const Catalogue = () => {
@@ -26,7 +27,7 @@ const Catalogue = () => {
 
   const getPageSrc = (i) =>
     `${import.meta.env.BASE_URL}assets/images/catalogue/converted/page${String(
-      i + 1
+      i + 1,
     ).padStart(2, "0")}.webp`;
   // const getPageSrc = (i) =>
   //   `/assets/images/catalogue/converted/page${String(i + 1).padStart(
@@ -35,43 +36,50 @@ const Catalogue = () => {
   //   )}.webp`;
 
   return (
-    <div
-      className={`catalogue-container ${
-        fullscreen ? "catalogue-fullscreen" : ""
-      }`}
-    >
-      <div className="flipbook-wrapper">
-        <HTMLFlipBook
-          // key={`${dimensions.width}x${dimensions.height}`}
-          ref={flipBookRef}
-          width={normalWidth}
-          height={normalHeight}
-          size={isSmallScreen ? "stretch" : "fixed"}
-          autoSize={true}
-          minWidth={315}
-          maxWidth={1000}
-          minHeight={400}
-          maxHeight={1200}
-          maxShadowOpacity={0.5}
-          showCover={true}
-          mobileScrollSupport={true}
-          drawShadow={true}
-          onFlip={(e) => setPage(e.data)}
-          className="mx-auto shadow-lg"
-          style={{ padding: "10px 0" }}
-        >
-          {Array.from({ length: totalPages }, (_, i) => (
-            <div className="demoPage" key={i}>
-              <img
-                src={getPageSrc(i)}
-                alt={`Page ${i + 1}`}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-              />
-              {/* <LazyImage
+    <>
+      <SEO
+        title="Product Catalogue"
+        description="Browse our full product catalogue of high-quality plastic goods including household and industrial products."
+        keywords="Plastic catalogue Nigeria, product brochure, Hart Industries catalogue"
+      />
+
+      <div
+        className={`catalogue-container ${
+          fullscreen ? "catalogue-fullscreen" : ""
+        }`}
+      >
+        <div className="flipbook-wrapper">
+          <HTMLFlipBook
+            // key={`${dimensions.width}x${dimensions.height}`}
+            ref={flipBookRef}
+            width={normalWidth}
+            height={normalHeight}
+            size={isSmallScreen ? "stretch" : "fixed"}
+            autoSize={true}
+            minWidth={315}
+            maxWidth={1000}
+            minHeight={400}
+            maxHeight={1200}
+            maxShadowOpacity={0.5}
+            showCover={true}
+            mobileScrollSupport={true}
+            drawShadow={true}
+            onFlip={(e) => setPage(e.data)}
+            className="mx-auto shadow-lg"
+            style={{ padding: "10px 0" }}
+          >
+            {Array.from({ length: totalPages }, (_, i) => (
+              <div className="demoPage" key={i}>
+                <img
+                  src={getPageSrc(i)}
+                  alt={`Page ${i + 1}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                />
+                {/* <LazyImage
                 src={getPageSrc(i)}
                 alt={`Page ${i + 1}`}
                 style={{
@@ -82,43 +90,44 @@ const Catalogue = () => {
                   maxHeight: `${normalHeight}px`,
                 }}
               /> */}
-            </div>
-          ))}
-        </HTMLFlipBook>
-      </div>
+              </div>
+            ))}
+          </HTMLFlipBook>
+        </div>
 
-      <ControlsContainer
-        className={`${fullscreen ? "controls-fullscreen" : ""}`}
-      >
-        <PageNumbers>
-          {page + 1} / {totalPages}
-        </PageNumbers>
-        <Controls>
-          <NavButtonsContainer>
-            <NavButton
-              onClick={() => flipBookRef.current.pageFlip().flipPrev()}
-              className="bg-transparent text-white  px-3 py-1 rounded shadow hover:bg-gray-200"
-            >
-              ◀ Prev
-            </NavButton>
-            <NavButton
-              onClick={() => flipBookRef.current.pageFlip().flipNext()}
-              // className="bg-transparent text-white m-4 px-3 py-1 rounded shadow "
-            >
-              Next ▶
-            </NavButton>
-          </NavButtonsContainer>
-          {!isSmallScreen && (
-            <FullscreenToggle
-              variant="outline-secondary"
-              onClick={() => setFullscreen((prev) => !prev)}
-            >
-              <BsFullscreen strokeWidth={0.6} size={14} color="white" />
-            </FullscreenToggle>
-          )}
-        </Controls>
-      </ControlsContainer>
-    </div>
+        <ControlsContainer
+          className={`${fullscreen ? "controls-fullscreen" : ""}`}
+        >
+          <PageNumbers>
+            {page + 1} / {totalPages}
+          </PageNumbers>
+          <Controls>
+            <NavButtonsContainer>
+              <NavButton
+                onClick={() => flipBookRef.current.pageFlip().flipPrev()}
+                className="bg-transparent text-white  px-3 py-1 rounded shadow hover:bg-gray-200"
+              >
+                ◀ Prev
+              </NavButton>
+              <NavButton
+                onClick={() => flipBookRef.current.pageFlip().flipNext()}
+                // className="bg-transparent text-white m-4 px-3 py-1 rounded shadow "
+              >
+                Next ▶
+              </NavButton>
+            </NavButtonsContainer>
+            {!isSmallScreen && (
+              <FullscreenToggle
+                variant="outline-secondary"
+                onClick={() => setFullscreen((prev) => !prev)}
+              >
+                <BsFullscreen strokeWidth={0.6} size={14} color="white" />
+              </FullscreenToggle>
+            )}
+          </Controls>
+        </ControlsContainer>
+      </div>
+    </>
   );
 };
 

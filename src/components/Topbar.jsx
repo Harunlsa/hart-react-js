@@ -50,7 +50,9 @@ const Topbar = () => {
       <div className="container d-flex justify-content-center justify-content-md-between">
         <div className="contact-info d-flex align-items-center">
           <i className="bi bi-envelope d-flex align-items-center">
-            <a href="mailto:sales@hartindustries.com">sales@hartindustries.com</a>
+            <a href="mailto:sales@hartindustries.com">
+              sales@hartindustries.com
+            </a>
           </i>
           <i className="bi bi-phone d-flex align-items-center ms-4">
             <a href="tel:+2347025596606">

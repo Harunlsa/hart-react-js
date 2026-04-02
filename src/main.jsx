@@ -10,11 +10,15 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import ScrollToTop from "./components/ScrollToTop,jsx";
+import { HelmetProvider } from "react-helmet-async";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
       <ScrollToTop />
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );

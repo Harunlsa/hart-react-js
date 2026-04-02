@@ -6,6 +6,7 @@ import ContactBanner from "../components/Contact/ContactBanner";
 import ContactMap from "../components/Contact/ContactMap";
 import ContactSection from "../components/Contact/ContactSection";
 import { toast } from "react-toastify";
+import SEO from "../components/SEO";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -61,16 +62,23 @@ const Contact = () => {
   };
 
   return (
-    <ContactPageWrapper>
-      <ContactBanner />
-      <ContactSection
-        formData={formData}
-        setFormData={setFormData}
-        handleSubmit={handleSubmit}
-        status={status}
+    <>
+      <SEO
+        title="Contact Us"
+        description="Get in touch with us to learn more about our products."
+        canonical="/contact"
       />
-      <ContactMap />
-    </ContactPageWrapper>
+      <ContactPageWrapper>
+        <ContactBanner />
+        <ContactSection
+          formData={formData}
+          setFormData={setFormData}
+          handleSubmit={handleSubmit}
+          status={status}
+        />
+        <ContactMap />
+      </ContactPageWrapper>
+    </>
   );
 };
 

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hart Industries Ltd</title>
+    <!--
+      GitHub Pages SPA fix — redirects all 404s back to index.html
+      so React Router can handle the route client-side.
+
+      Source: https://github.com/rafgraph/spa-github-pages
+    -->
+    <script>
+      // Single Page Apps for GitHub Pages
+      // Preserve the path so the app can restore it after redirect.
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname.split("/").slice(0, 1).join("/") +
+          "/?/" +
+          l.pathname.slice(1).replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash,
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

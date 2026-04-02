@@ -68,7 +68,7 @@ export const Catalogue = () => {
   // }, [dimensions, page]);
   const getPageSrc = (i) =>
     `${import.meta.env.BASE_URL}assets/images/catalogue/page${String(
-      i + 1
+      i + 1,
     ).padStart(2, "0")}.svg`;
 
   // useEffect(() => {

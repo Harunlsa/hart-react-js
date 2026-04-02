@@ -13,6 +13,7 @@ import { products } from "../data/products";
 import LazyImage from "./LazyImage";
 import { useEffect, useState } from "react";
 import AdditionalInfo from "./AdditionalInfo";
+import SEO from "./SEO";
 // import { useEffect } from "react";
 
 const categoryOptions = [
@@ -72,15 +73,6 @@ const ProductPageLayout = () => {
     categoryProducts = currentCategory ? products[currentCategory.value] : null;
   }
 
-  // ✅ Preload banner image when category changes
-  // useEffect(() => {
-  //   if (!currentCategory) return;
-  //   const fullImg = new Image();
-  //   fullImg.src = `${import.meta.env.BASE_URL}assets/images/product-groups/${
-  //     currentCategory.value
-  //   }Group.png`;
-  // }, [currentCategory]);
-
   if (loading) {
     return (
       <SpinnerContainer>
@@ -96,80 +88,94 @@ const ProductPageLayout = () => {
     return <Navigate to="/" replace />;
   }
 
+  const meta = {
+    title: currentCategory.label,
+    description: currentCategory.description,
+  };
+
   return (
-    <PageWrapper>
-      <Banner
-        bgImage={`${
-          import.meta.env.BASE_URL
-        }assets/images/product-banners/banner-${currentCategory.value}.webp`}
-      >
-        <Container>
-          <Row className="h-100 align-items-center">
-            <Col md={7}>
-              <h1>
-                {currentCategory.label}
-                <sup>
-                  <AdditionalInfo category={currentCategory.value} />
-                </sup>
-              </h1>
-              <p>{categoryProducts.description}</p>
-            </Col>
-            <Col
-              md={5}
-              className="text-right"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <BannerImage
-                src={`${import.meta.env.BASE_URL}assets/images/product-groups/${
-                  currentCategory.value
-                }Group.webp`}
-                alt={currentCategory.label}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Banner>
+    <>
+      <SEO
+        title={meta.title}
+        description={meta.description}
+        keywords={`${currentCategory.label}, plastic ${currentCategory.label.toLowerCase()}, Nigeria`}
+      />
+      <PageWrapper>
+        <Banner
+          bgImage={`${
+            import.meta.env.BASE_URL
+          }assets/images/product-banners/banner-${currentCategory.value}.webp`}
+        >
+          <Container>
+            <Row className="h-100 align-items-center">
+              <Col md={7}>
+                <h1>
+                  {currentCategory.label}
+                  <sup>
+                    <AdditionalInfo category={currentCategory.value} />
+                  </sup>
+                </h1>
+                <p>{categoryProducts.description}</p>
+              </Col>
+              <Col
+                md={5}
+                className="text-right"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <BannerImage
+                  src={`${import.meta.env.BASE_URL}assets/images/product-groups/${
+                    currentCategory.value
+                  }Group.webp`}
+                  alt={currentCategory.label}
+                />
+              </Col>
+            </Row>
+          </Container>
+        </Banner>
 
-      <FilterSection>
-        <Container>
-          <div className="d-flex justify-content-between align-items-center mb-4">
-            <Breadcrumb>
-              <Breadcrumb.Item href="/products">Products</Breadcrumb.Item>
-              <Breadcrumb.Item active>{currentCategory.label}</Breadcrumb.Item>
-            </Breadcrumb>
-            <Form.Select
-              value={currentCategory.value}
-              onChange={(e) => navigate(`/products/${e.target.value}`)}
-            >
-              {/* <option value="all">All Categories</option> */}
-              {categoryOptions.map(({ value, label }) => (
-                <option key={value} value={value}>
-                  {label}
-                </option>
+        <FilterSection>
+          <Container>
+            <div className="d-flex justify-content-between align-items-center mb-4">
+              <Breadcrumb>
+                <Breadcrumb.Item href="/products">Products</Breadcrumb.Item>
+                <Breadcrumb.Item active>
+                  {currentCategory.label}
+                </Breadcrumb.Item>
+              </Breadcrumb>
+              <Form.Select
+                value={currentCategory.value}
+                onChange={(e) => navigate(`/products/${e.target.value}`)}
+              >
+                {/* <option value="all">All Categories</option> */}
+                {categoryOptions.map(({ value, label }) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                ))}
+              </Form.Select>
+            </div>
+          </Container>
+        </FilterSection>
+
+        <ProductGrid>
+          <Container>
+            <Row>
+              {categoryProducts.items.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  category={currentCategory.value}
+                />
               ))}
-            </Form.Select>
-          </div>
-        </Container>
-      </FilterSection>
-
-      <ProductGrid>
-        <Container>
-          <Row>
-            {categoryProducts.items.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                category={currentCategory.value}
-              />
-            ))}
-          </Row>
-        </Container>
-      </ProductGrid>
-    </PageWrapper>
+            </Row>
+          </Container>
+        </ProductGrid>
+      </PageWrapper>
+    </>
   );
 };
 

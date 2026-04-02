@@ -1,114 +1,122 @@
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import CertificationsSection from "../components/About/CertificationsSection";
+import SEO from "../components/SEO";
 
 const About = () => {
   return (
-    <AboutPageWrapper>
-      <AboutContainer isSmallContent as={Container}>
-        <Row>
-          <AboutText as={Col} lg={6}>
-            <h1>
-              About Us<span>.</span>
-            </h1>
-            <p>
-              Hart Industries Ltd, founded in 2004 in Kano State, Nigeria, by
-              Mr. Harry Thakurdas Thadani and Mr. Viki H. Mahboobani, has grown
-              into a leading plactic manufacturing company under their dynamic
-              leadership.
-            </p>
-          </AboutText>
-          <Col lg={6}>
-            <AboutImageContainer className="twoImages">
-              <img
-                src={`${import.meta.env.BASE_URL}assets/images/abt1.webp`}
-                alt="abt1"
-              />
-            </AboutImageContainer>
-            <AboutImageContainer isSecond className="twoImages">
-              <img
-                className="second"
-                src={`${import.meta.env.BASE_URL}assets/images/abt2.webp`}
-                alt="abt2"
-              />
-            </AboutImageContainer>
-          </Col>
-        </Row>
-      </AboutContainer>
-      <hr
-        style={{
-          marginBottom: "80px",
-        }}
+    <>
+      <SEO
+        title="About Us"
+        description="Learn more about Hart Industries Limited"
+        canonical="/about"
       />
-      <AboutContainer as={Container}>
-        <h2>
-          Our <span>Vision</span> and <span>Mission</span>
-        </h2>
-        <Row style={{ marginTop: "10px", marginBottom: "40px" }}>
-          <AboutText as={Col} lg={9} isFullText>
-            <h3>Vision</h3>
-            <p>
-              Our vision is to exceed customers’ expectations in achieving their
-              goals, with innovative and reliable solutions.{" "}
-            </p>
-          </AboutText>
-          <Col lg={3}>
-            <AboutIconContainer>
-              <img
-                src={`${import.meta.env.BASE_URL}assets/images/visionIcon.webp`}
-                alt="abt1"
-              />
-            </AboutIconContainer>
-          </Col>
-        </Row>
-        <Row>
-          <AboutText as={Col} lg={9} isFullText>
-            <h3>Mission</h3>
-            <p>
-              We are committed to delivering exceptional value while providing
-              high-quality, durable products at competitive prices.{" "}
-            </p>
-          </AboutText>
-          <Col lg={3}>
-            <AboutIconContainer>
-              <img
-                src={`${
-                  import.meta.env.BASE_URL
-                }assets/images/missionIcon.webp`}
-                alt="abt1"
-              />
-            </AboutIconContainer>
-          </Col>
-        </Row>
-      </AboutContainer>
+      <AboutPageWrapper>
+        <AboutContainer isSmallContent as={Container}>
+          <Row>
+            <AboutText as={Col} lg={6}>
+              <h1>
+                About Us<span>.</span>
+              </h1>
+              <p>
+                Hart Industries Ltd, founded in 2004 in Kano State, Nigeria, by
+                Mr. Harry Thakurdas Thadani and Mr. Viki H. Mahboobani, has
+                grown into a leading plactic manufacturing company under their
+                dynamic leadership.
+              </p>
+            </AboutText>
+            <Col lg={6}>
+              <AboutImageContainer className="twoImages">
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/images/abt1.webp`}
+                  alt="abt1"
+                />
+              </AboutImageContainer>
+              <AboutImageContainer isSecond className="twoImages">
+                <img
+                  className="second"
+                  src={`${import.meta.env.BASE_URL}assets/images/abt2.webp`}
+                  alt="abt2"
+                />
+              </AboutImageContainer>
+            </Col>
+          </Row>
+        </AboutContainer>
+        <hr
+          style={{
+            marginBottom: "80px",
+          }}
+        />
+        <AboutContainer as={Container}>
+          <h2>
+            Our <span>Vision</span> and <span>Mission</span>
+          </h2>
+          <Row style={{ marginTop: "10px", marginBottom: "40px" }}>
+            <AboutText as={Col} lg={9} isFullText>
+              <h3>Vision</h3>
+              <p>
+                Our vision is to exceed customers’ expectations in achieving
+                their goals, with innovative and reliable solutions.{" "}
+              </p>
+            </AboutText>
+            <Col lg={3}>
+              <AboutIconContainer>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/images/visionIcon.webp`}
+                  alt="abt1"
+                />
+              </AboutIconContainer>
+            </Col>
+          </Row>
+          <Row>
+            <AboutText as={Col} lg={9} isFullText>
+              <h3>Mission</h3>
+              <p>
+                We are committed to delivering exceptional value while providing
+                high-quality, durable products at competitive prices.{" "}
+              </p>
+            </AboutText>
+            <Col lg={3}>
+              <AboutIconContainer>
+                <img
+                  src={`${
+                    import.meta.env.BASE_URL
+                  }assets/images/missionIcon.webp`}
+                  alt="abt1"
+                />
+              </AboutIconContainer>
+            </Col>
+          </Row>
+        </AboutContainer>
 
-      <CertificationsSection />
+        <CertificationsSection />
 
-      <AboutContainer as={Container} isSmallContent>
-        <Row>
-          <AboutText as={Col} lg={6}>
-            <h1>
-              Sustainability at Hart<span>.</span>
-            </h1>
-            <p>
-              We are committed to minimizing our environmental impact through
-              innovative recycling initiatives and the use of multi-use
-              plastics.
-            </p>
-          </AboutText>
-          <Col lg={6}>
-            <AboutImageContainer>
-              <img
-                src={`${
-                  import.meta.env.BASE_URL
-                }assets/images/plasticPellets.webp`}
-                alt="abt1"
-              />
-            </AboutImageContainer>
-          </Col>
-        </Row>
-      </AboutContainer>
-    </AboutPageWrapper>
+        <AboutContainer as={Container} isSmallContent>
+          <Row>
+            <AboutText as={Col} lg={6}>
+              <h1>
+                Sustainability at Hart<span>.</span>
+              </h1>
+              <p>
+                We are committed to minimizing our environmental impact through
+                innovative recycling initiatives and the use of multi-use
+                plastics.
+              </p>
+            </AboutText>
+            <Col lg={6}>
+              <AboutImageContainer>
+                <img
+                  src={`${
+                    import.meta.env.BASE_URL
+                  }assets/images/plasticPellets.webp`}
+                  alt="abt1"
+                />
+              </AboutImageContainer>
+            </Col>
+          </Row>
+        </AboutContainer>
+      </AboutPageWrapper>
+    </>
   );
 };
 const AboutPageWrapper = styled.section`

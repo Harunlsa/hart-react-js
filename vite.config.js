@@ -1,12 +1,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import imagePresets, { widthPreset } from "vite-plugin-image-presets";
+import sitemap from "vite-plugin-sitemap";
 
 // https://vite.dev/config/
 export default defineConfig({
   resolve: { alias: { "@": "/src" } },
   plugins: [
     react(),
+    // sitemapPlugin({ hostname: "https://www.hart-industries.com" }),
+    sitemap({ hostname: "https://hart-industries.com" }),
     imagePresets({
       // 👇 must match ?preset=hero
       hero: widthPreset({
