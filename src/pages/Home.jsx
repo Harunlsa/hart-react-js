@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <SEO
-        title=""
+        title="Quality Plastic Products Manufacturer"
         description="Hart Industries Limited manufactures durable plastic products including buckets, basins, racks, and storage solutions for homes and businesses accross Nigeria and beyond."
         canonical="/"
       />

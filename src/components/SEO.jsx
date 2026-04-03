@@ -8,6 +8,7 @@ const DEFAULT_IMAGE = `${BASE_URL}/og-image.jpg`;
 export default function SEO({
   title,
   description,
+  keywords,
   canonical,
   image = DEFAULT_IMAGE,
   imageAlt = `${SITE_NAME}`,
@@ -23,6 +24,7 @@ export default function SEO({
       {/* ── Primary ─────────────────────────────────────── */}
       <title>{fullTitle}</title>
       {description && <meta name="description" content={description} />}
+      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={resolvedCanonical} />
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
@@ -56,6 +58,7 @@ export default function SEO({
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
+  keywords: PropTypes.string,
   canonical: PropTypes.string, // e.g. '/services' – relative path
   image: PropTypes.string,
   imageAlt: PropTypes.string,

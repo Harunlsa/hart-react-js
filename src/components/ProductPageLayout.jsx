@@ -99,6 +99,7 @@ const ProductPageLayout = () => {
         title={meta.title}
         description={meta.description}
         keywords={`${currentCategory.label}, plastic ${currentCategory.label.toLowerCase()}, Nigeria`}
+        canonical={`/products/${currentCategory.value}`}
       />
       <PageWrapper>
         <Banner

@@ -7,9 +7,9 @@ import { BrowserRouter } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import ScrollToTop from "./components/ScrollToTop,jsx";
 import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")).render(
@@ -17,8 +17,8 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <HelmetProvider>
         <App />
+        <ScrollToTop />
       </HelmetProvider>
-      <ScrollToTop />
     </BrowserRouter>
   </StrictMode>,
 );

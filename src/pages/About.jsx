@@ -8,7 +8,7 @@ const About = () => {
     <>
       <SEO
         title="About Us"
-        description="Learn more about Hart Industries Limited"
+        description="Founded in 2004 in Kano, Nigeria, Hart Industries Ltd is a leading plastic products manufacturer. Learn about our history, leadership, certifications, and commitment to quality."
         canonical="/about"
       />
       <AboutPageWrapper>

@@ -5,10 +5,7 @@ User-agent: *
 Allow: /
 
 # Block crawling of unnecessary files
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*.txt$
 Disallow: /*.md$
 
 # Specify your sitemap for faster discovery
-Sitemap: https://hart-industries.com/sitemap.xml
+Sitemap: https://www.hart-industries.com/sitemap.xml

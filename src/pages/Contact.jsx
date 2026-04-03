@@ -65,7 +65,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us"
-        description="Get in touch with us to learn more about our products."
+        description="Contact Hart Industries Ltd in Kano, Nigeria. Call +234-702-559-6606, email sales@hartindustries.com, or fill in our enquiry form for product and order information."
         canonical="/contact"
       />
       <ContactPageWrapper>
