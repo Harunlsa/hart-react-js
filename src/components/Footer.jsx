@@ -79,8 +79,10 @@ const FooterWrapper = styled.footer`
   color: #444444;
   font-size: 14px;
   outline: 1px solid #cccccc;
+  min-height: 299.2px;
 
   @media (max-width: 768px) {
+    min-height: 457px;
     .copyright,
     .credits {
       float: none;
@@ -92,6 +94,10 @@ const FooterWrapper = styled.footer`
     .footer-links {
       margin: 0 5%;
     }
+  }
+
+  @media (max-width: 425px) {
+    min-height: 482px;
   }
 `;
 

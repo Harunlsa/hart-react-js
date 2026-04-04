@@ -21,6 +21,12 @@ body {
   }
 } */
 
+/* Prevent bootstrap-icons from blocking render
+@font-face {
+  font-family: "bootstrap-icons";
+  font-display: swap;
+} */
+
 body {
   position: relative;
   font-family: "Open Sans", sans-serif;

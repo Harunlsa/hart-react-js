@@ -134,9 +134,10 @@ const ContactSection = () => {
             >
               <Row className="g-3">
                 <Col md={6}>
-                  <Label>Your Name</Label>
+                  <Label htmlFor="name">Your Name</Label>
                   <Input
                     type="text"
+                    id="name"
                     // name="name"
                     // value={formData.name}
                     // onChange={handleChange}
@@ -155,9 +156,10 @@ const ContactSection = () => {
                 </Col>
 
                 <Col md={6}>
-                  <Label>Your Email</Label>
+                  <Label htmlFor="email">Your Email</Label>
                   <Input
                     type="email"
+                    id="email"
                     // name="email"
                     // value={formData.email}
                     // onChange={handleChange}
@@ -176,9 +178,10 @@ const ContactSection = () => {
                 </Col>
 
                 <Col md={12}>
-                  <Label>Subject</Label>
+                  <Label htmlFor="subject">Subject</Label>
                   <Input
                     type="text"
+                    id="subject"
                     // name="subject"
                     // value={formData.subject}
                     // onChange={handleChange}
@@ -193,10 +196,11 @@ const ContactSection = () => {
                 </Col>
 
                 <Col md={12}>
-                  <Label>Message</Label>
+                  <Label htmlFor="message">Message</Label>
                   <TextArea
                     // name="message"
                     rows="10"
+                    id="message"
                     // value={formData.message}
                     // onChange={handleChange}
                     // required

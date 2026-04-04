@@ -93,7 +93,7 @@ const HeroSection = () => {
     },
   ];
 
-  console.log(heroGreenBg);
+  // console.log(heroGreenBg);
 
   const swiperRef = useState(null);
   return (

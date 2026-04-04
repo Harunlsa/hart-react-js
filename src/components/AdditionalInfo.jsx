@@ -43,12 +43,17 @@ const AdditionalInfo = ({ category }) => {
         />
       </Button> */}
       {categoryData.additionalInfo !== "No additional information" ? (
-        <Button variant="link" size="sm">
+        <Button
+          variant="link"
+          size="sm"
+          aria-label={`More information about ${category}`}
+        >
           <BsInfoCircle
             strokeWidth={0.6}
             size={14}
             color="white"
             overflow={"visible"}
+            aria-hidden="true"
           />
         </Button>
       ) : (

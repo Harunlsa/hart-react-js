@@ -2,6 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import imagePresets, { widthPreset } from "vite-plugin-image-presets";
 import sitemap from "vite-plugin-sitemap";
+import purgecss from "vite-plugin-purgecss";
+import fontDisplay from "postcss-font-display";
 
 // All product category slugs — keep in sync with categoryOptions in ProductPageLayout.jsx
 const productRoutes = [
@@ -29,11 +31,20 @@ const productRoutes = [
 // https://vite.dev/config/
 export default defineConfig({
   resolve: { alias: { "@": "/src" } },
+  css: {
+    postcss: {
+      plugins: [fontDisplay({ display: "swap", replace: false })],
+    },
+  },
   plugins: [
     react(),
+    purgecss({
+      content: ["./src/**/*.{jsx,js,ts,tsx}", "./index.html"],
+      safelist: [/^bi-/], // keep all bootstrap-icon classes
+    }),
     // sitemapPlugin({ hostname: "https://www.hart-industries.com" }),
     sitemap({
-      hostname: "https://www.hart-industries.com",
+      hostname: "https://hart-industries.com",
       dynamicRoutes: ["/about", "/contact", "/catalogue", ...productRoutes],
     }),
     imagePresets({

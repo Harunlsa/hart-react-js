@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
 
 const SITE_NAME = "Hart Industries Ltd";
-const BASE_URL = "https://www.hart-industries.com";
+const BASE_URL = "https://hart-industries.com";
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.jpg`;
 
 export default function SEO({

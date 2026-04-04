@@ -147,9 +147,11 @@ const ProductPageLayout = () => {
                   {currentCategory.label}
                 </Breadcrumb.Item>
               </Breadcrumb>
+              <label htmlFor="category-select" className="hidden"></label>
               <Form.Select
                 value={currentCategory.value}
                 onChange={(e) => navigate(`/products/${e.target.value}`)}
+                id="category-select"
               >
                 {/* <option value="all">All Categories</option> */}
                 {categoryOptions.map(({ value, label }) => (
@@ -184,11 +186,10 @@ const ProductPageLayout = () => {
 const PageWrapper = styled.div`
   background-color: #f9f9f9;
 
-  nav ol{
+  nav ol {
     align-items: center;
     // justify-content: center;
     margin: auto 0;
-  
   }
 
   .form-select {
@@ -196,8 +197,7 @@ const PageWrapper = styled.div`
     @media (min-width: 600px) {
       max-width: 200px;
     }
-
-
+  }
 `;
 
 const Banner = styled.section`
