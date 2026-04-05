@@ -37,10 +37,10 @@ export default defineConfig({
     },
   },
   plugins: [
-    react(),
-    purgecss({
-      content: ["./src/**/*.{jsx,js,ts,tsx}", "./index.html"],
-      safelist: [/^bi-/], // keep all bootstrap-icon classes
+    react({
+      babel: {
+        plugins: ["babel-plugin-styled-components"],
+      },
     }),
     // sitemapPlugin({ hostname: "https://www.hart-industries.com" }),
     sitemap({
@@ -86,15 +86,15 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          router: ["react-router-dom"],
-          ui: ["bootstrap", "react-bootstrap", "styled-components"],
-        },
-      },
-    },
+    // rollupOptions: {
+    //   output: {
+    //     manualChunks: {
+    //       vendor: ["react", "react-dom"],
+    //       router: ["react-router-dom"],
+    //       ui: ["bootstrap", "react-bootstrap", "styled-components"],
+    //     },
+    //   },
+    // },
   },
   base: "/",
 });

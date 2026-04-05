@@ -35,7 +35,7 @@ const PortfolioSection = () => {
     activeFilter === "*"
       ? portfolioItems
       : portfolioItems.filter(
-          (item) => item.category === activeFilter.replace(".filter-", "")
+          (item) => item.category === activeFilter.replace(".filter-", ""),
         );
 
   return (

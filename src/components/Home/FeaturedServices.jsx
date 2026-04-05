@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { BiLogoDribbble, BiFile, BiTachometer, BiWorld } from "react-icons/bi";
 import { Container } from "react-bootstrap";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const services = [
   {
@@ -142,9 +142,9 @@ const Description = styled.p`
 `;
 
 const FeaturedServices = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <Section id="featured-services">
       <Container data-aos="fade-up">

@@ -1,5 +1,7 @@
 import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { Navigate, Route, Routes } from "react-router-dom";
 
@@ -15,7 +17,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import { Bounce, ToastContainer } from "react-toastify";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Spinner } from "react-bootstrap";
 
 const Home = lazy(() => import("./pages/Home"));
@@ -25,6 +27,14 @@ const Catalogue = lazy(() => import("./pages/Catalogue"));
 const ProductPageLayout = lazy(() => import("./components/ProductPageLayout"));
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: true, // only animate once — prevents re-hiding on scroll back up
+      offset: 50, // trigger 50px before element enters viewport
+    });
+  }, []);
+
   return (
     <>
       <Topbar />

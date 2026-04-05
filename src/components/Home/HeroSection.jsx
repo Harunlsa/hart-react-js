@@ -95,7 +95,7 @@ const HeroSection = () => {
 
   // console.log(heroGreenBg);
 
-  const swiperRef = useState(null);
+  const swiperRef = useRef(null);
   return (
     <HeroWrapper
       onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
