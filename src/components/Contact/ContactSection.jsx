@@ -6,7 +6,7 @@ const ContactSection = ({ formData, setFormData, handleSubmit, status }) => (
   <SectionWrapper className="contact">
     <Container>
       <Row>
-        <ContactInfoCol lg={5}>
+        <ContactInfoCol lg={5} data-aos="fade-right">
           <h1>Get in Touch</h1>
           <p>
             Whether you need assistance or just want to learn more about our
@@ -43,7 +43,7 @@ const ContactSection = ({ formData, setFormData, handleSubmit, status }) => (
             </li>
           </ContactInfoList>
         </ContactInfoCol>
-        <FormCol lg={7}>
+        <FormCol lg={7} data-aos="fade-left">
           <h2>Send a message</h2>
 
           <Form onSubmit={handleSubmit}>

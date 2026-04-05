@@ -47,7 +47,7 @@ const About = () => {
             marginBottom: "80px",
           }}
         />
-        <AboutContainer as={Container}>
+        <AboutContainer as={Container} data-aos="fade-up">
           <h2>
             Our <span>Vision</span> and <span>Mission</span>
           </h2>
@@ -91,7 +91,7 @@ const About = () => {
 
         <CertificationsSection />
 
-        <AboutContainer as={Container} isSmallContent>
+        <AboutContainer data-aos="fade-up" as={Container} isSmallContent>
           <Row>
             <AboutText as={Col} lg={6}>
               <h1>

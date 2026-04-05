@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 const ContactMap = () => (
-  <MapSection id="map">
+  <MapSection
+    id="map"
+    data-aos="zoom-in"
+    data-aos-easing="ease-in-sine"
+    data-aos-delay="500"
+  >
     <div className="map-container">
       <iframe
         title="Hart Industries location - Challawa Industrial Area, Kano"

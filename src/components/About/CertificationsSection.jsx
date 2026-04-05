@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const CertificationsSection = () => {
   return (
-    <CertificationsContainer>
+    <CertificationsContainer data-aos="fade-right">
       <h2>
         Our Commitment to <span>Quality</span>
       </h2>

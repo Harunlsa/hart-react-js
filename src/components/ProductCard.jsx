@@ -40,11 +40,11 @@ const getColorCode = (colorClass) => {
   return colorMap[colorName] || "#cccccc";
 };
 
-const ProductCard = ({ product, category }) => {
+const ProductCard = ({ product, category, ...props }) => {
   const [selectedColor, setSelectedColor] = useState(0);
 
   return (
-    <CardWrapper sm={6} md={4} lg={3}>
+    <CardWrapper sm={6} md={4} lg={3} {...props}>
       <Card>
         {/* <ProductImageWrapper> */}
         <ProductImage

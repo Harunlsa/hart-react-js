@@ -132,6 +132,8 @@ const ProductPageLayout = () => {
                     currentCategory.value
                   }Group.webp`}
                   alt={currentCategory.label}
+                  width="300"
+                  height="300"
                 />
               </Col>
             </Row>
@@ -169,6 +171,7 @@ const ProductPageLayout = () => {
             <Row>
               {categoryProducts.items.map((product) => (
                 <ProductCard
+                  data-aos="zoom-in-up"
                   key={product.id}
                   product={product}
                   category={currentCategory.value}

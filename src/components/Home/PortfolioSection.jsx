@@ -20,7 +20,7 @@ const PortfolioSection = () => {
   ];
 
   useEffect(() => {
-    AOS.init();
+    // AOS.init();
     GLightbox({
       selector: ".portfolio-lightbox",
     });
