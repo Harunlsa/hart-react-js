@@ -59,7 +59,7 @@ const Footer = () => {
             </Col>
             <Col md={6} className="credits">
               Designed by{" "}
-              <CreditLink href="mailto:harunlabdulwahab@gmail.com">
+              <CreditLink href="https://harulsa.github.io/myPortfolioWebsite">
                 HLAbdulwahab
               </CreditLink>
             </Col>
