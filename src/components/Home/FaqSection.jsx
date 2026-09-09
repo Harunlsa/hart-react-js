@@ -14,7 +14,7 @@ const faqData = [
     id: "faq2",
     question: "How can I request a quote for your products or services?",
     answer:
-      "You can contact our sales team directly at sales@hart-industries.com or call +234 902 083 8258 to discuss ",
+      "You can contact our sales team directly at sales@hart-industries.com or call +234 702 559 6606 to discuss ",
   },
   {
     id: "faq3",
